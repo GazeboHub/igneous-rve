@@ -1,0 +1,105 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SynchronizedTerminalTextDataTest" version="3">
+  <DEPS>
+    <ID name="SynchronizedTerminalTextDataTest" mc="Class" uid="9c1c6e84-1882-49fa-b21b-5fa524a521f6"/>
+    <EXTID name="AbstractITerminalTextDataTest" mc="Class" uid="2f639b24-1480-40a5-9c2e-d8f46c23e456"/>
+    <EXTID name="ITerminalTextData" mc="Interface" uid="ac632690-0372-4dd9-8652-517688ae86b4"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="SynchronizedTerminalTextDataTest" mc="Class" uid="9c1c6e84-1882-49fa-b21b-5fa524a521f6"/>
+    <PID name="model" mc="Package" uid="9137cf6f-04f3-4c9b-a309-4bf94c2303e2"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[SynchronizedTerminalTextDataTest]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="makeITerminalTextData" mc="Operation" uid="40853ae1-4666-40c2-adf5-f502d6c7904d"/>
+          <PID name="SynchronizedTerminalTextDataTest" mc="Class" uid="9c1c6e84-1882-49fa-b21b-5fa524a521f6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Protected</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[makeITerminalTextData]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="74061cb2-f5c8-4902-85bd-f532c4ac3fbd"/>
+                <PID name="SynchronizedTerminalTextDataTest" mc="Class" uid="9c1c6e84-1882-49fa-b21b-5fa524a521f6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalTextData" mc="Interface" uid="ac632690-0372-4dd9-8652-517688ae86b4"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="114f4c9a-5d6a-43ad-84fd-3efe35101eb2"/>
+                <PID name="SynchronizedTerminalTextDataTest" mc="Class" uid="9c1c6e84-1882-49fa-b21b-5fa524a521f6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return new SynchronizedTerminalTextData(new TerminalTextData());]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="" mc="Generalization" uid="99cd5b85-3bf4-4262-bcdf-fa05ce0c0557"/>
+          <PID name="SynchronizedTerminalTextDataTest" mc="Class" uid="9c1c6e84-1882-49fa-b21b-5fa524a521f6"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="AbstractITerminalTextDataTest" mc="Class" uid="2f639b24-1480-40a5-9c2e-d8f46c23e456"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

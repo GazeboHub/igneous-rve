@@ -1,0 +1,236 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TerminalPreferenceInitializer" version="3">
+  <DEPS>
+    <ID name="TerminalPreferenceInitializer" mc="Class" uid="bd42a828-4a6a-4dd9-af77-ee57a5255a2b"/>
+    <EXTID name="TerminalPlugin" mc="Class" uid="8ad2352b-2bc9-4f01-abf9-909c92cd2a8b"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaExtends" mc="TagType" uid="003800a8-0000-0154-0000-000000000000"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+    <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TerminalPreferenceInitializer" mc="Class" uid="bd42a828-4a6a-4dd9-af77-ee57a5255a2b"/>
+    <PID name="preferences" mc="Package" uid="96c72f70-78c8-4227-95ef-ac0ed2b05929"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[TerminalPreferenceInitializer]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="TerminalPreferenceInitializer" mc="Operation" uid="2b4144cf-99b6-4e0e-b235-2a45ebe95bdd"/>
+          <PID name="TerminalPreferenceInitializer" mc="Class" uid="bd42a828-4a6a-4dd9-af77-ee57a5255a2b"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[TerminalPreferenceInitializer]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="initializeDefaultPreferences" mc="Operation" uid="c8895b57-e754-49e6-bfe7-3071d5e3756e"/>
+          <PID name="TerminalPreferenceInitializer" mc="Class" uid="bd42a828-4a6a-4dd9-af77-ee57a5255a2b"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[initializeDefaultPreferences]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="67c488e7-e789-435f-84e7-cdc39998354f"/>
+                <PID name="TerminalPreferenceInitializer" mc="Class" uid="bd42a828-4a6a-4dd9-af77-ee57a5255a2b"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[//DefaultScope.INSTANCE was only added in Eclipse 3.7 - we want to be compatible further back
+IEclipsePreferences defaultPrefs = new DefaultScope().getNode(TerminalPlugin.PLUGIN_ID);
+defaultPrefs.putBoolean(ITerminalConstants.PREF_INVERT_COLORS, ITerminalConstants.DEFAULT_INVERT_COLORS);
+defaultPrefs.putInt(ITerminalConstants.PREF_BUFFERLINES, ITerminalConstants.DEFAULT_BUFFERLINES);
+migrateTerminalPreferences();
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="migrateTerminalPreferences" mc="Operation" uid="342e457a-e6a9-42de-ae87-4e57f7e378d7"/>
+          <PID name="TerminalPreferenceInitializer" mc="Class" uid="bd42a828-4a6a-4dd9-af77-ee57a5255a2b"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[migrateTerminalPreferences]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="1d49b8e2-1593-4e43-8e7c-3d2183ad6535"/>
+                <PID name="TerminalPreferenceInitializer" mc="Class" uid="bd42a828-4a6a-4dd9-af77-ee57a5255a2b"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Migrate settings from the older org.eclipse.tm.terminal.view bundle into the o.e.tm.terminal bundle]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="ad462ca1-4557-4a6e-8361-b9554179d834"/>
+                <PID name="TerminalPreferenceInitializer" mc="Class" uid="bd42a828-4a6a-4dd9-af77-ee57a5255a2b"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[//InstanceScope.INSTANCE was only added in Eclipse 3.7 - we want to be compatible further back
+IEclipsePreferences prefs = new InstanceScope().getNode(TerminalPlugin.PLUGIN_ID);
+if (!prefs.getBoolean(ITerminalConstants.PREF_HAS_MIGRATED, false)) {
+    prefs.putBoolean(ITerminalConstants.PREF_HAS_MIGRATED, true);
+    PreferenceModifyListener.migrateTerminalPreferences(new InstanceScope().getNode("")); //$NON-NLS-1$
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedImport">
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="7275c489-f581-4af3-8dda-f66e9ad34219"/>
+          <PID name="TerminalPreferenceInitializer" mc="Class" uid="bd42a828-4a6a-4dd9-af77-ee57a5255a2b"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="TerminalPlugin" mc="Class" uid="8ad2352b-2bc9-4f01-abf9-909c92cd2a8b"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="6d19accc-09ee-42aa-810c-e508c4e11466"/>
+          <PID name="TerminalPreferenceInitializer" mc="Class" uid="bd42a828-4a6a-4dd9-af77-ee57a5255a2b"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="94c44ba6-3844-41ed-a2c5-75bb319d1cc6"/>
+                <PID name="TerminalPreferenceInitializer" mc="Class" uid="bd42a828-4a6a-4dd9-af77-ee57a5255a2b"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[AbstractPreferenceInitializer]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaExtends" mc="TagType" uid="003800a8-0000-0154-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="c6d7e9c8-36f6-4e3f-94cd-11981e1baba6"/>
+          <PID name="TerminalPreferenceInitializer" mc="Class" uid="bd42a828-4a6a-4dd9-af77-ee57a5255a2b"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="190601a9-68c5-45ca-aa83-b15dc89de65f"/>
+                <PID name="TerminalPreferenceInitializer" mc="Class" uid="bd42a828-4a6a-4dd9-af77-ee57a5255a2b"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.core.runtime.preferences.AbstractPreferenceInitializer]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="b093669f-1baa-4b1d-8de6-90ff1d1613b2"/>
+                <PID name="TerminalPreferenceInitializer" mc="Class" uid="bd42a828-4a6a-4dd9-af77-ee57a5255a2b"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.core.runtime.preferences.DefaultScope]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="f36cb681-e077-4906-aeca-fad625e8555b"/>
+                <PID name="TerminalPreferenceInitializer" mc="Class" uid="bd42a828-4a6a-4dd9-af77-ee57a5255a2b"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.core.runtime.preferences.IEclipsePreferences]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="1f70a980-d441-4128-970c-4ea53d8c52f4"/>
+                <PID name="TerminalPreferenceInitializer" mc="Class" uid="bd42a828-4a6a-4dd9-af77-ee57a5255a2b"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.core.runtime.preferences.InstanceScope]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

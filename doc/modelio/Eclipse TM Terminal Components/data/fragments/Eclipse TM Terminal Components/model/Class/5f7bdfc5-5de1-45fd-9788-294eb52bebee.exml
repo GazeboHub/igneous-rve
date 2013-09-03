@@ -1,0 +1,167 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TerminalActionDisconnect" version="3">
+  <DEPS>
+    <ID name="TerminalActionDisconnect" mc="Class" uid="5f7bdfc5-5de1-45fd-9788-294eb52bebee"/>
+    <EXTID name="ITerminalView" mc="Interface" uid="0fe4b298-fd32-4c98-acd9-3bf9a5db8c03"/>
+    <EXTID name="ImageConsts" mc="Interface" uid="be7f36c5-5355-43ca-9ea6-af7f9f65973b"/>
+    <EXTID name="TerminalAction" mc="Class" uid="88e429c3-f7ac-43fa-bf34-d24b98353bd7"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TerminalActionDisconnect" mc="Class" uid="5f7bdfc5-5de1-45fd-9788-294eb52bebee"/>
+    <PID name="actions" mc="Package" uid="6be4b42e-f7ba-486b-bf6d-1421da7a72ea"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[TerminalActionDisconnect]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="TerminalActionDisconnect" mc="Operation" uid="af4a6f8e-7b7b-4e18-bd2c-a0d1f2754236"/>
+          <PID name="TerminalActionDisconnect" mc="Class" uid="5f7bdfc5-5de1-45fd-9788-294eb52bebee"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[TerminalActionDisconnect]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="target" mc="Parameter" uid="6a4c0a27-8e22-4d1b-8f60-bd9c6f780da0"/>
+                <PID name="TerminalActionDisconnect" mc="Class" uid="5f7bdfc5-5de1-45fd-9788-294eb52bebee"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[target]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalView" mc="Interface" uid="0fe4b298-fd32-4c98-acd9-3bf9a5db8c03"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="aac37446-b1a3-4588-8477-7bbda0168479"/>
+                <PID name="TerminalActionDisconnect" mc="Class" uid="5f7bdfc5-5de1-45fd-9788-294eb52bebee"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[super(target,
+      TerminalActionDisconnect.class.getName());
+
+setupAction(ActionMessages.DISCONNECT,
+            ActionMessages.DISCONNECT,
+            ImageConsts.IMAGE_CLCL_DISCONNECT,
+            ImageConsts.IMAGE_ELCL_DISCONNECT,
+            ImageConsts.IMAGE_DLCL_DISCONNECT,
+            false);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="run" mc="Operation" uid="5aa0e379-37cb-45e3-87d1-93ba95d91bd4"/>
+          <PID name="TerminalActionDisconnect" mc="Class" uid="5f7bdfc5-5de1-45fd-9788-294eb52bebee"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[run]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="f8ff0701-f569-448c-84c8-a7d7e29a1689"/>
+                <PID name="TerminalActionDisconnect" mc="Class" uid="5f7bdfc5-5de1-45fd-9788-294eb52bebee"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[fTarget.onTerminalDisconnect();]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="" mc="Generalization" uid="1465baa5-6da1-47be-9e36-dbd6bf22f07a"/>
+          <PID name="TerminalActionDisconnect" mc="Class" uid="5f7bdfc5-5de1-45fd-9788-294eb52bebee"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="TerminalAction" mc="Class" uid="88e429c3-f7ac-43fa-bf34-d24b98353bd7"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedImport">
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="2b8d5586-f622-4855-be5a-244f60021c41"/>
+          <PID name="TerminalActionDisconnect" mc="Class" uid="5f7bdfc5-5de1-45fd-9788-294eb52bebee"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="ImageConsts" mc="Interface" uid="be7f36c5-5355-43ca-9ea6-af7f9f65973b"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

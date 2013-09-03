@@ -1,0 +1,131 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SnapshotOutOfDateListener" version="3">
+  <DEPS>
+    <ID name="SnapshotOutOfDateListener" mc="Interface" uid="85c07d18-bfda-44ce-9149-d8983cf3e01e"/>
+    <EXTID name="ITerminalTextDataSnapshot" mc="Interface" uid="b5768b9b-c546-40ba-be28-aac7a10baa83"/>
+    <FOREIGNID name="JavaInterface" mc="Stereotype" uid="01ec23a8-0000-0267-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="258012b4-0000-03d3-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="SnapshotOutOfDateListener" mc="Interface" uid="85c07d18-bfda-44ce-9149-d8983cf3e01e"/>
+    <PID name="ITerminalTextDataSnapshot" mc="Interface" uid="b5768b9b-c546-40ba-be28-aac7a10baa83"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">true</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">PackageVisibility</ATT>
+      <ATT name="Name"><![CDATA[SnapshotOutOfDateListener]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="snapshotOutOfDate" mc="Operation" uid="6ae51112-fb90-4f49-aa26-e6b7d5223af2"/>
+          <PID name="SnapshotOutOfDateListener" mc="Interface" uid="85c07d18-bfda-44ce-9149-d8983cf3e01e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">true</ATT>
+            <ATT name="Name"><![CDATA[snapshotOutOfDate]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="snapshot" mc="Parameter" uid="c53dfe9a-1095-4ad7-8a82-d5c8dabeb649"/>
+                <PID name="SnapshotOutOfDateListener" mc="Interface" uid="85c07d18-bfda-44ce-9149-d8983cf3e01e"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[snapshot]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalTextDataSnapshot" mc="Interface" uid="b5768b9b-c546-40ba-be28-aac7a10baa83"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="807b5232-7cbe-4d01-96d4-6aa9bd83441b"/>
+                      <PID name="SnapshotOutOfDateListener" mc="Interface" uid="85c07d18-bfda-44ce-9149-d8983cf3e01e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[The snapshot that is out of date]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="9664c871-ace5-4a15-8f9d-82f7e5d8c3a3"/>
+                <PID name="SnapshotOutOfDateListener" mc="Interface" uid="85c07d18-bfda-44ce-9149-d8983cf3e01e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Gets called when the snapshot is out of date. To get the snapshot up to date,
+call {@link ITerminalTextDataSnapshot#updateSnapshot(boolean)}.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaInterface" mc="Stereotype" uid="01ec23a8-0000-0267-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="8f5b02ce-e0b3-42e4-a4fd-fa6fe3c29537"/>
+          <PID name="SnapshotOutOfDateListener" mc="Interface" uid="85c07d18-bfda-44ce-9149-d8983cf3e01e"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[This listener gets called when the current snapshot
+is out of date. Calling {@link ITerminalTextDataSnapshot#updateSnapshot(boolean)}
+will have an effect. Once the {@link #snapshotOutOfDate(ITerminalTextDataSnapshot)} method is called,
+it will not be called until {@link ITerminalTextDataSnapshot#updateSnapshot(boolean)}
+is called and a new snapshot needs to be updated again.
+<p>
+A typical terminal view would not update the snapshot immediately
+after the {@link #snapshotOutOfDate(ITerminalTextDataSnapshot)} has been called. It would introduce a
+delay to update the UI (and the snapshot} 10 or 20 times per second.
+
+<p>Make sure you don't spend too much time in this method.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="Javadoc" mc="NoteType" uid="258012b4-0000-03d3-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

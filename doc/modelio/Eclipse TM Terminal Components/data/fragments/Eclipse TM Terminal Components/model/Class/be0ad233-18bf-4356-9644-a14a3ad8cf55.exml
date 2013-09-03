@@ -1,0 +1,288 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TerminalActionCut" version="3">
+  <DEPS>
+    <ID name="TerminalActionCut" mc="Class" uid="be0ad233-18bf-4356-9644-a14a3ad8cf55"/>
+    <EXTID name="AbstractTerminalAction" mc="Class" uid="108c9308-d5c5-4028-977e-3bd8775c0ef8"/>
+    <EXTID name="ITerminalViewControl" mc="Interface" uid="c48973a6-e9dc-4236-a050-1010cb10d4e0"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+    <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TerminalActionCut" mc="Class" uid="be0ad233-18bf-4356-9644-a14a3ad8cf55"/>
+    <PID name="actions" mc="Package" uid="f854e869-b006-46b0-9aa6-023351cfbc2a"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[TerminalActionCut]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="TerminalActionCut" mc="Operation" uid="6874c05b-107c-4efd-8c32-ce904d029e8c"/>
+          <PID name="TerminalActionCut" mc="Class" uid="be0ad233-18bf-4356-9644-a14a3ad8cf55"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[TerminalActionCut]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="c8ddfc36-7bcf-4a53-a60d-aac3ec8ace66"/>
+                <PID name="TerminalActionCut" mc="Class" uid="be0ad233-18bf-4356-9644-a14a3ad8cf55"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[super(TerminalActionCut.class.getName());
+ISharedImages si = PlatformUI.getWorkbench().getSharedImages();
+setupAction(ActionMessages.CUT, ActionMessages.CUT, si
+        .getImageDescriptor(ISharedImages.IMG_TOOL_CUT), si
+        .getImageDescriptor(ISharedImages.IMG_TOOL_CUT), si
+        .getImageDescriptor(ISharedImages.IMG_TOOL_CUT_DISABLED), true);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="TerminalActionCut" mc="Operation" uid="258bc268-dc1e-4020-a56e-373c034d1871"/>
+          <PID name="TerminalActionCut" mc="Class" uid="be0ad233-18bf-4356-9644-a14a3ad8cf55"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[TerminalActionCut]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="target" mc="Parameter" uid="d2afaa15-b5fd-42af-94dd-172a66013e52"/>
+                <PID name="TerminalActionCut" mc="Class" uid="be0ad233-18bf-4356-9644-a14a3ad8cf55"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[target]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalViewControl" mc="Interface" uid="c48973a6-e9dc-4236-a050-1010cb10d4e0"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="b79d31de-f762-47ef-92bf-acc4b421640a"/>
+                <PID name="TerminalActionCut" mc="Class" uid="be0ad233-18bf-4356-9644-a14a3ad8cf55"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[super(target, TerminalActionCut.class.getName());
+ISharedImages si = PlatformUI.getWorkbench().getSharedImages();
+setupAction(ActionMessages.CUT, ActionMessages.CUT, si
+        .getImageDescriptor(ISharedImages.IMG_TOOL_CUT), si
+        .getImageDescriptor(ISharedImages.IMG_TOOL_CUT), si
+        .getImageDescriptor(ISharedImages.IMG_TOOL_CUT_DISABLED), true);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="run" mc="Operation" uid="d082998c-a30d-4ae6-b760-2b94b685569c"/>
+          <PID name="TerminalActionCut" mc="Class" uid="be0ad233-18bf-4356-9644-a14a3ad8cf55"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[run]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="93968608-bd95-4ac9-b362-9530e22ac9f9"/>
+                <PID name="TerminalActionCut" mc="Class" uid="be0ad233-18bf-4356-9644-a14a3ad8cf55"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ITerminalViewControl target = getTarget();
+if (target != null) {
+    target.sendKey('\u0018');
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="updateAction" mc="Operation" uid="5dc6465b-b555-4fce-9b8d-5710ad4e0919"/>
+          <PID name="TerminalActionCut" mc="Class" uid="be0ad233-18bf-4356-9644-a14a3ad8cf55"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[updateAction]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="aboutToShow" mc="Parameter" uid="8421849b-7565-456f-abbf-4d6f771e41ab"/>
+                <PID name="TerminalActionCut" mc="Class" uid="be0ad233-18bf-4356-9644-a14a3ad8cf55"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[aboutToShow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="94c62a85-36ac-40c4-8f35-d23563ad8556"/>
+                <PID name="TerminalActionCut" mc="Class" uid="be0ad233-18bf-4356-9644-a14a3ad8cf55"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[// Cut is always disabled
+setEnabled(false);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="" mc="Generalization" uid="dcb237f6-813c-4068-aab7-ee9005b91227"/>
+          <PID name="TerminalActionCut" mc="Class" uid="be0ad233-18bf-4356-9644-a14a3ad8cf55"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="AbstractTerminalAction" mc="Class" uid="108c9308-d5c5-4028-977e-3bd8775c0ef8"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="e7774914-a1b6-462b-a27b-51fd6da6e601"/>
+          <PID name="TerminalActionCut" mc="Class" uid="be0ad233-18bf-4356-9644-a14a3ad8cf55"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="d18ef96a-ed30-40fc-a83e-afecd299a0b7"/>
+                <PID name="TerminalActionCut" mc="Class" uid="be0ad233-18bf-4356-9644-a14a3ad8cf55"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.ui.ISharedImages]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="a42cfee9-9f18-45ed-a34e-97c3996857b8"/>
+                <PID name="TerminalActionCut" mc="Class" uid="be0ad233-18bf-4356-9644-a14a3ad8cf55"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.ui.PlatformUI]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

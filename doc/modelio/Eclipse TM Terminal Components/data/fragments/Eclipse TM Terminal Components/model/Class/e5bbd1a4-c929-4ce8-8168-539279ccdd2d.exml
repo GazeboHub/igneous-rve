@@ -1,0 +1,671 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TerminalFilterOutputStream" version="3">
+  <DEPS>
+    <ID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaExtends" mc="TagType" uid="003800a8-0000-0154-0000-000000000000"/>
+    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0161-0000-000000000000"/>
+    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+    <FOREIGNID name="byte" mc="DataType" uid="00000004-0000-0013-0000-000000000000"/>
+    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+    <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+    <PID name="TerminalToRemoteInjectionOutputStream" mc="Class" uid="958f2117-0d8b-4be1-b5ff-40bb1bfab573"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Private</ATT>
+      <ATT name="Name"><![CDATA[TerminalFilterOutputStream]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="close" mc="Operation" uid="a3283ca2-2091-43fd-8306-0d4300534cab"/>
+          <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[close]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="c2d31a26-c7de-42bc-9626-f42fa22fb359"/>
+                <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="689502fe-4c2b-4985-8f71-cc62a47887be"/>
+                      <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[IOException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="f435e380-339c-4c2b-b9d0-6322fde621e2"/>
+                <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized(fLock) {
+    if(fInjection==this) {
+        flush();
+        ungrabOutput();
+    }
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="write" mc="Operation" uid="9f1b719e-b708-4bc1-9392-97344ebe8f85"/>
+          <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[write]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="b" mc="Parameter" uid="ea0a8a4e-1456-4c8b-944a-4e3a4dee7b36"/>
+                <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[b]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="byte" mc="DataType" uid="00000004-0000-0013-0000-000000000000"/>
+                  </LINK>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="09dab2ec-4ae9-4436-b27b-2ed54501e415"/>
+                      <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="99044a65-4fc2-4011-8359-26b8d480e1f8"/>
+                            <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Array]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="off" mc="Parameter" uid="61438862-21bb-4369-b613-e3a0d8ba38ef"/>
+                <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[off]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="len" mc="Parameter" uid="66260ac6-eeb0-45b0-917e-8e73716038c5"/>
+                <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[len]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="8acdf735-9f34-476f-8237-742dfdc2270e"/>
+                <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="8466eb11-f4f7-4215-b369-9c4fae6bd54f"/>
+                      <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[IOException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="d87a6c35-ed86-441d-a64b-ee0f3ab026ee"/>
+                <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized(fLock) {
+    checkStream();
+    out.write(b, off, len);
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="write" mc="Operation" uid="bc6ede36-b9ac-403d-b355-007c4750067f"/>
+          <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[write]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="b" mc="Parameter" uid="9cdba32b-16a2-4ab8-bc7e-4c9811d2c350"/>
+                <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[b]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="byte" mc="DataType" uid="00000004-0000-0013-0000-000000000000"/>
+                  </LINK>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="9ad33af2-1136-414b-93e0-a621bb4ecea4"/>
+                      <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="80d897de-332d-4b49-af84-cad7646305da"/>
+                            <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Array]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="aeaeaeba-27bf-4c3f-81a5-d70d4220385d"/>
+                <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="98f86467-2d2e-4320-983a-36c6f1a97c8c"/>
+                      <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[IOException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="92722ae2-05f2-4034-95e4-567e27b3584d"/>
+                <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized(fLock) {
+    checkStream();
+    out.write(b);
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="flush" mc="Operation" uid="ce34b9c1-bd61-4989-9353-26d0d6e17aad"/>
+          <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[flush]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="c1903938-b830-4883-9b91-f6f824b4c760"/>
+                <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="c2ecaec5-0bec-4962-828c-3b5b4bcec4a3"/>
+                      <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[IOException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="51c15ccf-9afc-4aaf-ae0d-f8a77ee34201"/>
+                <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized(fLock) {
+    checkStream();
+    out.flush();
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="write" mc="Operation" uid="c9730bd0-e74f-4838-9820-5e882e30b849"/>
+          <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[write]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="b" mc="Parameter" uid="01ce68d1-1bd4-4df7-96ca-0a312b5d39fe"/>
+                <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[b]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="b20de5b9-d7ec-45be-b5fe-80b1bf8fb61b"/>
+                <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="b4d745b9-9d2f-407b-8094-adeb2e3a9faa"/>
+                      <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[IOException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="a8a40aca-6f29-476d-9c88-6c4925287bb6"/>
+                <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized(fLock) {
+    checkStream();
+    out.write(b);
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="checkStream" mc="Operation" uid="435c1541-617e-4e7c-869c-18cae89dce6d"/>
+          <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[checkStream]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="10a21940-4b29-4a29-aac7-fd75d0720195"/>
+                <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="d9de1d4b-2a38-42aa-b86f-d5110d97ac51"/>
+                      <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[IOException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="42f4cce0-0c82-44e1-ae85-cc2701c06602"/>
+                <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[if(fInjection!=this)
+    throw new IOException("Stream is closed"); //$NON-NLS-1$
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="fLock" mc="Attribute" uid="20aacea1-9a47-458a-808b-acc25a5b0a4e"/>
+          <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA[TerminalToRemoteInjectionOutputStream.this]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fLock]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="2722b86e-8ec5-4078-b547-0bfa6584a83a"/>
+                <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0161-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="a7570832-7757-438c-b6e5-6f64327a42a2"/>
+                <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="e8f0af7b-2c34-4968-b684-1a15123ccadd"/>
+                      <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[Object]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="1cad95c5-3699-4024-808d-4eb040c8df95"/>
+          <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="e3aea1ce-800c-49a0-bce7-6b09fd033376"/>
+                <PID name="TerminalFilterOutputStream" mc="Class" uid="e5bbd1a4-c929-4ce8-8168-539279ccdd2d"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[OutputStream]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaExtends" mc="TagType" uid="003800a8-0000-0154-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

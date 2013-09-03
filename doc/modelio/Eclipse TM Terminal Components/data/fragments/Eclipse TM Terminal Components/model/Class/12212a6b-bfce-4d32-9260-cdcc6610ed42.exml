@@ -1,0 +1,675 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TerminalToRemoteInjectionOutputStreamTest" version="3">
+  <DEPS>
+    <ID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+    <COMPID name="CleverInterceptor" mc="Class" uid="ce77b4c2-fa3f-4878-b60a-c366c331f5b4"/>
+    <COMPID name="NullInterceptor" mc="Class" uid="fe9552bf-d0fd-462b-a8c8-cc0d8b38b21c"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaExtends" mc="TagType" uid="003800a8-0000-0154-0000-000000000000"/>
+    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0161-0000-000000000000"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+    <PID name="connector" mc="Package" uid="32001c02-355e-4c7c-8b93-4eff70b42acf"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[TerminalToRemoteInjectionOutputStreamTest]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="testClose" mc="Operation" uid="0bea10ac-040b-4a8b-9391-33ca0dc239d2"/>
+          <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testClose]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="ffa6b9cc-c16e-4266-a2d1-e69ad092d918"/>
+                <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="d11d4425-4606-476c-adea-fc136aab31b7"/>
+                      <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[UnsupportedEncodingException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="336f42ea-6bdb-4b6a-9aa8-f4156c6d2ff0"/>
+                      <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[IOException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="12ca95f5-6fff-43dc-8422-ac1a5c0d1e27"/>
+                <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ByteArrayOutputStream bs=new ByteArrayOutputStream();
+TerminalToRemoteInjectionOutputStream s= new TerminalToRemoteInjectionOutputStream(bs);
+s.write("begin:".getBytes(ENCODING));
+assertEquals("begin:", new String(bs.toByteArray(),ENCODING));
+OutputStream os1=s.grabOutput();
+os1.write('x');
+s.write('A');
+os1.write('y');
+s.write('B');
+os1.close();
+
+s.write('-');
+OutputStream os=s.grabOutput();
+// make sure the closed output does not inject anything
+try {
+    os1.write('k');
+    fail("...");
+} catch (Exception e) {
+}
+os.write('X');
+s.write('a');
+os.write('Y');
+// make sure the closed output does not inject anything
+try {
+    os1.write('l');
+    fail("...");
+} catch (Exception e) {
+}
+s.write('b');
+os.close();
+assertEquals("begin:xyAB-XYab", new String(bs.toByteArray(),ENCODING));
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testFlush" mc="Operation" uid="611b5116-1319-48c2-aced-c50765573203"/>
+          <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testFlush]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testWriteInt" mc="Operation" uid="e5e07b57-f95c-4719-99d7-5236fef0e6b9"/>
+          <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testWriteInt]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="4902beab-7468-4679-a2cc-f1fa8ad3fea9"/>
+                <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="1e63a25d-5463-4bfd-9476-9cce3fe4f214"/>
+                      <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[UnsupportedEncodingException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="c0bb91b2-a2dd-42e6-a7f5-89816dbbee8f"/>
+                      <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[IOException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="5304de97-735e-400d-a5ef-106da53da29c"/>
+                <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ByteArrayOutputStream bs=new ByteArrayOutputStream();
+TerminalToRemoteInjectionOutputStream s= new TerminalToRemoteInjectionOutputStream(bs);
+s.write("begin:".getBytes(ENCODING));
+assertEquals("begin:", new String(bs.toByteArray(),ENCODING));
+OutputStream os=s.grabOutput();
+os.write('x');
+s.write('A');
+os.write('y');
+s.write('B');
+s.close();
+assertEquals("begin:xyAB", new String(bs.toByteArray(),ENCODING));
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testWriteByteArray" mc="Operation" uid="963b577a-fb76-4ad8-ae5a-502f6b1d218a"/>
+          <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testWriteByteArray]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testWriteByteArrayIntInt" mc="Operation" uid="af987737-1ae7-49cc-9f0d-d3fa7a81463a"/>
+          <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testWriteByteArrayIntInt]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testGrabOutput" mc="Operation" uid="5e6214dd-9f66-471c-974a-44b7d39dffe1"/>
+          <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testGrabOutput]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="a994c221-889b-4b9c-8b90-48c7ba81a2fd"/>
+                <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="6e169899-99ba-4926-805f-7e2c8b03e983"/>
+                      <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[UnsupportedEncodingException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="5222bf3c-3d11-4d53-a019-4e0f17a394c9"/>
+                      <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[IOException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="956e8d1f-ae65-4fd6-a8c3-6e2441250a6f"/>
+                <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ByteArrayOutputStream bs=new ByteArrayOutputStream();
+TerminalToRemoteInjectionOutputStream s= new TerminalToRemoteInjectionOutputStream(bs);
+s.write("begin:".getBytes(ENCODING));
+assertEquals("begin:", new String(bs.toByteArray(),ENCODING));
+OutputStream os1=s.grabOutput();
+OutputStream os2;
+try {
+    os2=s.grabOutput();
+    fail("should fail until the foirst output is closed");
+} catch (IOException e) {
+}
+os1.close();
+os2=s.grabOutput();
+assertEquals("begin:", new String(bs.toByteArray(),ENCODING));
+os2.write("Test".getBytes(ENCODING));
+assertEquals("begin:Test", new String(bs.toByteArray(),ENCODING));
+s.write(" west".getBytes(ENCODING));
+assertEquals("begin:Test", new String(bs.toByteArray(),ENCODING));
+os2.write(" the".getBytes(ENCODING));
+assertEquals("begin:Test the", new String(bs.toByteArray(),ENCODING));
+os2.close();
+assertEquals("begin:Test the west", new String(bs.toByteArray(),ENCODING));
+s.write('!');
+assertEquals("begin:Test the west!", new String(bs.toByteArray(),ENCODING));
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testGrabOutputWithCleverInterceptor" mc="Operation" uid="b54d0062-c45d-41bc-97fd-c212fc21a48e"/>
+          <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testGrabOutputWithCleverInterceptor]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="0616b34c-7b0b-49d4-a23e-2ab78f5c755b"/>
+                <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="7e70d72c-c289-4224-99f1-18d752fe2a35"/>
+                      <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[UnsupportedEncodingException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="7c56637a-3d33-4cf1-80be-e97c91ff66c1"/>
+                      <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[IOException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="4d2a1b95-497f-46b0-92f7-6cc6a4e4a9db"/>
+                <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ByteArrayOutputStream bs=new ByteArrayOutputStream();
+TerminalToRemoteInjectionOutputStream s= new TerminalToRemoteInjectionOutputStream(bs);
+s.write("begin:".getBytes(ENCODING));
+assertEquals("begin:", new String(bs.toByteArray(),ENCODING));
+// the injector escapes the output coming from the main stream
+OutputStream os=s.grabOutput(new CleverInterceptor());
+assertEquals("begin:", new String(bs.toByteArray(),ENCODING));
+os.write("Test".getBytes(ENCODING));
+assertEquals("begin:Test", new String(bs.toByteArray(),ENCODING));
+s.write(" west".getBytes(ENCODING));
+assertEquals("begin:Test[ west]", new String(bs.toByteArray(),ENCODING));
+os.write(" the".getBytes(ENCODING));
+assertEquals("begin:Test[ west] the", new String(bs.toByteArray(),ENCODING));
+s.write('x');
+assertEquals("begin:Test[ west] the[x]", new String(bs.toByteArray(),ENCODING));
+os.close();
+assertEquals("begin:Test[ west] the[x]", new String(bs.toByteArray(),ENCODING));
+s.write('!');
+assertEquals("begin:Test[ west] the[x]!", new String(bs.toByteArray(),ENCODING));
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testGrabOutputWithNullInterceptor" mc="Operation" uid="d6f12742-03be-466d-a85e-ade4b46d83c3"/>
+          <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testGrabOutputWithNullInterceptor]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="1a7e9940-0792-45fe-add4-3c0aaaf25132"/>
+                <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="8b3f8943-8073-47fe-b937-e855347f0b51"/>
+                      <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[UnsupportedEncodingException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="ca0c7681-ab2f-4118-8ad8-1db42692b174"/>
+                      <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[IOException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="3ff59a5b-b92b-485b-86e9-5714845f99ab"/>
+                <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ByteArrayOutputStream bs=new ByteArrayOutputStream();
+TerminalToRemoteInjectionOutputStream s= new TerminalToRemoteInjectionOutputStream(bs);
+s.write("begin:".getBytes(ENCODING));
+assertEquals("begin:", new String(bs.toByteArray(),ENCODING));
+// bytes written to the main stream are ignored while the injector
+// is active
+OutputStream os=s.grabOutput(new NullInterceptor());
+assertEquals("begin:", new String(bs.toByteArray(),ENCODING));
+os.write("Test".getBytes(ENCODING));
+assertEquals("begin:Test", new String(bs.toByteArray(),ENCODING));
+s.write(" west".getBytes(ENCODING));
+assertEquals("begin:Test", new String(bs.toByteArray(),ENCODING));
+os.write(" the".getBytes(ENCODING));
+assertEquals("begin:Test the", new String(bs.toByteArray(),ENCODING));
+s.write('x');
+assertEquals("begin:Test the", new String(bs.toByteArray(),ENCODING));
+os.close();
+assertEquals("begin:Test the", new String(bs.toByteArray(),ENCODING));
+s.write('!');
+assertEquals("begin:Test the!", new String(bs.toByteArray(),ENCODING));
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="ENCODING" mc="Attribute" uid="fea47261-8f47-4881-b6d5-2ac2d0d3798e"/>
+          <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA["UTF-8"]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[ENCODING]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="49516aad-2ce6-46fb-9619-67fe9caf8592"/>
+                <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0161-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="11ba328a-ae28-4d33-b4fa-1d8a6ebecaa7"/>
+                <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="ee29b408-a361-48f3-a0f8-84f38b409a99"/>
+                      <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[String]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="CleverInterceptor" mc="Class" uid="ce77b4c2-fa3f-4878-b60a-c366c331f5b4"/>
+        <COMPID name="NullInterceptor" mc="Class" uid="fe9552bf-d0fd-462b-a8c8-cc0d8b38b21c"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="c7a2542b-5990-4a37-b7b4-0d40cc8f33d0"/>
+          <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="e9715bd2-7247-4b7a-a153-2f70d66bfea5"/>
+                <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[TestCase]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaExtends" mc="TagType" uid="003800a8-0000-0154-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="5caff383-abb6-45f9-af33-9aa10da05b8c"/>
+          <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="a7a1b499-73fb-480b-8991-c27075db114c"/>
+                <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.io.ByteArrayOutputStream]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="748e5198-9dab-4f96-b678-a7c2118a61e0"/>
+                <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.io.IOException]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="1d300565-a5a2-4572-b00e-b3ee812595c9"/>
+                <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.io.OutputStream]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="98b4b98f-45a6-466b-8adb-1e95929f67f4"/>
+                <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.io.UnsupportedEncodingException]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="d0459dba-4824-4989-a0b3-8303b237e26f"/>
+                <PID name="TerminalToRemoteInjectionOutputStreamTest" mc="Class" uid="12212a6b-bfce-4d32-9260-cdcc6610ed42"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[junit.framework.TestCase]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

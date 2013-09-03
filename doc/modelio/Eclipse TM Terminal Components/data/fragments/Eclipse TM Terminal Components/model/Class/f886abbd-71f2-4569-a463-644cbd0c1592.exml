@@ -1,0 +1,2681 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="VT100EmulatorBackend" version="3">
+  <DEPS>
+    <ID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+    <EXTID name="ITerminalTextData" mc="Interface" uid="ac632690-0372-4dd9-8652-517688ae86b4"/>
+    <EXTID name="IVT100EmulatorBackend" mc="Interface" uid="6d0c41ff-268d-4034-b022-839ea60fa0a3"/>
+    <EXTID name="Style" mc="Class" uid="7cdb99e1-1c04-4057-9dc6-e4097a90d2d1"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0180-0000-000000000000"/>
+    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+    <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+    <PID name="emulator" mc="Package" uid="55b07303-6d16-45f7-a2e4-00f007a51e56"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[VT100EmulatorBackend]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="VT100EmulatorBackend" mc="Operation" uid="86fda6ba-954c-4827-a01e-0fac1fcdbf24"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[VT100EmulatorBackend]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="terminal" mc="Parameter" uid="ebd905a6-a71b-4e6e-85f8-9ff941fc3769"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[terminal]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalTextData" mc="Interface" uid="ac632690-0372-4dd9-8652-517688ae86b4"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="fd708207-fcee-4590-9ca6-3cfcfbcd37a6"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[fTerminal=terminal;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="clearAll" mc="Operation" uid="a333ecd0-446a-4ed5-afab-9e6b3c99b577"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[clearAll]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="be710cad-e005-4ab5-aa8c-75778d6d2df3"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#clearAll()
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="da94341f-e991-401a-bb70-883cac743b97"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    // clear the history
+    int n=fTerminal.getHeight();
+    for (int line = 0; line < n; line++) {
+        fTerminal.cleanLine(line);
+    }
+    fTerminal.setDimensions(fLines, fTerminal.getWidth());
+    setStyle(getDefaultStyle());
+    setCursor(0, 0);
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="setDimensions" mc="Operation" uid="85abc497-6444-4a24-82f8-baf357bb85be"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[setDimensions]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="lines" mc="Parameter" uid="b7bbbfd5-81ae-4540-8c42-c6bbf279ebe4"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[lines]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="cols" mc="Parameter" uid="620b2f59-a121-4a42-90ff-52156fc7dc31"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[cols]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="c7f78eee-1f5a-460e-b5b9-3d250c429a1f"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#setDimensions(int, int)
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="627209fb-08b1-43f5-93b3-e1189faf24be"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    if(lines==fLines && cols==fColumns)
+        return; // nothing to do
+    // relative cursor line
+    int cl=getCursorLine();
+    int cc=getCursorColumn();
+    int height=fTerminal.getHeight();
+    // absolute cursor line
+    int acl=cl+height-fLines;
+    int newLines=Math.max(lines,height);
+    if(lines<fLines) {
+        if(height==fLines) {
+            // if the terminal has no history, then resize by
+            // setting the size to the new size
+            // TODO We are assuming that cursor line points at end of text
+            newLines=Math.max(lines, cl+1);
+        }
+    }
+    fLines=lines;
+    fColumns=cols;
+    // make the terminal at least as high as we need lines
+    fTerminal.setDimensions(newLines, fColumns);
+    // compute relative cursor line
+    cl=acl-(newLines-fLines);
+    setCursor(cl, cc);
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="toAbsoluteLine" mc="Operation" uid="fc5860ff-0661-4ddb-a609-5e2517544de5"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[toAbsoluteLine]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="line" mc="Parameter" uid="9c821ffd-e703-42cd-9c27-34bc71a89807"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[line]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="e97fb4af-f1f1-40d4-86fc-bd4dae76dd08"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="083a97bf-45ca-4f20-bf69-080fe2e961fa"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    return fTerminal.getHeight()-fLines+line;
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="insertCharacters" mc="Operation" uid="e7f73723-21fc-4e02-8e1f-e311fd173e81"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[insertCharacters]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="charactersToInsert" mc="Parameter" uid="f4e12ff3-4ab8-4945-96c1-5fd8a63f53e2"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[charactersToInsert]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="7c9f6f3a-a775-46bb-9c4b-b0607cbec256"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#insertCharacters(int)
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="f7c10eb6-b9a2-4f1f-841d-4b47e2a55f2f"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    int line=toAbsoluteLine(fCursorLine);
+    int n=charactersToInsert;
+    for (int col = fColumns-1; col >=fCursorColumn+n; col--) {
+        char c=fTerminal.getChar(line, col-n);
+        Style style=fTerminal.getStyle(line, col-n);
+        fTerminal.setChar(line, col,c, style);
+    }
+    int last=Math.min(fCursorColumn+n, fColumns);
+    for (int col = fCursorColumn; col <last; col++) {
+        fTerminal.setChar(line, col,'\000', null);
+    }
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="eraseToEndOfScreen" mc="Operation" uid="4c3846bb-8913-4c9a-a8f2-03d5e01b2907"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[eraseToEndOfScreen]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="254c5d79-3679-43d3-8904-79fda9021e76"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#eraseToEndOfScreen()
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="a86e5974-62c0-4c81-a347-6e77c61b56c0"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    eraseLineToEnd();
+    for (int line = toAbsoluteLine(fCursorLine+1); line < toAbsoluteLine(fLines); line++) {
+        fTerminal.cleanLine(line);
+    }
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="eraseToCursor" mc="Operation" uid="6bf3b2a9-b8b6-41ac-8923-8094ad22c722"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[eraseToCursor]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="b1ec8cfb-66af-4b21-8648-186514f5ef41"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#eraseToCursor()
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="136b520a-8df3-4112-b38c-85cbe891e33d"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    for (int line = toAbsoluteLine(0); line < toAbsoluteLine(fCursorLine); line++) {
+        fTerminal.cleanLine(line);
+    }
+    eraseLineToCursor();
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="eraseAll" mc="Operation" uid="7e4c717c-56f5-407a-bd50-59e619ea031c"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[eraseAll]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="47a052b1-678d-4d38-89c4-2783cc0c55eb"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#eraseAll()
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="6a6ca182-72fe-41c6-b66a-db4611f4f5a3"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    for (int line = toAbsoluteLine(0); line < toAbsoluteLine(fLines); line++) {
+        fTerminal.cleanLine(line);
+    }
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="eraseLine" mc="Operation" uid="2f6059ec-8d57-42d3-8800-7c39d34c9bd7"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[eraseLine]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="7024ac19-2775-4e86-9749-154e07553bf3"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#eraseLine()
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="0971099f-8a8a-4607-8cd8-0a08b930c828"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    fTerminal.cleanLine(toAbsoluteLine(fCursorLine));
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="eraseLineToEnd" mc="Operation" uid="9657021f-ca95-4790-81dd-15bf0ffb16ed"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[eraseLineToEnd]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="6c339ce0-45b7-4a2c-ac3c-ee2c8e5e7147"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#eraseLineToEnd()
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="03c5a493-72b5-456a-8321-456cff36c26e"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    int line=toAbsoluteLine(fCursorLine);
+    for (int col = fCursorColumn; col < fColumns; col++) {
+        fTerminal.setChar(line, col, '\000', null);
+    }
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="eraseLineToCursor" mc="Operation" uid="73fa1192-9cb0-40c6-a2da-1ed57d535b83"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[eraseLineToCursor]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="dc8e2bc6-1e24-46ba-8fcf-df370692f374"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#eraseLineToCursor()
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="7a014323-e8be-4489-9d0f-2ea00220e428"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    int line=toAbsoluteLine(fCursorLine);
+    for (int col = 0; col <= fCursorColumn; col++) {
+        fTerminal.setChar(line, col, '\000', null);
+    }
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="insertLines" mc="Operation" uid="cf28fa48-a659-48d2-9d07-9c85ec339f83"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[insertLines]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="n" mc="Parameter" uid="4b96d4bd-cc72-48e8-b2a0-f840361b5bda"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[n]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="870d903e-a7b9-4eb7-8c59-ed4bed1efcfe"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#insertLines(int)
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="5dc7d440-4005-44a9-b83e-1355184c4e29"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    if(!isCusorInScrollingRegion())
+        return;
+    assert n>0;
+    int line=toAbsoluteLine(fCursorLine);
+    int nLines=fTerminal.getHeight()-line;
+    fTerminal.scroll(line, nLines, n);
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="deleteCharacters" mc="Operation" uid="e1546de0-ba29-4d68-b9c5-4d1f16c8b9f1"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[deleteCharacters]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="n" mc="Parameter" uid="67259336-fe1a-4bfc-85ff-a5b29bc8b761"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[n]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="7888e7fb-b15e-4e87-a411-41a27d8ecbb8"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#deleteCharacters(int)
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="f6a27e21-b709-4fdb-b7c2-048622a54945"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    int line=toAbsoluteLine(fCursorLine);
+    for (int col = fCursorColumn+n; col < fColumns; col++) {
+        char c=fTerminal.getChar(line, col);
+        Style style=fTerminal.getStyle(line, col);
+        fTerminal.setChar(line, col-n,c, style);
+    }
+    int first=Math.max(fCursorColumn, fColumns-n);
+    for (int col = first; col <fColumns; col++) {
+        fTerminal.setChar(line, col,'\000', null);
+    }
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="deleteLines" mc="Operation" uid="f949ebb5-1a5a-4f4f-8223-a3e0bf785e88"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[deleteLines]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="n" mc="Parameter" uid="a2ef217d-29c8-4a2c-8eed-fe70436487f4"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[n]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="5ba9ef64-39a6-439b-bd41-2deea851003b"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#deleteLines(int)
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="2d811c5b-0972-490f-959f-7531c995fd16"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    if(!isCusorInScrollingRegion())
+        return;
+    assert n>0;
+    int line=toAbsoluteLine(fCursorLine);
+    int nLines=fTerminal.getHeight()-line;
+    fTerminal.scroll(line, nLines, -n);
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="isCusorInScrollingRegion" mc="Operation" uid="30c1b377-deaf-421e-ad06-268416def2c1"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[isCusorInScrollingRegion]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="ca7681c8-c204-4ca5-acd3-bde7bc9bd74e"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="cdf1cb4b-bbef-43e6-9541-e18be08c546a"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return true;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="8ad8516c-5ae5-425b-8b6c-5b33221cddda"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[// TODO Auto-generated method stub]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="getDefaultStyle" mc="Operation" uid="858508d1-db77-4456-8620-b951952c74d0"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[getDefaultStyle]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="c1dfff0c-cb1c-43b4-a482-fe5b01586611"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Style" mc="Class" uid="7cdb99e1-1c04-4057-9dc6-e4097a90d2d1"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="16aec3a3-d681-4bad-aba6-2e50417430c9"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#getDefaultStyle()
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="f85d8496-e7d1-4316-93e7-a30270e50240"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    return fDefaultStyle;
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="setDefaultStyle" mc="Operation" uid="f9f142bd-b553-46e6-bf50-c5d57619dfbe"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[setDefaultStyle]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="defaultStyle" mc="Parameter" uid="a847d2f7-804f-4115-8566-5b0f117a5340"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[defaultStyle]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Style" mc="Class" uid="7cdb99e1-1c04-4057-9dc6-e4097a90d2d1"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="364d8b64-c130-4aac-bf57-d707a8bac3ea"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#setDefaultStyle(org.eclipse.tm.terminal.model.Style)
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="a178283a-80b1-40bd-8832-0ada5af1b69b"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    fDefaultStyle = defaultStyle;
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="getStyle" mc="Operation" uid="9e4fb05d-f0cc-4459-829c-2dbf91a75bef"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[getStyle]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="ae596272-a294-4988-8153-9b491cf959e5"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Style" mc="Class" uid="7cdb99e1-1c04-4057-9dc6-e4097a90d2d1"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="861dc798-8ea4-4731-80f1-0a551b45e254"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#getStyle()
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="42e3e486-761c-461c-a061-8d35d9045189"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    if(fStyle==null)
+        return fDefaultStyle;
+    return fStyle;
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="setStyle" mc="Operation" uid="a6003353-969f-436a-96be-26ddce37091c"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[setStyle]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="style" mc="Parameter" uid="421317d2-53eb-469b-846f-085bd2d097d7"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[style]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Style" mc="Class" uid="7cdb99e1-1c04-4057-9dc6-e4097a90d2d1"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="d2af15dc-2306-4b0f-80cd-6b648e605a4d"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#setStyle(org.eclipse.tm.terminal.model.Style)
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="659b1ec4-9e76-4e49-b766-d890d262211d"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    fStyle=style;
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="appendString" mc="Operation" uid="4c2f282a-bd38-49b0-b9ed-01c68ff6f400"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[appendString]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="buffer" mc="Parameter" uid="32df9ebc-02e7-4acf-850d-c20eef7526e3"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[buffer]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="a81c615a-9f86-445e-8022-ce56f65ac7e6"/>
+                      <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="2ea7ca1c-edfe-4abc-9e26-4cae83f92aad"/>
+                            <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[String]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="b113a837-e630-4952-9fee-fface0d55b76"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#appendString(java.lang.String)
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="71a3f02e-777d-48b8-9f87-02422b35b303"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    char[] chars=buffer.toCharArray();
+    int line=toAbsoluteLine(fCursorLine);
+    int i=0;
+    while (i < chars.length) {
+        int n=Math.min(fColumns-fCursorColumn,chars.length-i);
+        fTerminal.setChars(line, fCursorColumn, chars, i, n, fStyle);
+        int col=fCursorColumn+n;
+        i+=n;
+        // wrap needed?
+        if(col>=fColumns) {
+            doNewline();
+            line=toAbsoluteLine(fCursorLine);
+            setCursorColumn(0);
+        } else {
+            setCursorColumn(col);
+        }
+    }
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="doNewline" mc="Operation" uid="b51450b4-2c00-4a55-b5d0-b6b815ef3c05"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[doNewline]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="6a18a214-364d-4678-be75-43c495d00ebb"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[MUST be called from a synchronized block!]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="28fd37b4-876c-48e2-981d-869151741771"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[if(fCursorLine+1>=fLines) {
+    int h=fTerminal.getHeight();
+    fTerminal.addLine();
+    if(h!=fTerminal.getHeight())
+        setCursorLine(fCursorLine+1);
+} else {
+    setCursorLine(fCursorLine+1);
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="processNewline" mc="Operation" uid="3f80e8ad-3a86-44aa-8dad-48e482638dae"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[processNewline]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="0a5b84b1-0b37-45d6-9291-78626722905b"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#processNewline()
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="2f88eea7-2635-4115-b631-7a77dd90827a"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    doNewline();
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="getCursorLine" mc="Operation" uid="b4203367-2b42-4e73-b8bf-e5723a6d99f6"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[getCursorLine]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="4d893bb7-d95c-4f40-a13e-d6a6fcf220ad"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="6e4d2e5c-d3cd-43a9-a07e-28ca9144cd96"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#getCursorLine()
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="d70ec0a6-e560-467e-8256-f4bc726cdc4c"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    return fCursorLine;
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="getCursorColumn" mc="Operation" uid="71498ccc-81ab-4029-883e-1e75e23c3464"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[getCursorColumn]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="77053661-066a-4817-bf30-ce28a82cff71"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="501f676f-cb80-4948-affb-6c66ce84d613"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#getCursorColumn()
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="18a61018-0bef-4d1f-af81-420f50caa501"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    return fCursorColumn;
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="setCursor" mc="Operation" uid="c4fc33a5-5a66-4db2-b992-cbc7325f996d"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[setCursor]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="targetLine" mc="Parameter" uid="ac350e6b-6527-4e10-a0bd-16741f312bd2"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[targetLine]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="targetColumn" mc="Parameter" uid="a205095e-675e-40a4-8e39-96beed78ebd6"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[targetColumn]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="e6e1222d-f8a5-4f63-8d7e-760f85dcde53"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#setCursor(int, int)
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="af784a73-69ff-4c69-b427-42fabc0a1e8e"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    setCursorLine(targetLine);
+    setCursorColumn(targetColumn);
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="setCursorColumn" mc="Operation" uid="f61f4a78-19dc-4a72-945d-163d75357569"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[setCursorColumn]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="targetColumn" mc="Parameter" uid="0bec7a5a-7ffd-4806-b263-60507f0dc715"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[targetColumn]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="10ff07ef-b011-466e-bfb2-1184b76efd59"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#setCursorColumn(int)
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="f1fbe2db-ff89-4bf5-b6ef-1e2beeeeaf5b"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    if(targetColumn<0)
+        targetColumn=0;
+    else if(targetColumn>=fColumns)
+        targetColumn=fColumns-1;
+    fCursorColumn=targetColumn;
+    // We make the assumption that nobody is changing the
+    // terminal cursor except this class!
+    // This assumption gives a huge performance improvement
+    fTerminal.setCursorColumn(targetColumn);
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="setCursorLine" mc="Operation" uid="b255b018-6d8f-4c4e-a32c-fb1f44d3e454"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[setCursorLine]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="targetLine" mc="Parameter" uid="5249763d-e290-40d2-bc52-2d842b0c1284"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[targetLine]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="5c079edd-ae9e-4e3a-871f-275bddb01bff"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#setCursorLine(int)
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="0b766676-3b75-4590-be88-ad7941f56a19"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    if(targetLine<0)
+        targetLine=0;
+    else if(targetLine>=fLines)
+        targetLine=fLines-1;
+    fCursorLine=targetLine;
+    // We make the assumption that nobody is changing the
+    // terminal cursor except this class!
+    // This assumption gives a huge performance improvement
+    fTerminal.setCursorLine(toAbsoluteLine(targetLine));
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="getLines" mc="Operation" uid="002407ca-2dd9-490c-99fe-d3b531c02751"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[getLines]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="3f5ee999-ab05-4ad9-8dd2-97b2fea34d8e"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="a9ac509c-60b3-48db-8bc4-f706c85fe781"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#getLines()
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="9d659cc5-cf04-45b3-b82b-49e5c69633c2"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    return fLines;
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="getColumns" mc="Operation" uid="6640ac61-462d-4278-9343-10378a1723e8"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[getColumns]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="d50d14d0-4ec4-41c0-bb71-5854972ab18a"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="1f18d243-18a8-40ee-96a8-a8b6e9c2956c"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[/* (non-Javadoc)
+     * @see org.eclipse.tm.internal.terminal.emulator.IVT100EmulatorBackend#getColumns()
+     */]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="cd97db08-1bb0-4e19-8bf4-24b6d0642ef9"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (fTerminal) {
+    return fColumns;
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="fCursorColumn" mc="Attribute" uid="a2e21e88-9a06-4bdf-ae89-f38638d08035"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fCursorColumn]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="e4654c0a-9576-4a9f-859f-0aa47269d2c4"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="d8a2e532-ee2d-421b-84fd-3eb9cd5ced11"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[This field holds the number of the column in which the cursor is
+logically positioned. The leftmost column on the screen is column 0, and
+column numbers increase to the right. The maximum value of this field is
+{@link #widthInColumns} - 1. We track the cursor column using this field
+to avoid having to recompute it repeatly using StyledText method calls.
+<p>
+
+The StyledText widget that displays text has a vertical bar (called the
+"caret") that appears _between_ character cells, but ANSI terminals have
+the concept of a cursor that appears _in_ a character cell, so we need a
+convention for which character cell the cursor logically occupies when
+the caret is physically between two cells. The convention used in this
+class is that the cursor is logically in column N when the caret is
+physically positioned immediately to the _left_ of column N.
+<p>
+
+When fCursorColumn is N, the next character output to the terminal appears
+in column N. When a character is output to the rightmost column on a
+given line (column widthInColumns - 1), the cursor moves to column 0 on
+the next line after the character is drawn (this is how line wrapping is
+implemented). If the cursor is in the bottommost line when line wrapping
+occurs, the topmost visible line is scrolled off the top edge of the
+screen.
+<p>]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fCursorLine" mc="Attribute" uid="ceae405d-32f7-4e38-afa8-f32bef53371b"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fCursorLine]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="8a3381f1-fb28-4cae-b653-377e4f3f5d0a"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fLines" mc="Attribute" uid="7c092628-d3fe-465b-b99a-a414884d6dda"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fLines]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="cc89c287-30ae-4af4-908e-2ed7727b39a4"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fColumns" mc="Attribute" uid="00126d36-98bb-4fa0-a968-87625735dd68"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fColumns]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="f7bfa3d1-9aad-4e0f-9f85-a11a2d6ecd6c"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedEnd">
+        <OBJECT>
+          <ID name="fDefaultStyle" mc="AssociationEnd" uid="7ad7a10c-796d-43f1-9fa0-9b25b2120c7c"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fDefaultStyle]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="Style" mc="Class" uid="7cdb99e1-1c04-4057-9dc6-e4097a90d2d1"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="AssociationEnd" uid="6874e738-67fc-4f79-a9de-5d5a43d79689"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="fDefaultStyle" mc="AssociationEnd" uid="7ad7a10c-796d-43f1-9fa0-9b25b2120c7c"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Association" uid="a5882c1f-3029-4f10-b794-ce97975bf8e8"/>
+                      <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <OBJECT>
+                <ID name="" mc="Association" uid="a5882c1f-3029-4f10-b794-ce97975bf8e8"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="c54182bf-d4b9-4600-b82f-7ceea5b0a966"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fStyle" mc="AssociationEnd" uid="86c744a8-5179-4457-9476-96102355c027"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fStyle]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="Style" mc="Class" uid="7cdb99e1-1c04-4057-9dc6-e4097a90d2d1"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="AssociationEnd" uid="6f863a61-4510-4b24-939a-9aa3e085c491"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="fStyle" mc="AssociationEnd" uid="86c744a8-5179-4457-9476-96102355c027"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Association" uid="1322e70a-0955-49e5-baf3-24a460212dde"/>
+                      <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <OBJECT>
+                <ID name="" mc="Association" uid="1322e70a-0955-49e5-baf3-24a460212dde"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="fa1863ca-33cc-4eb4-94e2-a9021385cb6a"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fTerminal" mc="AssociationEnd" uid="35fec69f-b2ce-445e-836a-70e6c5bbf2c3"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fTerminal]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="ITerminalTextData" mc="Interface" uid="ac632690-0372-4dd9-8652-517688ae86b4"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="AssociationEnd" uid="e1fd4d93-073a-49aa-9a1e-7aa13260f988"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="fTerminal" mc="AssociationEnd" uid="35fec69f-b2ce-445e-836a-70e6c5bbf2c3"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Association" uid="4e1aa918-56cb-412e-a474-d3876170511a"/>
+                      <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <OBJECT>
+                <ID name="" mc="Association" uid="4e1aa918-56cb-412e-a474-d3876170511a"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="b265e2a1-b499-48d8-a1fc-cef294af887c"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0180-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="1c62dc03-b0fb-44d2-8a06-a53532b540a0"/>
+                <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Realized">
+        <OBJECT>
+          <ID name="" mc="InterfaceRealization" uid="8a544469-a69a-47b7-b0a6-f8c1dc174b4e"/>
+          <PID name="VT100EmulatorBackend" mc="Class" uid="f886abbd-71f2-4569-a463-644cbd0c1592"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Implemented">
+              <ID name="IVT100EmulatorBackend" mc="Interface" uid="6d0c41ff-268d-4034-b022-839ea60fa0a3"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

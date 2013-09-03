@@ -1,0 +1,197 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TerminalActionToggleCommandInputField" version="3">
+  <DEPS>
+    <ID name="TerminalActionToggleCommandInputField" mc="Class" uid="662b8385-a366-42c5-84ff-0221671f1a11"/>
+    <EXTID name="ITerminalView" mc="Interface" uid="0fe4b298-fd32-4c98-acd9-3bf9a5db8c03"/>
+    <EXTID name="ImageConsts" mc="Interface" uid="be7f36c5-5355-43ca-9ea6-af7f9f65973b"/>
+    <EXTID name="TerminalAction" mc="Class" uid="88e429c3-f7ac-43fa-bf34-d24b98353bd7"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+    <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TerminalActionToggleCommandInputField" mc="Class" uid="662b8385-a366-42c5-84ff-0221671f1a11"/>
+    <PID name="actions" mc="Package" uid="6be4b42e-f7ba-486b-bf6d-1421da7a72ea"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[TerminalActionToggleCommandInputField]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="TerminalActionToggleCommandInputField" mc="Operation" uid="31ad1ba9-0615-4cf7-af06-d3211ab4af25"/>
+          <PID name="TerminalActionToggleCommandInputField" mc="Class" uid="662b8385-a366-42c5-84ff-0221671f1a11"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[TerminalActionToggleCommandInputField]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="target" mc="Parameter" uid="4c979702-4f13-433a-8330-36a655f7bc36"/>
+                <PID name="TerminalActionToggleCommandInputField" mc="Class" uid="662b8385-a366-42c5-84ff-0221671f1a11"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[target]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalView" mc="Interface" uid="0fe4b298-fd32-4c98-acd9-3bf9a5db8c03"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="010b9764-9926-452e-b1e4-f54f905f0761"/>
+                <PID name="TerminalActionToggleCommandInputField" mc="Class" uid="662b8385-a366-42c5-84ff-0221671f1a11"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[super(target,
+      TerminalActionToggleCommandInputField.class.getName(),IAction.AS_RADIO_BUTTON);
+
+setupAction(ActionMessages.TOGGLE_COMMAND_INPUT_FIELD,
+            ActionMessages.TOGGLE_COMMAND_INPUT_FIELD,
+            ImageConsts.IMAGE_CLCL_COMMAND_INPUT_FIELD,
+            ImageConsts.IMAGE_ELCL_COMMAND_INPUT_FIELD,
+            ImageConsts.IMAGE_DLCL_COMMAND_INPUT_FIELD,
+            true);
+setChecked(fTarget.hasCommandInputField());
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="run" mc="Operation" uid="7fa4289c-7951-4712-8b35-fe985bcafcfc"/>
+          <PID name="TerminalActionToggleCommandInputField" mc="Class" uid="662b8385-a366-42c5-84ff-0221671f1a11"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[run]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="69743c44-488d-4907-a008-0f29589c9e6b"/>
+                <PID name="TerminalActionToggleCommandInputField" mc="Class" uid="662b8385-a366-42c5-84ff-0221671f1a11"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[fTarget.setCommandInputField(!fTarget.hasCommandInputField());
+setChecked(fTarget.hasCommandInputField());
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="" mc="Generalization" uid="0dd8c216-4029-45e1-8987-357a30fd9d66"/>
+          <PID name="TerminalActionToggleCommandInputField" mc="Class" uid="662b8385-a366-42c5-84ff-0221671f1a11"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="TerminalAction" mc="Class" uid="88e429c3-f7ac-43fa-bf34-d24b98353bd7"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedImport">
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="60772212-1689-4ccb-88d1-c2a48e9a0bf7"/>
+          <PID name="TerminalActionToggleCommandInputField" mc="Class" uid="662b8385-a366-42c5-84ff-0221671f1a11"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="ImageConsts" mc="Interface" uid="be7f36c5-5355-43ca-9ea6-af7f9f65973b"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="ff9bb7df-473b-4e38-8758-c18547ad6035"/>
+          <PID name="TerminalActionToggleCommandInputField" mc="Class" uid="662b8385-a366-42c5-84ff-0221671f1a11"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="9831f303-0ea2-4250-96b6-c631b832f67b"/>
+                <PID name="TerminalActionToggleCommandInputField" mc="Class" uid="662b8385-a366-42c5-84ff-0221671f1a11"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.jface.action.IAction]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

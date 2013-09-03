@@ -1,0 +1,322 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TerminalActionPaste" version="3">
+  <DEPS>
+    <ID name="TerminalActionPaste" mc="Class" uid="a4304ef4-b420-48bd-833c-5e34d1fd7a42"/>
+    <EXTID name="AbstractTerminalAction" mc="Class" uid="108c9308-d5c5-4028-977e-3bd8775c0ef8"/>
+    <EXTID name="ITerminalViewControl" mc="Interface" uid="c48973a6-e9dc-4236-a050-1010cb10d4e0"/>
+    <EXTID name="TerminalState" mc="Class" uid="1d91de4b-94ef-4f77-909b-3d387e8d77cd"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+    <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TerminalActionPaste" mc="Class" uid="a4304ef4-b420-48bd-833c-5e34d1fd7a42"/>
+    <PID name="actions" mc="Package" uid="f854e869-b006-46b0-9aa6-023351cfbc2a"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[TerminalActionPaste]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="TerminalActionPaste" mc="Operation" uid="ed79f59a-9cbc-4864-bd3d-5aa91f0afd25"/>
+          <PID name="TerminalActionPaste" mc="Class" uid="a4304ef4-b420-48bd-833c-5e34d1fd7a42"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[TerminalActionPaste]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="528a7982-15c7-4be4-b4c6-1ee4724e6001"/>
+                <PID name="TerminalActionPaste" mc="Class" uid="a4304ef4-b420-48bd-833c-5e34d1fd7a42"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[super(TerminalActionPaste.class.getName());
+setActionDefinitionId("org.eclipse.tm.terminal.paste"); //$NON-NLS-1$
+ISharedImages si = PlatformUI.getWorkbench().getSharedImages();
+setupAction(ActionMessages.PASTE, ActionMessages.PASTE, si
+        .getImageDescriptor(ISharedImages.IMG_TOOL_PASTE), si
+        .getImageDescriptor(ISharedImages.IMG_TOOL_PASTE_DISABLED), si
+        .getImageDescriptor(ISharedImages.IMG_TOOL_PASTE), false);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="TerminalActionPaste" mc="Operation" uid="e9c5fcb3-ddb0-4dae-8685-531df34819e7"/>
+          <PID name="TerminalActionPaste" mc="Class" uid="a4304ef4-b420-48bd-833c-5e34d1fd7a42"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[TerminalActionPaste]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="target" mc="Parameter" uid="8ae3bc19-56e5-4825-be05-3aa1f06810c3"/>
+                <PID name="TerminalActionPaste" mc="Class" uid="a4304ef4-b420-48bd-833c-5e34d1fd7a42"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[target]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalViewControl" mc="Interface" uid="c48973a6-e9dc-4236-a050-1010cb10d4e0"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="716d3e1d-dbe5-4d36-b0ea-dd703a8b7a30"/>
+                <PID name="TerminalActionPaste" mc="Class" uid="a4304ef4-b420-48bd-833c-5e34d1fd7a42"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[super(target, TerminalActionPaste.class.getName());
+setActionDefinitionId("org.eclipse.tm.terminal.paste"); //$NON-NLS-1$
+ISharedImages si = PlatformUI.getWorkbench().getSharedImages();
+setupAction(ActionMessages.PASTE, ActionMessages.PASTE, si
+        .getImageDescriptor(ISharedImages.IMG_TOOL_PASTE), si
+        .getImageDescriptor(ISharedImages.IMG_TOOL_PASTE_DISABLED), si
+        .getImageDescriptor(ISharedImages.IMG_TOOL_PASTE), false);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="run" mc="Operation" uid="3e8cc0bd-48ff-43c4-85a3-c12e7e5392ba"/>
+          <PID name="TerminalActionPaste" mc="Class" uid="a4304ef4-b420-48bd-833c-5e34d1fd7a42"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[run]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="e79a36ef-ae4b-45ef-840d-ea3c5aa43dd7"/>
+                <PID name="TerminalActionPaste" mc="Class" uid="a4304ef4-b420-48bd-833c-5e34d1fd7a42"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ITerminalViewControl target = getTarget();
+if (target != null) {
+    target.paste();
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="updateAction" mc="Operation" uid="ba6f091c-c4bb-4c1b-9af5-7b81038e993e"/>
+          <PID name="TerminalActionPaste" mc="Class" uid="a4304ef4-b420-48bd-833c-5e34d1fd7a42"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[updateAction]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="aboutToShow" mc="Parameter" uid="2f0d50c5-7725-4b7f-bbed-a346afe267cc"/>
+                <PID name="TerminalActionPaste" mc="Class" uid="a4304ef4-b420-48bd-833c-5e34d1fd7a42"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[aboutToShow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="5e7dd01e-2603-47fa-8269-6d80fcf6632a"/>
+                <PID name="TerminalActionPaste" mc="Class" uid="a4304ef4-b420-48bd-833c-5e34d1fd7a42"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ITerminalViewControl target = getTarget();
+boolean bEnabled = target != null && target.getClipboard() != null && !target.getClipboard().isDisposed();
+if (bEnabled) {
+    String strText = (String) target.getClipboard().getContents(
+            TextTransfer.getInstance());
+    bEnabled = ((strText != null) && (!strText.equals("")) && (target.getState() == TerminalState.CONNECTED));//$NON-NLS-1$
+}
+setEnabled(bEnabled);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="" mc="Generalization" uid="30e13f48-792e-437f-9e24-503f6e5ebbc8"/>
+          <PID name="TerminalActionPaste" mc="Class" uid="a4304ef4-b420-48bd-833c-5e34d1fd7a42"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="AbstractTerminalAction" mc="Class" uid="108c9308-d5c5-4028-977e-3bd8775c0ef8"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedImport">
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="c55c6553-b5c2-4a10-a691-8bebcd5462bc"/>
+          <PID name="TerminalActionPaste" mc="Class" uid="a4304ef4-b420-48bd-833c-5e34d1fd7a42"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="TerminalState" mc="Class" uid="1d91de4b-94ef-4f77-909b-3d387e8d77cd"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="6d6d7114-c9a9-43f5-b17f-7b395b0920e7"/>
+          <PID name="TerminalActionPaste" mc="Class" uid="a4304ef4-b420-48bd-833c-5e34d1fd7a42"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="0346972e-adde-440b-85aa-9a172ecd38b8"/>
+                <PID name="TerminalActionPaste" mc="Class" uid="a4304ef4-b420-48bd-833c-5e34d1fd7a42"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.dnd.TextTransfer]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="e67a143c-3264-4091-80ee-3f1e2994842d"/>
+                <PID name="TerminalActionPaste" mc="Class" uid="a4304ef4-b420-48bd-833c-5e34d1fd7a42"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.ui.ISharedImages]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="8a65c799-b350-4364-9589-ea5a8ff57774"/>
+                <PID name="TerminalActionPaste" mc="Class" uid="a4304ef4-b420-48bd-833c-5e34d1fd7a42"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.ui.PlatformUI]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

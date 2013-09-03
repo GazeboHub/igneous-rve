@@ -1,0 +1,300 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ICommandInputField" version="3">
+  <DEPS>
+    <ID name="ICommandInputField" mc="Interface" uid="08dff594-04da-47f9-a317-bee781fdb375"/>
+    <EXTID name="ITerminalViewControl" mc="Interface" uid="c48973a6-e9dc-4236-a050-1010cb10d4e0"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="258012b4-0000-03f6-0000-000000000000"/>
+    <FOREIGNID name="JavaInterface" mc="Stereotype" uid="01ec23a8-0000-0267-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="258012b4-0000-03d3-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ICommandInputField" mc="Interface" uid="08dff594-04da-47f9-a317-bee781fdb375"/>
+    <PID name="control" mc="Package" uid="06a04ca4-2f8a-4d70-9c90-58025e87171b"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">true</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ICommandInputField]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="createControl" mc="Operation" uid="96567784-a04c-4266-8767-232ac6834651"/>
+          <PID name="ICommandInputField" mc="Interface" uid="08dff594-04da-47f9-a317-bee781fdb375"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">true</ATT>
+            <ATT name="Name"><![CDATA[createControl]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="parent" mc="Parameter" uid="55bb2f47-22aa-4939-bcaf-a7d793b59c4b"/>
+                <PID name="ICommandInputField" mc="Interface" uid="08dff594-04da-47f9-a317-bee781fdb375"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[parent]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="10128993-b9e1-4e20-9e03-e056b70e3483"/>
+                      <PID name="ICommandInputField" mc="Interface" uid="08dff594-04da-47f9-a317-bee781fdb375"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="836984f1-7c9a-41cd-b65e-39752a326d28"/>
+                            <PID name="ICommandInputField" mc="Interface" uid="08dff594-04da-47f9-a317-bee781fdb375"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Composite]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="terminal" mc="Parameter" uid="e2e8eee6-9b9e-46e3-80a5-a3a17feb6048"/>
+                <PID name="ICommandInputField" mc="Interface" uid="08dff594-04da-47f9-a317-bee781fdb375"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[terminal]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalViewControl" mc="Interface" uid="c48973a6-e9dc-4236-a050-1010cb10d4e0"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="486e7458-8e6b-4b2d-8ad7-f67ea2bc0e27"/>
+                <PID name="ICommandInputField" mc="Interface" uid="08dff594-04da-47f9-a317-bee781fdb375"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[@param parent
+@param terminal]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="dispose" mc="Operation" uid="4597827f-f577-4ac6-818c-78e761151886"/>
+          <PID name="ICommandInputField" mc="Interface" uid="08dff594-04da-47f9-a317-bee781fdb375"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">true</ATT>
+            <ATT name="Name"><![CDATA[dispose]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="setFont" mc="Operation" uid="990a38db-c229-416c-b2f5-cef5b32ab11d"/>
+          <PID name="ICommandInputField" mc="Interface" uid="08dff594-04da-47f9-a317-bee781fdb375"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">true</ATT>
+            <ATT name="Name"><![CDATA[setFont]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="font" mc="Parameter" uid="a842774c-4fe3-4cb3-8bb2-ed4ca791a737"/>
+                <PID name="ICommandInputField" mc="Interface" uid="08dff594-04da-47f9-a317-bee781fdb375"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[font]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="62625be4-2660-4041-80cf-b491fa72774a"/>
+                      <PID name="ICommandInputField" mc="Interface" uid="08dff594-04da-47f9-a317-bee781fdb375"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="4b773708-7f59-4f81-b995-7923a6a78ed3"/>
+                            <PID name="ICommandInputField" mc="Interface" uid="08dff594-04da-47f9-a317-bee781fdb375"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Font]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="68e0e510-f931-4f9d-b1ad-9a07fa2c627f"/>
+                      <PID name="ICommandInputField" mc="Interface" uid="08dff594-04da-47f9-a317-bee781fdb375"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the new text font]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="94385f7b-c891-4a8a-9e5d-cee65ed1b6d2"/>
+                <PID name="ICommandInputField" mc="Interface" uid="08dff594-04da-47f9-a317-bee781fdb375"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Sets the font of a control created with {@link #createControl(Composite, ITerminalViewControl)}
+@param control]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaInterface" mc="Stereotype" uid="01ec23a8-0000-0267-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="4a4d11a9-93d0-49b8-9f0a-88b9fb2e1bec"/>
+          <PID name="ICommandInputField" mc="Interface" uid="08dff594-04da-47f9-a317-bee781fdb375"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="62124366-2faf-4e9e-9e8e-69590b050495"/>
+                <PID name="ICommandInputField" mc="Interface" uid="08dff594-04da-47f9-a317-bee781fdb375"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.graphics.Font]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="0dd75819-cef2-47a1-bcc5-6934924fdf8b"/>
+                <PID name="ICommandInputField" mc="Interface" uid="08dff594-04da-47f9-a317-bee781fdb375"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Composite]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="258012b4-0000-03f6-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="4c3600e8-2aef-4025-a382-60e5b382161b"/>
+          <PID name="ICommandInputField" mc="Interface" uid="08dff594-04da-47f9-a317-bee781fdb375"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Interface to create a command input control.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="Javadoc" mc="NoteType" uid="258012b4-0000-03d3-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

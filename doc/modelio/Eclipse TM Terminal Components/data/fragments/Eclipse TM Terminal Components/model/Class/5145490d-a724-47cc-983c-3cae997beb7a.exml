@@ -1,0 +1,275 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TerminalActionSelectAll" version="3">
+  <DEPS>
+    <ID name="TerminalActionSelectAll" mc="Class" uid="5145490d-a724-47cc-983c-3cae997beb7a"/>
+    <EXTID name="AbstractTerminalAction" mc="Class" uid="108c9308-d5c5-4028-977e-3bd8775c0ef8"/>
+    <EXTID name="ITerminalViewControl" mc="Interface" uid="c48973a6-e9dc-4236-a050-1010cb10d4e0"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+    <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TerminalActionSelectAll" mc="Class" uid="5145490d-a724-47cc-983c-3cae997beb7a"/>
+    <PID name="actions" mc="Package" uid="f854e869-b006-46b0-9aa6-023351cfbc2a"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[TerminalActionSelectAll]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="TerminalActionSelectAll" mc="Operation" uid="7b328883-e6ff-445b-bcbf-d37f5384e087"/>
+          <PID name="TerminalActionSelectAll" mc="Class" uid="5145490d-a724-47cc-983c-3cae997beb7a"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[TerminalActionSelectAll]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="ee45639e-f9d9-40c5-9692-cbb7f29ba197"/>
+                <PID name="TerminalActionSelectAll" mc="Class" uid="5145490d-a724-47cc-983c-3cae997beb7a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[super(TerminalActionSelectAll.class.getName());
+
+setupAction(ActionMessages.SELECTALL, ActionMessages.SELECTALL,
+        (ImageDescriptor) null, null, null, false);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="TerminalActionSelectAll" mc="Operation" uid="c653e1d5-14f0-4928-84a2-c29802b80f8b"/>
+          <PID name="TerminalActionSelectAll" mc="Class" uid="5145490d-a724-47cc-983c-3cae997beb7a"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[TerminalActionSelectAll]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="target" mc="Parameter" uid="4ea17630-5c46-4948-b79e-81bf912f26f1"/>
+                <PID name="TerminalActionSelectAll" mc="Class" uid="5145490d-a724-47cc-983c-3cae997beb7a"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[target]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalViewControl" mc="Interface" uid="c48973a6-e9dc-4236-a050-1010cb10d4e0"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="ba635b53-d18f-4a6f-a8a4-bf5ecbe1099f"/>
+                <PID name="TerminalActionSelectAll" mc="Class" uid="5145490d-a724-47cc-983c-3cae997beb7a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[super(target, TerminalActionSelectAll.class.getName());
+
+setupAction(ActionMessages.SELECTALL, ActionMessages.SELECTALL,
+        (ImageDescriptor) null, null, null, false);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="run" mc="Operation" uid="ef641993-473b-4e1f-916c-58b841f18ece"/>
+          <PID name="TerminalActionSelectAll" mc="Class" uid="5145490d-a724-47cc-983c-3cae997beb7a"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[run]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="f6001f19-28a4-441d-9860-9166e3e49cf5"/>
+                <PID name="TerminalActionSelectAll" mc="Class" uid="5145490d-a724-47cc-983c-3cae997beb7a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ITerminalViewControl target = getTarget();
+if (target != null) {
+    target.selectAll();
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="updateAction" mc="Operation" uid="f943205f-37a9-4535-ac9a-ab435a1e8ff1"/>
+          <PID name="TerminalActionSelectAll" mc="Class" uid="5145490d-a724-47cc-983c-3cae997beb7a"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[updateAction]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="aboutToShow" mc="Parameter" uid="fda1804f-0386-486c-8e5a-e576a0bc6221"/>
+                <PID name="TerminalActionSelectAll" mc="Class" uid="5145490d-a724-47cc-983c-3cae997beb7a"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[aboutToShow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="fbce708c-46cc-4204-a51c-870f5ea7b4ec"/>
+                <PID name="TerminalActionSelectAll" mc="Class" uid="5145490d-a724-47cc-983c-3cae997beb7a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ITerminalViewControl target = getTarget();
+setEnabled(target != null && !target.isEmpty());
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="" mc="Generalization" uid="8442662f-e6e1-4504-9e7f-547acdd1f214"/>
+          <PID name="TerminalActionSelectAll" mc="Class" uid="5145490d-a724-47cc-983c-3cae997beb7a"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="AbstractTerminalAction" mc="Class" uid="108c9308-d5c5-4028-977e-3bd8775c0ef8"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="f82800c9-b8e3-4aee-893a-c55a245d8eee"/>
+          <PID name="TerminalActionSelectAll" mc="Class" uid="5145490d-a724-47cc-983c-3cae997beb7a"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="6b946881-2301-4d06-aeb2-4af795d52436"/>
+                <PID name="TerminalActionSelectAll" mc="Class" uid="5145490d-a724-47cc-983c-3cae997beb7a"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.jface.resource.ImageDescriptor]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

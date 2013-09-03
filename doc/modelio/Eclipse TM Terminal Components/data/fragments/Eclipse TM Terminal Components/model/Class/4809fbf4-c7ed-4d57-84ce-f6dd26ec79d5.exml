@@ -1,0 +1,3444 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TextCanvas" version="3">
+  <DEPS>
+    <ID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+    <COMPID name="ResizeListener" mc="Interface" uid="b7936b67-bb15-4523-9b6a-70eeb0cb811a"/>
+    <EXTID name="GridCanvas" mc="Class" uid="df621f73-883a-4082-8fed-5a2d65875eee"/>
+    <EXTID name="ILinelRenderer" mc="Interface" uid="fd3522c1-0174-41e0-98e4-9e738b98e78a"/>
+    <EXTID name="ITextCanvasModel" mc="Interface" uid="db0d75ab-8a36-4894-ad68-901151456b4a"/>
+    <EXTID name="ResizeListener" mc="Interface" uid="b7936b67-bb15-4523-9b6a-70eeb0cb811a"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0180-0000-000000000000"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015d-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+    <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+    <PID name="textcanvas" mc="Package" uid="962e54a2-1be9-4744-b78c-571bb2e671ca"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[TextCanvas]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="TextCanvas" mc="Operation" uid="c4194439-82ec-4c6b-861c-6d788f5cbfd4"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[TextCanvas]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="parent" mc="Parameter" uid="002d1284-0892-46d8-a61f-88bae76721c3"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[parent]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="b16d0cbe-f9a2-4a93-ad0c-3e729d6a1d09"/>
+                      <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="481fe9c1-5741-4875-bd76-37d685cc9231"/>
+                            <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Composite]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="model" mc="Parameter" uid="941fdd96-1663-410a-8fb6-3dc2f1da0022"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[model]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITextCanvasModel" mc="Interface" uid="db0d75ab-8a36-4894-ad68-901151456b4a"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="style" mc="Parameter" uid="a5bbd37a-2330-48d1-8159-2c8e3f2b277a"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[style]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="cellRenderer" mc="Parameter" uid="35cda25f-33c6-4148-8e44-c2558c68127a"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[cellRenderer]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ILinelRenderer" mc="Interface" uid="fd3522c1-0174-41e0-98e4-9e738b98e78a"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="ac799988-8b9d-41db-9eff-7212eccea4d7"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Create a new CellCanvas with the given SWT style bits.
+(SWT.H_SCROLL and SWT.V_SCROLL are automatically added).]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="54f6bf45-add5-4f21-a81c-8dbbad9cb543"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[super(parent, style | SWT.H_SCROLL | SWT.V_SCROLL);
+fCellRenderer=cellRenderer;
+setCellWidth(fCellRenderer.getCellWidth());
+setCellHeight(fCellRenderer.getCellHeight());
+fCellCanvasModel=model;
+fCellCanvasModel.addCellCanvasModelListener(new ITextCanvasModelListener(){
+    public void rangeChanged(int col, int line, int width, int height) {
+        repaintRange(col,line,width,height);
+    }
+    public void dimensionsChanged(int cols, int rows) {
+        calculateGrid();
+    }
+    public void terminalDataChanged() {
+        if(isDisposed())
+            return;
+        // scroll to end (unless scroll lock is active)
+        if (!fResizing) {
+            calculateGrid();
+            scrollToEnd();
+        }
+    }
+});
+// let the cursor blink if the text canvas gets the focus...
+addFocusListener(new FocusListener(){
+    public void focusGained(FocusEvent e) {
+        fCellCanvasModel.setCursorEnabled(fCursorEnabled);
+    }
+    public void focusLost(FocusEvent e) {
+        fCellCanvasModel.setCursorEnabled(false);
+    }});
+addMouseListener(new MouseListener(){
+    public void mouseDoubleClick(MouseEvent e) {
+    }
+    public void mouseDown(MouseEvent e) {
+        if(e.button==1) { // left button
+            fDraggingStart=screenPointToCell(e.x, e.y);
+            fHasSelection=false;
+            if((e.stateMask&SWT.SHIFT)!=0) {
+                Point anchor=fCellCanvasModel.getSelectionAnchor();
+                if(anchor!=null)
+                    fDraggingStart=anchor;
+            } else {
+                fCellCanvasModel.setSelectionAnchor(fDraggingStart);
+            }
+            fDraggingEnd=null;
+        }
+    }
+    public void mouseUp(MouseEvent e) {
+        if(e.button==1) { // left button
+            updateHasSelection(e);
+            if(fHasSelection)
+                setSelection(screenPointToCell(e.x, e.y));
+            else
+                fCellCanvasModel.setSelection(-1,-1,-1,-1);
+            fDraggingStart=null;
+        }
+    }
+});
+addMouseMoveListener(new MouseMoveListener() {
+
+    public void mouseMove(MouseEvent e) {
+        if (fDraggingStart != null) {
+            updateHasSelection(e);
+            setSelection(screenPointToCell(e.x, e.y));
+        }
+    }
+});
+serVerticalBarVisible(true);
+setHorizontalBarVisible(false);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="updateHasSelection" mc="Operation" uid="755b691b-93c3-40c5-a7d6-de29dc2565f0"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[updateHasSelection]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="e" mc="Parameter" uid="24816d6c-d140-4dd2-be33-633e471afb98"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[e]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="ceb02f0e-d30c-4c78-9aa3-c7adf9ebba9e"/>
+                      <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="b90313c3-9884-49cd-a611-898186fd3990"/>
+                            <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[MouseEvent]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="d6cd45d0-1f54-413f-bd19-4d2bb4b1049d"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[The user has to drag the mouse to at least one character to make a selection.
+Once this is done, even a one char selection is OK.
+@param e]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="8e9ea0e2-54d0-4632-9473-0e9e3cdce60c"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[if(fDraggingStart!=null) {
+    Point p=screenPointToCell(e.x, e.y);
+    if(fDraggingStart.x!=p.x||fDraggingStart.y!=p.y)
+        fHasSelection=true;
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="setSelection" mc="Operation" uid="7c98d3cb-05dd-4e56-a911-879c1191dd82"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[setSelection]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="p" mc="Parameter" uid="ee63790d-7bb5-4329-91f7-81a5083be697"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[p]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="e482fad3-9d57-4992-bd28-145141448732"/>
+                      <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="9daff9d7-bf95-4e79-8da5-56e878e085d0"/>
+                            <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Point]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="76071dd0-c97a-408d-99ca-a5f625b25633"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[if (fDraggingStart !=null && !p.equals(fDraggingEnd)) {
+    fDraggingEnd = p;
+    if (compare(p, fDraggingStart) < 0) {
+        // bug 219589 - make sure selection start coordinates are non-negative
+        int startColumn = Math.max(0, p.x);
+        int startRow = Math.max(p.y, 0);
+        fCellCanvasModel.setSelection(startRow, fDraggingStart.y, startColumn, fDraggingStart.x);
+    } else {
+        fCellCanvasModel.setSelection(fDraggingStart.y, p.y, fDraggingStart.x, p.x);
+
+    }
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="compare" mc="Operation" uid="d21ceecb-b4ec-4063-a432-ca0f7ca79cfa"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[compare]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="p1" mc="Parameter" uid="8a604c80-0cf3-406f-84b2-0f1cfefbe823"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[p1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="fc952ceb-41ad-4987-b7ba-65471df01230"/>
+                      <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="81ab4a39-831f-43a6-ad61-dc8b0aef5f7f"/>
+                            <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Point]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="p2" mc="Parameter" uid="6012395f-10ff-4bf6-8f3b-03182ced7687"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[p2]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="5a761781-97c0-4bf9-b457-1ff6c0f2ae76"/>
+                      <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="97f8a4a5-93fd-4227-bb8f-5bf90880ae85"/>
+                            <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Point]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="0fc956c6-725f-4858-a24f-ba2c0962cebc"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="48dbdc39-2677-40c0-8809-a61c080b23f4"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[if (p1.equals(p2))
+    return 0;
+if (p1.y == p2.y) {
+    if (p1.x > p2.x)
+        return 1;
+    else
+        return -1;
+}
+if (p1.y > p2.y) {
+    return 1;
+} else {
+    return -1;
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="getCellRenderer" mc="Operation" uid="f753f34b-b9b3-49b1-a71c-d83bfce60e42"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[getCellRenderer]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="0531af9f-f9b0-44a9-8c19-f654a98f4fdf"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ILinelRenderer" mc="Interface" uid="fd3522c1-0174-41e0-98e4-9e738b98e78a"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="c80235fa-2de3-49a4-94a4-d6b6c2268a1a"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return fCellRenderer;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="getMinColumns" mc="Operation" uid="6b99e173-5fd7-407f-95d9-79b590e7b5f0"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[getMinColumns]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="c88bfa5d-289c-452e-aee1-8a94b6cdb2e3"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="4864ca01-342e-47f4-b665-307f37d2a40d"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return fMinColumns;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="setMinColumns" mc="Operation" uid="a42ae27f-54fb-42b7-a5b7-9d262835a244"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[setMinColumns]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="minColumns" mc="Parameter" uid="7319d0e8-0a50-408f-ae34-d110372e59d6"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[minColumns]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="3d11970c-6fd5-4f23-b760-5e5e54a1115c"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[fMinColumns = minColumns;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="getMinLines" mc="Operation" uid="0d45f717-3311-442c-85ae-ed9cb5a4b96d"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[getMinLines]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="18880a86-0186-4a67-bcff-82f0a4bfd257"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="03b7ec82-b1bd-477c-a7bc-2c81fede67a6"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return fMinLines;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="setMinLines" mc="Operation" uid="b096082c-cb7a-41c6-9c47-ed3828e92e22"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[setMinLines]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="minLines" mc="Parameter" uid="811ddfbb-7771-4140-ad81-b3c7b84d9366"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[minLines]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="32f0a6eb-52b1-4c36-983a-ed1051b3bc74"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[fMinLines = minLines;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="onResize" mc="Operation" uid="0c625723-e38f-440b-a38f-d51cbc92cee0"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Protected</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[onResize]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="init" mc="Parameter" uid="6e9092ad-e0b8-44da-a357-dcedbb83a919"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[init]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="4a4710c8-f13c-45cc-aaf0-1172878f47b1"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[if(fResizeListener!=null) {
+    Rectangle bonds=getClientArea();
+    int cellHeight = getCellHeight();
+    int cellWidth = getCellWidth();
+    int lines=bonds.height/cellHeight;
+    int columns=bonds.width/cellWidth;
+    // when the view is minimised, its size is set to 0
+    // we don't sent this to the terminal!
+    if((lines>0 && columns>0) || init) {
+        if(columns<fMinColumns) {
+            if(!isHorizontalBarVisble()) {
+                setHorizontalBarVisible(true);
+                bonds=getClientArea();
+                lines=bonds.height/cellHeight;
+            }
+            columns=fMinColumns;
+        } else if(columns>=fMinColumns && isHorizontalBarVisble()) {
+            setHorizontalBarVisible(false);
+            bonds=getClientArea();
+            lines=bonds.height/cellHeight;
+            columns=bonds.width/cellWidth;
+        }
+        if(lines<fMinLines)
+            lines=fMinLines;
+        fResizeListener.sizeChanged(lines, columns);
+    }
+}
+super.onResize();
+calculateGrid();
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="onResize" mc="Operation" uid="faea72df-db6f-4ee9-8323-a894a02cdb32"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Protected</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[onResize]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="0d197905-c2d5-4d8e-b3f9-9ce721673ce6"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[fResizing = true;
+try {
+    onResize(false);
+} finally {
+    fResizing = false;
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="calculateGrid" mc="Operation" uid="46911f54-f677-482b-99bc-d0a6e63f3d1c"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[calculateGrid]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="b38549ca-8405-4c7a-abf5-ded1a58ebc17"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Rectangle virtualBounds = getVirtualBounds();
+setRedraw(false);
+try {
+    setVirtualExtend(getCols()*getCellWidth(),getRows()*getCellHeight());
+    getParent().layout();
+    if (fResizing) {
+        // scroll to end if view port was near last line
+        Rectangle viewRect = getViewRectangle();
+        if (virtualBounds.height - (viewRect.y + viewRect.height) < getCellHeight() * 2)
+            scrollToEnd();
+    }
+} finally {
+    setRedraw(true);
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="scrollToEnd" mc="Operation" uid="27eee960-bf4f-4ee3-8b2d-4543f3957d6f"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[scrollToEnd]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="03007d2c-752a-44bf-b2bd-67ccb8e34a11"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[if(!fScrollLock) {
+    int y=-(getRows()*getCellHeight()-getClientArea().height);
+    if (y > 0) {
+        y = 0;
+    }
+    Rectangle v=getViewRectangle();
+    if(v.y!=-y) {
+        setVirtualOrigin(v.x,y);
+    }
+    // make sure the scroll area is correct:
+    scrollY(getVerticalBar());
+    scrollX(getHorizontalBar());
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="isScrollLock" mc="Operation" uid="1cafb104-9d63-451f-9f1a-88f6151af17b"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[isScrollLock]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="4a376aa7-6782-4235-9a53-033333a7e251"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="b6a8b119-7b23-4339-9e98-d17a4b93b6a1"/>
+                      <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[true if the cursor should be shown on output....]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="6d8ff135-4a87-4b76-94d6-7ad7330a2215"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return fScrollLock;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="setScrollLock" mc="Operation" uid="0a398390-167a-40f1-a3b3-5f0d74dfa8d1"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[setScrollLock]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="scrollLock" mc="Parameter" uid="18fe2791-6a03-4f79-b41a-d0c15dc693b1"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[scrollLock]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="ff9a8bbf-822c-48fa-ba5a-5de3cf66651e"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[If set then if the size changes]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="62fdad80-f8e8-49f0-92a2-8bee2ecd5913"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[fScrollLock=scrollLock;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="repaintRange" mc="Operation" uid="95ec3212-7577-4bd8-bfad-cbfba1f5b5b1"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Protected</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[repaintRange]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="col" mc="Parameter" uid="945109f5-6515-47b4-9be7-8e03c17eae93"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[col]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="line" mc="Parameter" uid="40903ef7-9396-4940-8014-e8bde17ff2e4"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[line]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="width" mc="Parameter" uid="1e140393-ec95-4bdc-b21d-2a488e5b8f17"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[width]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="height" mc="Parameter" uid="6f4c14b2-91e2-46c7-bc5f-a0dfe3a466ce"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[height]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="589fde16-603f-48ef-8a69-e129d50f0ea5"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Point origin=cellToOriginOnScreen(col,line);
+Rectangle r=new Rectangle(origin.x,origin.y,width*getCellWidth(),height*getCellHeight());
+repaint(r);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="drawLine" mc="Operation" uid="843e0aaa-d573-471d-8ee3-df36cfeba47b"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Protected</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[drawLine]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="gc" mc="Parameter" uid="bff974f3-4069-488e-8c02-27d76cac0b91"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[gc]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="70efed57-36c0-46b6-91d7-f2c505305817"/>
+                      <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="9aeb4e2a-8cfd-4ce0-8cf5-48adbb9c42a3"/>
+                            <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[GC]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="line" mc="Parameter" uid="90cea212-c01b-499c-bf32-cfaf9ee06cc7"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[line]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="x" mc="Parameter" uid="a9661851-4cda-4120-a595-cccd19366999"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[x]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="y" mc="Parameter" uid="c1e631b2-9b83-40b7-9334-0007c37e0470"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[y]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="colFirst" mc="Parameter" uid="b9971467-008a-4517-88ae-8d9a1d952716"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[colFirst]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="colLast" mc="Parameter" uid="dbf6e211-e8e0-4b4a-94a3-a6d5c40ec17f"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[colLast]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="4ab4e188-0125-4f7a-85cb-eaf25c9e3395"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[fCellRenderer.drawLine(fCellCanvasModel, gc,line,x,y,colFirst, colLast);]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="getTerminalBackgroundColor" mc="Operation" uid="869dcc51-1f1e-48bc-b988-237ef8a25fcd"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Protected</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[getTerminalBackgroundColor]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="03a0f377-ae43-4a59-96bf-c934b5b90f90"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="aa7dd6ad-f1e6-4801-ac51-46ae695f7151"/>
+                      <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="23f0d8a7-8c63-455f-af67-e957b214afb7"/>
+                            <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Color]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="fe5893ca-a947-4c74-afc8-87814807d627"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return fCellRenderer.getDefaultBackgroundColor();]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="visibleCellRectangleChanged" mc="Operation" uid="5318dc85-57f1-4ce1-b65d-9a01f7e33b0c"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Protected</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[visibleCellRectangleChanged]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="x" mc="Parameter" uid="f849a683-a5cb-46d2-bf3c-ce9c6955c528"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[x]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="y" mc="Parameter" uid="61575380-c000-4589-b44b-067eaabee5f4"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[y]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="width" mc="Parameter" uid="2656fcfe-788b-444c-bb38-944b389fd8a1"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[width]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="height" mc="Parameter" uid="f727a330-9c65-4fa7-bcd1-81353abb7d6c"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[height]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="84a4240a-4552-4ad1-bf60-af56c0733d36"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[fCellCanvasModel.setVisibleRectangle(y,x,height,width);
+update();
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="getCols" mc="Operation" uid="9e07fc2f-0511-4315-9e12-df6c6135199d"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Protected</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[getCols]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="823fd462-0b82-491d-8362-274979ada347"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="8c4c77d3-dffa-4eb1-b8e6-b2c0ab97ac33"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return fCellCanvasModel.getTerminalText().getWidth();]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="getRows" mc="Operation" uid="b42e740e-b64c-4c94-aed6-f8f19d4213dc"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Protected</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[getRows]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="00856eb1-e514-4d9c-a744-a1c497775fb9"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="00fe0c9d-bcc8-41e7-a01e-11b3ffa234b4"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return fCellCanvasModel.getTerminalText().getHeight();]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="getSelectionText" mc="Operation" uid="02f60a2a-df7a-4dca-8524-ecd449252405"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[getSelectionText]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="cd8f8a3e-0d05-4d45-a20d-140d3a6087f8"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="b2b4cf0c-54bf-4010-8fd2-ee09a66b795d"/>
+                      <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="4783e7b6-52d8-459c-8fab-ef2322f366b1"/>
+                            <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[String]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="738d8d9d-5743-46b2-9778-7db312788e29"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return fCellCanvasModel.getSelectedText();]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="5bce927c-f791-4955-b397-0dee54183481"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[// TODO -- create a hasSelectionMethod!]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="copy" mc="Operation" uid="0cf4cbd8-9ae7-401f-9272-d6fa85229db9"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[copy]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="728e238f-fef0-43cc-a7a1-dacbe6a78c62"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Clipboard clipboard = new Clipboard(getDisplay());
+clipboard.setContents(new Object[] { getSelectionText() }, new Transfer[] { TextTransfer.getInstance() });
+clipboard.dispose();
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="selectAll" mc="Operation" uid="f30703d1-d73b-4f1a-81d1-24b5c5bf3906"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[selectAll]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="007c15c2-d22d-43fa-a8a9-1f9d24809091"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[fCellCanvasModel.setSelection(0, fCellCanvasModel.getTerminalText().getHeight(), 0, fCellCanvasModel.getTerminalText().getWidth());
+fCellCanvasModel.setSelectionAnchor(new Point(0,0));
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="isEmpty" mc="Operation" uid="2423179c-8f30-44b9-ade9-06058f95eb7c"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[isEmpty]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="7a981ca2-ceda-4619-9be4-a3886a9efdce"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="e554ee72-b180-49f1-84f6-65ea043ee6f9"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return false;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="addResizeHandler" mc="Operation" uid="f6880317-fc6b-4d25-bc2b-1ac4dbf54f3e"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[addResizeHandler]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="listener" mc="Parameter" uid="2a53c3d1-8a54-4df8-9bbe-8357acd1ccd1"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[listener]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ResizeListener" mc="Interface" uid="b7936b67-bb15-4523-9b6a-70eeb0cb811a"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="6af4390c-594c-4749-a105-4510900e9950"/>
+                      <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[this listener gets notified, when the size of
+the widget changed. It should change the dimensions of the underlying
+terminaldata]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="8aeb60c3-d5fa-4104-9e19-68f54592d001"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[if(fResizeListener!=null)
+    throw new IllegalArgumentException("There can be at most one listener at the moment!"); //$NON-NLS-1$
+fResizeListener=listener;
+
+// Bug 281328: [terminal] The very first few characters might be missing in
+//             the terminal control if opened and connected programmatically
+//
+// In case the terminal had not been visible yet or is too small (less than one
+// line visible), the terminal should have a minimum size to avoid RuntimeExceptions.
+Rectangle bonds=getClientArea();
+if (bonds.height<getCellHeight() || bonds.width<getCellWidth()) {
+    //Widget not realized yet, or minimized to < 1 item:
+    //Just tell the listener our min size
+    fResizeListener.sizeChanged(getMinLines(), getMinColumns());
+} else {
+    //Widget realized: compute actual size and force telling the listener
+    onResize(true);
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="onFontChange" mc="Operation" uid="bfc0d85d-d400-4f19-8b95-ad7f6aeafa3b"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[onFontChange]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="2f721604-a6e3-4f2e-953e-cfda35f7be68"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Notify about a change of the global Font Preference.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="fbcee3d2-c748-4b27-a869-73cfbb2e2c47"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[fCellRenderer.onFontChange();
+setCellWidth(fCellRenderer.getCellWidth());
+setCellHeight(fCellRenderer.getCellHeight());
+calculateGrid();
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="updateFont" mc="Operation" uid="295d743a-31fd-499e-b3d8-52ff151eb019"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[updateFont]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="fontName" mc="Parameter" uid="41d8354e-c4e9-4a2e-80a4-3ee6d8684915"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[fontName]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="e09e3231-88f3-49af-aa5e-7ad78496eb18"/>
+                      <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="8a5c36f2-24bc-431f-a523-49829cef6ff1"/>
+                            <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[String]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="50acc74e-3457-4a41-827b-99830c73de19"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[fCellRenderer.updateFont(fontName);
+setCellWidth(fCellRenderer.getCellWidth());
+setCellHeight(fCellRenderer.getCellHeight());
+calculateGrid();
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="setInvertedColors" mc="Operation" uid="ee9c739f-7686-4971-a30e-6c21cb300c4e"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[setInvertedColors]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="invert" mc="Parameter" uid="772ca456-d4c4-410d-ace0-8c7b8e55c625"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[invert]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="f182649a-cae5-4120-9dd6-d369c8e16f35"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[fCellRenderer.setInvertedColors(invert);
+redraw();
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="isCursorEnabled" mc="Operation" uid="d06b475a-90ad-4655-8ffa-d9462147d1f9"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[isCursorEnabled]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="5f1d1bd6-9d79-41c1-8610-5f16b41d1642"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="35f85240-6ece-4f48-90ba-f4fb1b129e6f"/>
+                      <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[true if the cursor is enabled (blinking). By default the cursor is not enabled.]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="6f2b5131-9a63-4cd6-b539-d111c4c0b26c"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return fCursorEnabled;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="setCursorEnabled" mc="Operation" uid="686f5d32-ff9f-44ba-be90-aaf430ea0b59"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[setCursorEnabled]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="enabled" mc="Parameter" uid="df44f0ef-4c6d-4266-a22d-fb88d533ec51"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[enabled]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="8d63f5e3-3f0b-4b8f-8240-23a47fb3e3cc"/>
+                      <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[enabling means that the cursor blinks]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="4909d410-b75f-4cdb-b7b5-650b357f63d0"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[if(enabled!=fCursorEnabled) {
+    fCursorEnabled=enabled;
+    fCellCanvasModel.setCursorEnabled(fCursorEnabled);
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="fScrollLock" mc="Attribute" uid="57b2388e-d5f2-4935-b298-4a1c7ea4c810"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fScrollLock]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="1a564626-6a3c-4740-8f36-b24541364815"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fDraggingStart" mc="Attribute" uid="9821ed23-25bc-4e1c-a819-4e8fe813f469"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fDraggingStart]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="bc7267c9-58e9-4280-b6e6-c62cdee30513"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="9d887b78-4f9f-492b-b91f-ea08c8d01ade"/>
+                      <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[Point]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="24a5620f-6435-4701-b710-05027ef2251d"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fDraggingEnd" mc="Attribute" uid="538f8528-7ce1-4025-9cfc-46717e05c26f"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fDraggingEnd]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="f8fefe27-844f-4444-aadc-9d50de375c64"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="5c1440ff-86db-49af-a560-9ab9a3852184"/>
+                      <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[Point]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="12f1fe80-ff1b-45eb-a51c-cef6ae3631f5"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fHasSelection" mc="Attribute" uid="4b0b812f-abcd-4ca6-9570-28a2e17632d8"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fHasSelection]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="9deef0c0-f7a5-4ee5-bf35-a83c0ed2e789"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fMinColumns" mc="Attribute" uid="bf515f0a-b6d2-440f-908c-a56fbb1917bf"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA[80]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fMinColumns]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="6ef93b78-496c-4c57-ac79-ae45764699b1"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[// The minSize is meant to determine the minimum size of the backing store
+// (grid) into which remote data is rendered. If the viewport is smaller
+// than that minimum size, the backing store size remains at the minSize,
+// and a scrollbar is shown instead. In reality, this has the following
+// issues or effects today:
+//  (a) Bug 281328: For very early data coming in before the widget is
+//      realized, the minSize determines into what initial grid that is
+//      rendered. See also @link{#addResizeHandler(ResizeListener)}.
+//  (b) Bug 294468: Since we have redraw and size computation problems
+//      with horizontal scrollers, for now the minColumns must be small
+//      enough to avoid a horizontal scroller appearing in most cases.
+//  (b) Bug 294327: since we have problems with the vertical scroller
+//      showing the correct location, minLines must be small enough
+//      to avoid a vertical scroller or new data may be rendered off-screen.
+// As a compromise, we have been working with a 20x4 since the Terminal
+// inception, though many users would want a 80x24 minSize and backing
+// store. Pros and cons of the small minsize:
+//   + consistent "remote size==viewport size", vi works as expected
+//   - dumb terminals which expect 80x24 render garbled on small viewport.
+// If bug 294468 were resolved, an 80 wide minSize would be preferrable
+// since it allows switching the terminal viewport small/large as needed,
+// without destroying the backing store. For a complete solution,
+// Bug 196462 tracks the request for a user-defined fixed-widow-size-mode.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fMinLines" mc="Attribute" uid="d9aefdec-7c82-4dc3-98e3-e38b5bc3cb56"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA[4]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fMinLines]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fCursorEnabled" mc="Attribute" uid="317041d0-b84d-4bd8-bcbe-42d060a75d32"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fCursorEnabled]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="cda57c4e-c729-4d5c-96ee-3a864511ea91"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fResizing" mc="Attribute" uid="4ba15b95-bbc8-4201-b1b7-46efdebc5159"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fResizing]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="a451042d-8f74-4136-89da-0f29e2aef948"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedEnd">
+        <OBJECT>
+          <ID name="fCellCanvasModel" mc="AssociationEnd" uid="45e24e27-03a9-45f1-8b4e-a0c89b320cec"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Protected</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fCellCanvasModel]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="ITextCanvasModel" mc="Interface" uid="db0d75ab-8a36-4894-ad68-901151456b4a"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="AssociationEnd" uid="2c4d5028-20f0-413f-a93b-3baacc09a270"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="fCellCanvasModel" mc="AssociationEnd" uid="45e24e27-03a9-45f1-8b4e-a0c89b320cec"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Association" uid="4add242e-e1d1-43f0-b2c6-f41e39a5a5ff"/>
+                      <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <OBJECT>
+                <ID name="" mc="Association" uid="4add242e-e1d1-43f0-b2c6-f41e39a5a5ff"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="2edc950d-7471-4787-b9aa-c56bf49eb244"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0180-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="f933af4a-a2c6-4024-8b24-9f21a54d0631"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fCellRenderer" mc="AssociationEnd" uid="40346558-a172-4203-84b8-c4501a5ecd41"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fCellRenderer]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="ILinelRenderer" mc="Interface" uid="fd3522c1-0174-41e0-98e4-9e738b98e78a"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="AssociationEnd" uid="ef963d44-02b1-4084-9d13-ed3ee3834472"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="fCellRenderer" mc="AssociationEnd" uid="40346558-a172-4203-84b8-c4501a5ecd41"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Association" uid="6abd65dd-1a39-47d3-8298-88bfaa0a8537"/>
+                      <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <OBJECT>
+                <ID name="" mc="Association" uid="6abd65dd-1a39-47d3-8298-88bfaa0a8537"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="64115317-d57c-47c3-bcf8-a7d9fd11fb8e"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0180-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="ee232455-24df-4d77-8b26-0e5fb0c8ec28"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="63ee8dcf-5990-47d6-b6a3-210a7523e1b3"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Renders the cells]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fResizeListener" mc="AssociationEnd" uid="abd674a6-20a7-4950-a09d-e9d540db2652"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fResizeListener]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="ResizeListener" mc="Interface" uid="b7936b67-bb15-4523-9b6a-70eeb0cb811a"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="AssociationEnd" uid="4d3aa552-5a31-4cdd-bed2-ec2998e5f464"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="fResizeListener" mc="AssociationEnd" uid="abd674a6-20a7-4950-a09d-e9d540db2652"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Association" uid="a7feec52-4508-450c-b683-d99c1b533425"/>
+                      <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <OBJECT>
+                <ID name="" mc="Association" uid="a7feec52-4508-450c-b683-d99c1b533425"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="5a0a32bd-6037-4be6-8f54-c375dd4c6ffa"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="" mc="Generalization" uid="1aff3a6f-8516-49a9-9f31-7a9612c528d5"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="GridCanvas" mc="Class" uid="df621f73-883a-4082-8fed-5a2d65875eee"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="ResizeListener" mc="Interface" uid="b7936b67-bb15-4523-9b6a-70eeb0cb811a"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="319a7495-7be8-4e75-9b1d-d376c3ffa9e3"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="47b524e1-37e7-4000-81e1-b22f7a844d05"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.SWT]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="78fd20cd-3baf-4bbe-be50-3aca089bd98e"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.dnd.Clipboard]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="699aa7e2-6fae-4cdb-a8ed-c596854720e0"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.dnd.TextTransfer]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="62ff3a12-e8c9-494f-b828-5b51a73546f9"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.dnd.Transfer]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="0f0c19c2-7ba5-4d64-9bc7-ce4c4c6cc4f5"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.events.FocusEvent]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="5ca44171-0ae4-4758-8ee1-6593b8787041"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.events.FocusListener]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="e2a70a63-ac99-473c-9345-65aac947efb6"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.events.MouseEvent]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="8b01c224-657f-4364-8e78-27723000b7a0"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.events.MouseListener]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="1dddbcb6-8d05-479d-9271-042792fc32a0"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.events.MouseMoveListener]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="9337f342-3c2d-4043-b4ba-5731010a06e4"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.graphics.Color]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="2b6801f2-f2e9-4102-9e87-5de21f03f375"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.graphics.GC]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="3f502406-ff82-4a54-bc2b-9f6342e1c090"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.graphics.Point]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="c0d0080a-229e-46e3-ad18-0d9ab2a928d2"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.graphics.Rectangle]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="8fa9df62-3e99-44ab-bc92-c8a3b7d618f8"/>
+                <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Composite]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="ea9fc4f3-bb80-45fc-a4b9-6674dbfbb330"/>
+          <PID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[A cell oriented Canvas. Maintains a list of "cells".
+It can either be vertically or horizontally scrolled.
+The CellRenderer is responsible for painting the cell.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015d-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

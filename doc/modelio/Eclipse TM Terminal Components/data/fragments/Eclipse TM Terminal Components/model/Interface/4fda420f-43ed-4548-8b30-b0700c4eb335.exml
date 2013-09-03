@@ -1,0 +1,450 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ISettingsPage" version="3">
+  <DEPS>
+    <ID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+    <COMPID name="Listener" mc="Interface" uid="eb03d9fd-08b9-4cf0-a616-82c6be9d066d"/>
+    <EXTID name="Listener" mc="Interface" uid="eb03d9fd-08b9-4cf0-a616-82c6be9d066d"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="258012b4-0000-03f6-0000-000000000000"/>
+    <FOREIGNID name="JavaInterface" mc="Stereotype" uid="01ec23a8-0000-0267-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="258012b4-0000-03d3-0000-000000000000"/>
+    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+    <PID name="api" mc="Package" uid="cd0dd477-1392-431c-a8eb-f5bdaee3f5d4"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">true</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ISettingsPage]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="createControl" mc="Operation" uid="c75154ac-6275-46e6-8cb5-7cc0da906ee0"/>
+          <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">true</ATT>
+            <ATT name="Name"><![CDATA[createControl]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="parent" mc="Parameter" uid="46d1ed89-43b5-4f39-a97d-7bd8df76adf9"/>
+                <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[parent]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="7239e2c7-595f-41f9-96fc-01ba0965454b"/>
+                      <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="9925b63b-ec69-41cd-8fe0-2a15466d5de0"/>
+                            <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Composite]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="d0d394de-9c2c-4049-b42d-7837df806575"/>
+                <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Create a page to be shown in a dialog or wizard to setup the connection.
+@param parent]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="loadSettings" mc="Operation" uid="106a2450-7194-4e8e-8c68-fc8a165d2e2e"/>
+          <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">true</ATT>
+            <ATT name="Name"><![CDATA[loadSettings]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="01459637-a5b5-4f37-b0a8-d4fcc01fca3e"/>
+                <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Called before the page is shown. Loads the state from the {@link ITerminalConnector}.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="saveSettings" mc="Operation" uid="93c1c529-c578-4d0a-bb2a-475d8581532d"/>
+          <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">true</ATT>
+            <ATT name="Name"><![CDATA[saveSettings]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="4cd47846-2b70-410f-8e70-f8063515f1ea"/>
+                <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Called when the OK button is pressed.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="validateSettings" mc="Operation" uid="6c5dca8b-8947-48c4-adaf-905a5af0202e"/>
+          <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">true</ATT>
+            <ATT name="Name"><![CDATA[validateSettings]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="484188ba-1141-4ecd-8924-0e31a720595e"/>
+                <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="879dd79a-6979-4c55-8360-2bb945e45001"/>
+                      <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[true if the]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="addListener" mc="Operation" uid="b3ca8ee9-786d-4969-95cf-13da983660b4"/>
+          <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">true</ATT>
+            <ATT name="Name"><![CDATA[addListener]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="listener" mc="Parameter" uid="337ba1d2-760d-4a01-a298-59139a4c360d"/>
+                <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[listener]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Listener" mc="Interface" uid="eb03d9fd-08b9-4cf0-a616-82c6be9d066d"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="8dddeedc-947e-439c-a494-affe78567da0"/>
+                      <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[The listener. Must not be <code>null</code>.]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="6ca156d3-0dbe-4bcf-9a40-83f742fd0c3b"/>
+                <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Adds the given listener.
+<p>
+Has not effect if the same listener is already registered.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="removeListener" mc="Operation" uid="349029c5-70a4-4de0-9476-364613f77418"/>
+          <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">true</ATT>
+            <ATT name="Name"><![CDATA[removeListener]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="listener" mc="Parameter" uid="7f7b1ff3-cbc8-44bc-8370-c4afbc2ec0ff"/>
+                <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[listener]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Listener" mc="Interface" uid="eb03d9fd-08b9-4cf0-a616-82c6be9d066d"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="4ab0f5f1-d234-4a30-bbf4-d6fe3f1b0b7e"/>
+                      <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[The listener. Must not be <code>null</code>.]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="ebe28c3c-e002-4acc-b978-b948daaebbad"/>
+                <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Removes the given listener.
+<p>
+Has no effect if the same listener was not registered.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Listener" mc="Interface" uid="eb03d9fd-08b9-4cf0-a616-82c6be9d066d"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaInterface" mc="Stereotype" uid="01ec23a8-0000-0267-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="8d05184f-a999-47f9-a5a6-8a3b4108ec14"/>
+          <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="962a2f05-a36e-40c7-9b79-09de1d7a7864"/>
+                <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Composite]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="ac55c8e8-7059-4fa8-83b3-9b9a4a09d4ce"/>
+                <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Control]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="258012b4-0000-03f6-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="4e29f1dd-1c5a-4b5e-84a8-ed4439eb95e7"/>
+          <PID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[@author Michael Scharf
+
+TODO: Michael Scharf: provide a long description of a wizard
+TODO: Michael Scharf: allow multiple pages to be generated
+<p>
+<strong>EXPERIMENTAL</strong>. This class or interface has been added as
+part of a work in progress. There is no guarantee that this API will
+work or that it will remain the same. Please do not use this API without
+consulting with the <a href="http://www.eclipse.org/tm/">Target Management</a> team.
+</p>]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="Javadoc" mc="NoteType" uid="258012b4-0000-03d3-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

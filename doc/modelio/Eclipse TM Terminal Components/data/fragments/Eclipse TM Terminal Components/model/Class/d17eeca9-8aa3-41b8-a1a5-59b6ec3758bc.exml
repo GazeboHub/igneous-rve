@@ -1,0 +1,367 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TerminalKeyHandler" version="3">
+  <DEPS>
+    <ID name="TerminalKeyHandler" mc="Class" uid="d17eeca9-8aa3-41b8-a1a5-59b6ec3758bc"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaExtends" mc="TagType" uid="003800a8-0000-0154-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TerminalKeyHandler" mc="Class" uid="d17eeca9-8aa3-41b8-a1a5-59b6ec3758bc"/>
+    <PID name="VT100TerminalControl" mc="Class" uid="79e9ccc9-d662-43b5-97af-7380689aeee7"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Protected</ATT>
+      <ATT name="Name"><![CDATA[TerminalKeyHandler]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="keyPressed" mc="Operation" uid="ec9c8ffb-fb2d-4aac-b70a-a91d6b9d92f9"/>
+          <PID name="TerminalKeyHandler" mc="Class" uid="d17eeca9-8aa3-41b8-a1a5-59b6ec3758bc"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[keyPressed]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="event" mc="Parameter" uid="e3d908ae-0491-4a38-9bda-9f82f049344c"/>
+                <PID name="TerminalKeyHandler" mc="Class" uid="d17eeca9-8aa3-41b8-a1a5-59b6ec3758bc"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[event]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="a6a85876-8301-4ca7-8854-ab5c6f6077cb"/>
+                      <PID name="TerminalKeyHandler" mc="Class" uid="d17eeca9-8aa3-41b8-a1a5-59b6ec3758bc"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="ac743345-7b00-4528-97bd-45ffb1568cf0"/>
+                            <PID name="TerminalKeyHandler" mc="Class" uid="d17eeca9-8aa3-41b8-a1a5-59b6ec3758bc"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[KeyEvent]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="9ebf4677-1ad8-4d6a-8839-314d67fc27ef"/>
+                <PID name="TerminalKeyHandler" mc="Class" uid="d17eeca9-8aa3-41b8-a1a5-59b6ec3758bc"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[if (getState()==TerminalState.CONNECTING)
+    return;
+
+int accelerator = SWTKeySupport.convertEventToUnmodifiedAccelerator(event);
+if (editActionAccelerators.isCopyAction(accelerator)) {
+    copy();
+    return;
+}
+if (editActionAccelerators.isPasteAction(accelerator)) {
+    paste();
+    return;
+}
+
+// We set the event.doit to false to prevent any further processing of this
+// key event.  The only reason this is here is because I was seeing the F10
+// key both send an escape sequence (due to this method) and switch focus
+// to the Workbench File menu (forcing the user to click in the Terminal
+// view again to continue entering text).  This fixes that.
+
+event.doit = false;
+
+char character = event.character;
+
+//if (!isConnected()) {
+if (fState==TerminalState.CLOSED) {
+    // Pressing ENTER while not connected causes us to connect.
+    if (character == '\r') {
+        connectTerminal();
+        return;
+    }
+
+    // Ignore all other keyboard input when not connected.
+    // Allow other key handlers (such as Ctrl+F1) do their work
+    event.doit = true;
+    return;
+}
+
+// Manage the Del key
+if (event.keyCode == 0x000007f)
+    {
+    sendString("\u001b[3~"); //$NON-NLS-1$
+    return;
+}
+
+// If the event character is NUL ('\u0000'), then a special key was pressed
+// (e.g., PageUp, PageDown, an arrow key, a function key, Shift, Alt,
+// Control, etc.).  The one exception is when the user presses Control-@,
+// which sends a NUL character, in which case we must send the NUL to the
+// remote endpoint.  This is necessary so that Emacs will work correctly,
+// because Control-@ (i.e., NUL) invokes Emacs' set-mark-command when Emacs
+// is running on a terminal.  When the user presses Control-@, the keyCode
+// is 50.
+
+if (character == '\u0000' && event.keyCode != 50) {
+    // A special key was pressed.  Figure out which one it was and send the
+    // appropriate ANSI escape sequence.
+    //
+    // IMPORTANT: Control will not enter this method for these special keys
+    // unless certain <keybinding> tags are present in the plugin.xml file
+    // for the Terminal view.  Do not delete those tags.
+
+    switch (event.keyCode) {
+    case 0x1000001: // Up arrow.
+        sendString("\u001b[A"); //$NON-NLS-1$
+        break;
+
+    case 0x1000002: // Down arrow.
+        sendString("\u001b[B"); //$NON-NLS-1$
+        break;
+
+    case 0x1000003: // Left arrow.
+        sendString("\u001b[D"); //$NON-NLS-1$
+        break;
+
+    case 0x1000004: // Right arrow.
+        sendString("\u001b[C"); //$NON-NLS-1$
+        break;
+
+    case 0x1000005: // PgUp key.
+        sendString("\u001b[5~"); //$NON-NLS-1$
+        break;
+
+    case 0x1000006: // PgDn key.
+        sendString("\u001b[6~"); //$NON-NLS-1$
+        break;
+
+    case 0x1000007: // Home key.
+        sendString("\u001b[H"); //$NON-NLS-1$
+        break;
+
+    case 0x1000008: // End key.
+        sendString("\u001b[F"); //$NON-NLS-1$
+        break;
+
+    case 0x1000009: // Insert.
+        sendString("\u001b[2~"); //$NON-NLS-1$
+        break;
+
+    case 0x100000a: // F1 key.
+        if ( (event.stateMask & SWT.CTRL)!=0 ) {
+            //Allow Ctrl+F1 to act locally as well as on the remote, because it is
+            //typically non-intrusive
+            event.doit=true;
+        }
+        sendString("\u001b[M"); //$NON-NLS-1$
+        break;
+
+    case 0x100000b: // F2 key.
+        sendString("\u001b[N"); //$NON-NLS-1$
+        break;
+
+    case 0x100000c: // F3 key.
+        sendString("\u001b[O"); //$NON-NLS-1$
+        break;
+
+    case 0x100000d: // F4 key.
+        sendString("\u001b[P"); //$NON-NLS-1$
+        break;
+
+    case 0x100000e: // F5 key.
+        sendString("\u001b[Q"); //$NON-NLS-1$
+        break;
+
+    case 0x100000f: // F6 key.
+        sendString("\u001b[R"); //$NON-NLS-1$
+        break;
+
+    case 0x1000010: // F7 key.
+        sendString("\u001b[S"); //$NON-NLS-1$
+        break;
+
+    case 0x1000011: // F8 key.
+        sendString("\u001b[T"); //$NON-NLS-1$
+        break;
+
+    case 0x1000012: // F9 key.
+        sendString("\u001b[U"); //$NON-NLS-1$
+        break;
+
+    case 0x1000013: // F10 key.
+        sendString("\u001b[V"); //$NON-NLS-1$
+        break;
+
+    case 0x1000014: // F11 key.
+        sendString("\u001b[W"); //$NON-NLS-1$
+        break;
+
+    case 0x1000015: // F12 key.
+        sendString("\u001b[X"); //$NON-NLS-1$
+        break;
+
+    default:
+        // Ignore other special keys.  Control flows through this case when
+        // the user presses SHIFT, CONTROL, ALT, and any other key not
+        // handled by the above cases.
+        break;
+    }
+
+    // It's ok to return here, because we never locally echo special keys.
+
+    return;
+}
+
+// To fix SPR 110341, we consider the Alt key to be pressed only when the
+// Control key is _not_ also pressed.  This works around a bug in SWT where,
+// on European keyboards, the AltGr key being pressed appears to us as Control
+// + Alt being pressed simultaneously.
+
+Logger.log("stateMask = " + event.stateMask); //$NON-NLS-1$
+
+boolean altKeyPressed = (((event.stateMask & SWT.ALT) != 0) && ((event.stateMask & SWT.CTRL) == 0));
+
+if (!altKeyPressed && (event.stateMask & SWT.CTRL) != 0
+        && character == ' ') {
+    // Send a NUL character -- many terminal emulators send NUL when
+    // Control-Space is pressed.  This is used to set the mark in Emacs.
+
+    character = '\u0000';
+}
+
+sendChar(character, altKeyPressed);
+
+// Special case: When we are in a TCP connection and echoing characters
+// locally, send a LF after sending a CR.
+// ISSUE: Is this absolutely required?
+
+if (character == '\r' && getTerminalConnector() != null
+        && isConnected()
+        && getTerminalConnector().isLocalEcho()) {
+    sendChar('\n', false);
+}
+
+// Now decide if we should locally echo the character we just sent.  We do
+// _not_ locally echo the character if any of these conditions are true:
+//
+// o This is a serial connection.
+//
+// o This is a TCP connection (i.e., m_telnetConnection is not null) and
+//   the remote endpoint is not a TELNET server.
+//
+// o The ALT (or META) key is pressed.
+//
+// o The character is any of the first 32 ISO Latin-1 characters except
+//   Control-I or Control-M.
+//
+// o The character is the DELETE character.
+
+if (getTerminalConnector() == null
+        || getTerminalConnector().isLocalEcho() == false || altKeyPressed
+        || (character >= '\u0001' && character < '\t')
+        || (character > '\t' && character < '\r')
+        || (character > '\r' && character <= '\u001f')
+        || character == '\u007f') {
+    // No local echoing.
+    return;
+}
+
+// Locally echo the character.
+
+StringBuffer charBuffer = new StringBuffer();
+charBuffer.append(character);
+
+// If the character is a carriage return, we locally echo it as a CR + LF
+// combination.
+
+if (character == '\r')
+    charBuffer.append('\n');
+
+writeToTerminal(charBuffer.toString());
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="89e25d3d-2eb4-4846-b5dd-376ab61b2254"/>
+          <PID name="TerminalKeyHandler" mc="Class" uid="d17eeca9-8aa3-41b8-a1a5-59b6ec3758bc"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="d785a15f-1ef4-4f6e-ae2b-9971303339ed"/>
+                <PID name="TerminalKeyHandler" mc="Class" uid="d17eeca9-8aa3-41b8-a1a5-59b6ec3758bc"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[KeyAdapter]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaExtends" mc="TagType" uid="003800a8-0000-0154-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

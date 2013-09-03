@@ -1,0 +1,254 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TerminalConnectorPluginTest" version="3">
+  <DEPS>
+    <ID name="TerminalConnectorPluginTest" mc="Class" uid="89b403d2-5f02-42da-8333-28c56790f56f"/>
+    <EXTID name="ConnectorMock" mc="Class" uid="74ddb43f-f808-4db2-add5-4d04b3fea643"/>
+    <EXTID name="Platform" mc="Class" uid="5a58741e-31b7-4a82-aeeb-c29370697a81"/>
+    <EXTID name="SimpleFactory" mc="Class" uid="eb44e28e-d18f-4513-bb4b-83c1d78d0f2b"/>
+    <EXTID name="TerminalControlMock" mc="Class" uid="534b0fda-9b4b-48eb-af98-9f8d97e80baa"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaExtends" mc="TagType" uid="003800a8-0000-0154-0000-000000000000"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015d-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TerminalConnectorPluginTest" mc="Class" uid="89b403d2-5f02-42da-8333-28c56790f56f"/>
+    <PID name="connector" mc="Package" uid="32001c02-355e-4c7c-8b93-4eff70b42acf"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[TerminalConnectorPluginTest]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="testIsInitialized" mc="Operation" uid="efcff5c4-67dc-420d-aaaa-d0a818b02a26"/>
+          <PID name="TerminalConnectorPluginTest" mc="Class" uid="89b403d2-5f02-42da-8333-28c56790f56f"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testIsInitialized]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="71d4ae69-e71b-47d9-8f18-21ad4d376fb3"/>
+                <PID name="TerminalConnectorPluginTest" mc="Class" uid="89b403d2-5f02-42da-8333-28c56790f56f"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[if (!Platform.isRunning())
+    return;
+TerminalConnector c = new TerminalConnector(new SimpleFactory(new ConnectorMock()), "xID", "xName", false);
+assertFalse(c.isInitialized());
+c.getId();
+assertFalse(c.isInitialized());
+c.getName();
+assertFalse(c.isInitialized());
+c.isHidden();
+assertFalse(c.isInitialized());
+c.getSettingsSummary();
+assertFalse(c.isInitialized());
+c.setTerminalSize(10, 10);
+assertFalse(c.isInitialized());
+c.load(null);
+assertFalse(c.isInitialized());
+c.save(null);
+assertFalse(c.isInitialized());
+c.getAdapter(ConnectorMock.class);
+assertFalse(c.isInitialized());
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testGetAdapter" mc="Operation" uid="dc853eae-ae53-46c0-933d-111fa560032b"/>
+          <PID name="TerminalConnectorPluginTest" mc="Class" uid="89b403d2-5f02-42da-8333-28c56790f56f"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testGetAdapter]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="95a6c5d3-a223-4564-84dc-0d88310e980e"/>
+                <PID name="TerminalConnectorPluginTest" mc="Class" uid="89b403d2-5f02-42da-8333-28c56790f56f"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[if (!Platform.isRunning())
+    return;
+ConnectorMock mock = new ConnectorMock();
+TerminalConnector c = new TerminalConnector(new SimpleFactory(mock), "xID", "xName", false);
+assertNull(c.getAdapter(ConnectorMock.class));
+// the load is called after the connect...
+c.connect(new TerminalControlMock());
+
+assertSame(mock, c.getAdapter(ConnectorMock.class));
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedImport">
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="e9607e1e-8b11-4ea3-b090-55c581a96f2c"/>
+          <PID name="TerminalConnectorPluginTest" mc="Class" uid="89b403d2-5f02-42da-8333-28c56790f56f"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="Platform" mc="Class" uid="5a58741e-31b7-4a82-aeeb-c29370697a81"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="ffe89153-302b-4095-a1af-0a279782c6d5"/>
+          <PID name="TerminalConnectorPluginTest" mc="Class" uid="89b403d2-5f02-42da-8333-28c56790f56f"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="ConnectorMock" mc="Class" uid="74ddb43f-f808-4db2-add5-4d04b3fea643"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="28f2fc78-4d00-4dbe-8321-56007769451a"/>
+          <PID name="TerminalConnectorPluginTest" mc="Class" uid="89b403d2-5f02-42da-8333-28c56790f56f"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="SimpleFactory" mc="Class" uid="eb44e28e-d18f-4513-bb4b-83c1d78d0f2b"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="5446111d-baee-4cf7-8b28-af4a92459fec"/>
+          <PID name="TerminalConnectorPluginTest" mc="Class" uid="89b403d2-5f02-42da-8333-28c56790f56f"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="TerminalControlMock" mc="Class" uid="534b0fda-9b4b-48eb-af98-9f8d97e80baa"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="001b4110-f05b-46ce-a717-d70b38ff7636"/>
+          <PID name="TerminalConnectorPluginTest" mc="Class" uid="89b403d2-5f02-42da-8333-28c56790f56f"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="ad597840-e561-473a-a460-5994e566456e"/>
+                <PID name="TerminalConnectorPluginTest" mc="Class" uid="89b403d2-5f02-42da-8333-28c56790f56f"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[TestCase]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaExtends" mc="TagType" uid="003800a8-0000-0154-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="3dba92e0-96e4-405c-a45b-2fa7bf08bcc8"/>
+          <PID name="TerminalConnectorPluginTest" mc="Class" uid="89b403d2-5f02-42da-8333-28c56790f56f"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="bbe00371-b25c-4866-be93-2d8cabcc22c3"/>
+                <PID name="TerminalConnectorPluginTest" mc="Class" uid="89b403d2-5f02-42da-8333-28c56790f56f"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[junit.framework.TestCase]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="6f7b3617-1bd9-4a94-8ad4-4fbd7e2c3cfa"/>
+          <PID name="TerminalConnectorPluginTest" mc="Class" uid="89b403d2-5f02-42da-8333-28c56790f56f"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Testcase for TerminalConnector that must run as a JUnit plug-in test.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015d-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

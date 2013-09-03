@@ -1,0 +1,653 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ITerminalViewConnectionManager" version="3">
+  <DEPS>
+    <ID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+    <COMPID name="ITerminalViewConnectionFactory" mc="Interface" uid="a090d583-13a3-45e8-9b45-098d670691d9"/>
+    <COMPID name="ITerminalViewConnectionListener" mc="Interface" uid="1a59ae44-c7ad-40f6-88fb-07a55c474b4a"/>
+    <EXTID name="ISettingsStore" mc="Interface" uid="d979a8e6-7b9e-43c1-a556-d2ab1ada53ad"/>
+    <EXTID name="ITerminalViewConnection" mc="Interface" uid="ab5e3886-e95e-45f8-85c3-3c0d411e574c"/>
+    <EXTID name="ITerminalViewConnectionFactory" mc="Interface" uid="a090d583-13a3-45e8-9b45-098d670691d9"/>
+    <EXTID name="ITerminalViewConnectionListener" mc="Interface" uid="1a59ae44-c7ad-40f6-88fb-07a55c474b4a"/>
+    <FOREIGNID name="JavaInterface" mc="Stereotype" uid="01ec23a8-0000-0267-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="258012b4-0000-03d3-0000-000000000000"/>
+    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+    <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+    <PID name="view" mc="Package" uid="92e154b2-74a0-4cfc-9b4f-3dd03a11fc72"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">true</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ITerminalViewConnectionManager]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="getConnections" mc="Operation" uid="e32fcb92-b943-443b-8e47-7f50b0254ecf"/>
+          <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">true</ATT>
+            <ATT name="Name"><![CDATA[getConnections]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="2735e382-2b51-4f53-be19-6b848b481a3d"/>
+                <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalViewConnection" mc="Interface" uid="ab5e3886-e95e-45f8-85c3-3c0d411e574c"/>
+                  </LINK>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="daaa2193-f07c-4a2a-96a6-04ddc0e30a1d"/>
+                      <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="461417d8-f84b-4a18-8881-5b07bd10f9a4"/>
+                            <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Array]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="cae3174d-3a30-464e-9659-09e195bda44b"/>
+                      <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[a list of all connections this view can display]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="size" mc="Operation" uid="197a3d47-8644-4db3-906d-0e50044b5e53"/>
+          <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">true</ATT>
+            <ATT name="Name"><![CDATA[size]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="c3d0adf2-8dea-43d1-81d5-b96827d7a035"/>
+                <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="9ab25d3e-1efa-4ed4-8a4f-9fdbe29a70ac"/>
+                      <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the number of connections]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="getActiveConnection" mc="Operation" uid="9af50f00-7f6b-4c9c-bb3e-fe2d20ff1388"/>
+          <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">true</ATT>
+            <ATT name="Name"><![CDATA[getActiveConnection]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="f4a474b2-41d9-462f-a950-af4c2a223566"/>
+                <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalViewConnection" mc="Interface" uid="ab5e3886-e95e-45f8-85c3-3c0d411e574c"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="48c5969c-f368-4885-a6ab-8edfdce2e62e"/>
+                      <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[th connection the view is showing at the moment]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="setActiveConnection" mc="Operation" uid="0fa23bf2-29db-4ddd-8560-e55b58f21591"/>
+          <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">true</ATT>
+            <ATT name="Name"><![CDATA[setActiveConnection]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="conn" mc="Parameter" uid="183df024-ccac-42d4-8eda-026a0abec8d7"/>
+                <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[conn]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalViewConnection" mc="Interface" uid="ab5e3886-e95e-45f8-85c3-3c0d411e574c"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="d668a648-33f5-41c4-b238-3508a780bfbd"/>
+                      <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[make this connection the active connection]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="removeActive" mc="Operation" uid="b0558c60-2ebc-4e98-9ae6-079d34e57acd"/>
+          <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">true</ATT>
+            <ATT name="Name"><![CDATA[removeActive]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="441601cb-d5cb-4e72-b3ef-7333fe2ec563"/>
+                <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[If more than two connections are available, remove the active connection]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="addConnection" mc="Operation" uid="213425f8-5d51-44e9-af95-fc90f4e11761"/>
+          <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">true</ATT>
+            <ATT name="Name"><![CDATA[addConnection]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="conn" mc="Parameter" uid="065d3a88-37fa-45b1-88a4-b8e95ff60917"/>
+                <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[conn]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalViewConnection" mc="Interface" uid="ab5e3886-e95e-45f8-85c3-3c0d411e574c"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="dac7aada-dbed-4558-a86e-19e3c9920ed2"/>
+                      <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[adds a new connection]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="swapConnection" mc="Operation" uid="9e59393c-1f85-4186-b863-39b2e327ddc4"/>
+          <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">true</ATT>
+            <ATT name="Name"><![CDATA[swapConnection]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="8d836e79-58f4-4ef1-9ab1-0bfc89ca58f2"/>
+                <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[If there are more than two connections toggle between this and the
+previously shown connection]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="addListener" mc="Operation" uid="73245590-6ee9-4af8-9dc5-4c2ebe5716e7"/>
+          <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">true</ATT>
+            <ATT name="Name"><![CDATA[addListener]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="listener" mc="Parameter" uid="3934d43a-fd4f-4e83-b09b-793b9fb719d8"/>
+                <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[listener]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalViewConnectionListener" mc="Interface" uid="1a59ae44-c7ad-40f6-88fb-07a55c474b4a"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="removeListener" mc="Operation" uid="4b47176e-bc07-4827-b38b-20a8007cb01f"/>
+          <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">true</ATT>
+            <ATT name="Name"><![CDATA[removeListener]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="listener" mc="Parameter" uid="3c68d622-6155-4b05-9c8e-5993f51b69c5"/>
+                <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[listener]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalViewConnectionListener" mc="Interface" uid="1a59ae44-c7ad-40f6-88fb-07a55c474b4a"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="saveState" mc="Operation" uid="730d4a70-cf9a-4823-8c5d-14e7b804d5e2"/>
+          <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">true</ATT>
+            <ATT name="Name"><![CDATA[saveState]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="store" mc="Parameter" uid="31d82ff5-20a6-4884-bda3-f874909d1839"/>
+                <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[store]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ISettingsStore" mc="Interface" uid="d979a8e6-7b9e-43c1-a556-d2ab1ada53ad"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="loadState" mc="Operation" uid="ab2d11bf-473a-4513-abb7-ac4dbc46e6c2"/>
+          <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">true</ATT>
+            <ATT name="Name"><![CDATA[loadState]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="store" mc="Parameter" uid="19856512-a1f3-41ad-bfe8-bbf95c517776"/>
+                <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[store]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ISettingsStore" mc="Interface" uid="d979a8e6-7b9e-43c1-a556-d2ab1ada53ad"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="factory" mc="Parameter" uid="021e0b40-6aa9-4b15-8fcc-3bd63e356304"/>
+                <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[factory]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalViewConnectionFactory" mc="Interface" uid="a090d583-13a3-45e8-9b45-098d670691d9"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="57a053c0-c28c-4ec8-86f1-ae29fc92c8b9"/>
+                      <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[used to create new {@link ITerminalViewConnection}]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="cb9a3800-e87d-4414-8067-a185ecd87452"/>
+                <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[@param store]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="ITerminalViewConnectionListener" mc="Interface" uid="1a59ae44-c7ad-40f6-88fb-07a55c474b4a"/>
+        <COMPID name="ITerminalViewConnectionFactory" mc="Interface" uid="a090d583-13a3-45e8-9b45-098d670691d9"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaInterface" mc="Stereotype" uid="01ec23a8-0000-0267-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="b278e83d-049e-4b76-aa74-27570f5025b2"/>
+          <PID name="ITerminalViewConnectionManager" mc="Interface" uid="bfcb1f51-89c1-4446-9e70-9d7a97c0698b"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Supports multiple connections]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="Javadoc" mc="NoteType" uid="258012b4-0000-03d3-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

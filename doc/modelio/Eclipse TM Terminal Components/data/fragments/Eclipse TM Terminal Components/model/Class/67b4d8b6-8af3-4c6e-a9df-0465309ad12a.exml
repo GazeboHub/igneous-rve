@@ -1,0 +1,972 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SettingsStore" version="3">
+  <DEPS>
+    <ID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+    <EXTID name="ISettingsStore" mc="Interface" uid="d979a8e6-7b9e-43c1-a556-d2ab1ada53ad"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0161-0000-000000000000"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+    <FOREIGNID name="JavaInitValueComment" mc="NoteType" uid="eb8c06dc-0000-0f67-0000-000000000000"/>
+    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015d-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+    <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+    <PID name="view" mc="Package" uid="92e154b2-74a0-4cfc-9b4f-3dd03a11fc72"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">PackageVisibility</ATT>
+      <ATT name="Name"><![CDATA[SettingsStore]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="SettingsStore" mc="Operation" uid="a2e37b84-b008-42c7-822e-3082c65ac4bc"/>
+          <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[SettingsStore]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="memento" mc="Parameter" uid="4e0aa4f5-e907-419c-8190-ccdfa576b81c"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[memento]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="3d0012f9-c6bb-42c5-ad26-718813224af1"/>
+                      <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="79e44a18-f093-4f7f-b345-5d8f62b7005d"/>
+                            <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[IMemento]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="42d3f0c6-8910-4319-9802-3d53e03427ef"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[if(memento==null)
+    return;
+// load all keys ever used from the memento
+String keys=memento.getString(KEYS);
+if(keys!=null) {
+    String[] keyNames=keys.split(","); //$NON-NLS-1$
+    for (int i = 0; i < keyNames.length; i++) {
+        String key=keyNames[i];
+        if(!KEYS.equals(key)) {
+            // get the dot separated elements
+            String[] path=key.split("\\."); //$NON-NLS-1$
+            IMemento m=memento;
+            // iterate over all but the last segment and get the children...
+            for(int iPath=0; m!=null && iPath+1<path.length; iPath++) {
+                m=m.getChild(path[iPath]);
+            }
+            if(m!=null) {
+                // cache the value in the map
+                fMap.put(key,m.getString(path[path.length-1]));
+            }
+        }
+    }
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="get" mc="Operation" uid="d97bb36c-c349-447d-92d6-21c71f6bdbc9"/>
+          <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[get]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="key" mc="Parameter" uid="f5f6ab25-aca9-4044-b498-95f1d52c3467"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[key]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="0ec25df4-bdf4-43b9-a231-3eaa6ef555bb"/>
+                      <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="6be9ee6d-5c45-4a8f-b668-9d0f8b50265c"/>
+                            <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[String]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="766fe743-00ba-4df0-9db7-cbac2e58eccb"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="23fd0406-1bb2-4250-ac8d-03502df03c36"/>
+                      <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="d08fc98a-7139-469b-ad7b-ad7d8b2bf19a"/>
+                            <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[String]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="681a1c12-6af0-4618-9551-990e937df624"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return get(key,null);]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="get" mc="Operation" uid="e58a8dcd-27c7-4263-90c6-c98607c8031e"/>
+          <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[get]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="key" mc="Parameter" uid="02b2bffd-8b1a-4f22-bb50-ad588c32d37b"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[key]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="2ece0d8f-3a8a-47b2-83b9-b2cddbc44720"/>
+                      <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="d8c42555-dcab-4bea-8795-901c6ff5d769"/>
+                            <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[String]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="defaultValue" mc="Parameter" uid="9e6d287e-7f22-4deb-9579-b713a2cedf34"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[defaultValue]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="dc74edac-04b3-469d-a6bf-be87dbb07b02"/>
+                      <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="b5fe91b9-c2a9-4d11-85ed-d44d2bafce24"/>
+                            <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[String]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="e6dc3387-2519-44c6-89bc-5e0aef4c7541"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="bb1a4467-c94c-4ef1-9c46-4160f85de09f"/>
+                      <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="085a1778-977e-4d76-be43-e87ea27e35e8"/>
+                            <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[String]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="7875f51a-4baa-4fb9-bbf1-091d287bba54"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return value;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="7d555afb-380d-4e98-948d-20c7635aff0c"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[String value = (String) fMap.get(key);
+if ((value == null) || (value.equals(""))) //$NON-NLS-1$
+    return defaultValue;
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="put" mc="Operation" uid="beeefe23-da88-4182-b4c2-7f1e93cbaf48"/>
+          <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[put]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="key" mc="Parameter" uid="a6267397-0ad0-470b-b6b6-5e7c4f50a8ee"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[key]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="a254b6b6-3d3c-4560-b528-8e569a8a9d52"/>
+                      <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="d6dcc9c9-a824-4543-bd84-84bb8a0ce56f"/>
+                            <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[String]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="value" mc="Parameter" uid="7732bf48-1ea1-4fc7-ac30-15dc33ac7135"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[value]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="80bc5b34-d028-4d0d-bdf3-034c125c307e"/>
+                      <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="67c6af5b-de27-44d1-a9fb-e179fd915bd8"/>
+                            <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[String]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="e7123ffd-1d01-4735-bf44-a8bc3878792a"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[if(!key.matches("^[\\w.]+$")) //$NON-NLS-1$
+    throw new IllegalArgumentException("Key '"+key+"' is not alpha numeric or '.'!"); //$NON-NLS-1$ //$NON-NLS-2$
+// null values remove the key from the map
+if ((value == null) || (value.equals(""))) //$NON-NLS-1$
+    fMap.remove(key);
+else
+    fMap.put(key, value);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="saveState" mc="Operation" uid="45bbcc27-c06c-4cb9-b170-036de172779f"/>
+          <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[saveState]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="memento" mc="Parameter" uid="54ef78b7-e7c0-4c35-9a23-edbc434246f2"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[memento]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="b183288b-16bc-47ba-808f-c0adb804b6a6"/>
+                      <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="7cc8345f-f014-4dc8-96fa-997816ddd6b2"/>
+                            <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[IMemento]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="92b6fae1-7621-4896-acc4-c763ae1f262e"/>
+                      <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[Memento to save state into.]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="4007bf18-f8c0-4300-8483-a89c0064c19d"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Save the state into memento.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="98f67e84-d7d9-4d55-86f0-ed04db85193b"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[String[] keyNames=(String[]) fMap.keySet().toArray(new String[fMap.size()]);
+Arrays.sort(keyNames);
+StringBuffer buffer=new StringBuffer();
+for (int i = 0; i < keyNames.length; i++) {
+    String key=keyNames[i];
+    String[] path=key.split("\\."); //$NON-NLS-1$
+    IMemento m=memento;
+    // iterate over all but the last segment and get the children...
+    for(int iPath=0; iPath+1<path.length; iPath++) {
+        IMemento child=m.getChild(path[iPath]);
+        // if the child does not exist, create it
+        if(child==null)
+            child=m.createChild(path[iPath]);
+        m=child;
+    }
+    // use the last element in path as key of the child memento
+    m.putString(path[path.length-1], (String) fMap.get(key));
+    // construct the string for the keys
+    if(i>0)
+        buffer.append(","); //$NON-NLS-1$
+    buffer.append(key);
+}
+// save the keys we have used.
+memento.putString(KEYS, buffer.toString());
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="KEYS" mc="Attribute" uid="009bc99e-a0e6-4ca4-a142-61ce40e1535d"/>
+          <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA["_keys_"]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[KEYS]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="be8ef156-bc40-4ca9-898e-edb0ef0bd1cc"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0161-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="e834b9e5-77fd-4601-9e55-ed8e9e10b254"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="c5a33f2b-9acc-4650-88ae-e6fe11419be7"/>
+                      <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[String]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="8122d3d3-e3ba-41b5-9951-2647abb17f7e"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[$NON-NLS-1$]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaInitValueComment" mc="NoteType" uid="eb8c06dc-0000-0f67-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fMap" mc="Attribute" uid="38fb6beb-262b-4e01-8b87-8bfc30abf1dc"/>
+          <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA[new HashMap()]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fMap]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="39cfd74f-4f10-4783-abed-538dc7c8cc65"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0161-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="0d0c93b9-d66a-4c45-976a-f2836f4f81bd"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="12551556-1c31-479e-abe7-a886f6250739"/>
+                      <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[Map]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Realized">
+        <OBJECT>
+          <ID name="" mc="InterfaceRealization" uid="bf97621f-a718-4e30-8423-7f397bebd0f6"/>
+          <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Implemented">
+              <ID name="ISettingsStore" mc="Interface" uid="d979a8e6-7b9e-43c1-a556-d2ab1ada53ad"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="6ddeb983-ddec-4404-9814-f73cb2bedebc"/>
+          <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="a4b02f3a-d46a-4fef-bee2-c1eec4a40181"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.util.Arrays]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="177759ec-7f74-4bf4-aea4-066091667507"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.util.HashMap]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="0494f50a-755a-49f6-a6d9-4a0749d68988"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.util.Map]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="031b171f-04bd-4fbf-a1a3-32f3d5cdd932"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.jface.dialogs.IDialogSettings]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="99d480ba-62c9-40f4-a196-3e368994a401"/>
+                <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.ui.IMemento]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="4dcfdafe-24a7-4411-b1c8-913c224169fe"/>
+          <PID name="SettingsStore" mc="Class" uid="67b4d8b6-8af3-4c6e-a9df-0465309ad12a"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[A {@link IDialogSettings} based {@link ISettingsStore}.
+
+Setting Store based on IMemento. IMemento documentations says only alpha numeric
+values may be used as keys. Therefore the implementation converts dots (.) into
+child elements of the memento.
+
+@author Michael Scharf]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015d-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

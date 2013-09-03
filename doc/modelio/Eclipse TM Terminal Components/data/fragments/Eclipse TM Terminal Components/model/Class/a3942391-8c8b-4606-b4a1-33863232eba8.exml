@@ -1,0 +1,386 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TerminalFocusListener" version="3">
+  <DEPS>
+    <ID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaImplements" mc="TagType" uid="003800a8-0000-0156-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+    <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+    <PID name="VT100TerminalControl" mc="Class" uid="79e9ccc9-d662-43b5-97af-7380689aeee7"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Protected</ATT>
+      <ATT name="Name"><![CDATA[TerminalFocusListener]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="TerminalFocusListener" mc="Operation" uid="60df7b57-97e5-45ec-8df8-5b57144be3ee"/>
+          <PID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Protected</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[TerminalFocusListener]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="fe9a9e01-60e9-4754-8dfd-b317cf9b4493"/>
+                <PID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[super();]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="focusGained" mc="Operation" uid="6a2cdded-43dc-488f-a07e-7347994768b7"/>
+          <PID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[focusGained]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="event" mc="Parameter" uid="aea6613c-f547-4229-aa76-661d3688466d"/>
+                <PID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[event]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="9d035416-9577-4d5b-b3fe-a0475b12a135"/>
+                      <PID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="6da23504-bf2b-4d46-bb77-4c85100a150d"/>
+                            <PID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[FocusEvent]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="fbe7f5d5-a74a-4362-83cc-980790a36781"/>
+                <PID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[// Disable all keyboard accelerators (e.g., Control-B) so the Terminal view
+// can see every keystroke.  Without this, Emacs, vi, and Bash are unusable
+// in the Terminal view.
+
+IBindingService bindingService = (IBindingService) PlatformUI
+        .getWorkbench().getAdapter(IBindingService.class);
+bindingService.setKeyFilterEnabled(false);
+
+// The above code fails to cause Eclipse to disable menu-activation
+// accelerators (e.g., Alt-F for the File menu), so we set the command
+// context to be the Terminal view's command context.  This enables us to
+// override menu-activation accelerators with no-op commands in our
+// plugin.xml file, which enables the Terminal view to see absolutly _all_
+// key-presses.
+
+IContextService contextService = (IContextService) PlatformUI
+        .getWorkbench().getAdapter(IContextService.class);
+contextActivation = contextService
+        .activateContext("org.eclipse.tm.terminal.TerminalContext"); //$NON-NLS-1$
+contextActivation1 = contextService
+        .activateContext("org.eclipse.tm.terminal.EditContext"); //$NON-NLS-1$
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="focusLost" mc="Operation" uid="e70cca28-52b6-49f5-843a-c18ba9d94d20"/>
+          <PID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[focusLost]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="event" mc="Parameter" uid="9293c185-39e0-41ed-84de-f963ca3b40c6"/>
+                <PID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[event]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="22c2b1f9-a616-4963-b018-cadfc8c18b3f"/>
+                      <PID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="c4c25f8e-a783-4186-a241-e0e08456eb6d"/>
+                            <PID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[FocusEvent]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="4af57837-abf7-43f1-9a0e-4358210530fa"/>
+                <PID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[// Enable all keybindings.
+
+IBindingService bindingService = (IBindingService) PlatformUI
+        .getWorkbench().getAdapter(IBindingService.class);
+bindingService.setKeyFilterEnabled(true);
+
+// Restore the command context to its previous value.
+
+IContextService contextService = (IContextService) PlatformUI
+        .getWorkbench().getAdapter(IContextService.class);
+contextService.deactivateContext(contextActivation);
+contextService.deactivateContext(contextActivation1);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="contextActivation" mc="Attribute" uid="8a8ac347-8100-4186-99b5-2df03df7b701"/>
+          <PID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA[null]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[contextActivation]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="21f8df37-6518-4c53-a28e-ce48e4bcae56"/>
+                <PID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="417ae5f3-6461-4ce2-ae9e-881f70171d82"/>
+                      <PID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[IContextActivation]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="contextActivation1" mc="Attribute" uid="1981f8f7-c4ed-499d-b5ed-130ad2d4116c"/>
+          <PID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA[null]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[contextActivation1]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="d48f0eb8-dfd7-4824-993d-b1bbbe31b287"/>
+                <PID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="c4d8c1b7-b6c3-4fbd-a214-1129f50b8b54"/>
+                      <PID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[IContextActivation]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="68ca9951-9c44-4e6f-8126-f1efde9ba813"/>
+          <PID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="0e3487aa-682d-48cf-bd06-c20dfa2cbc22"/>
+                <PID name="TerminalFocusListener" mc="Class" uid="a3942391-8c8b-4606-b4a1-33863232eba8"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[FocusListener]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImplements" mc="TagType" uid="003800a8-0000-0156-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

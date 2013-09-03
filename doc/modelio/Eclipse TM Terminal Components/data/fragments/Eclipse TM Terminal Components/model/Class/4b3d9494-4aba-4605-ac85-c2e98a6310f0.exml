@@ -1,0 +1,141 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TerminalPropertyChangeHandler" version="3">
+  <DEPS>
+    <ID name="TerminalPropertyChangeHandler" mc="Class" uid="4b3d9494-4aba-4605-ac85-c2e98a6310f0"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaImplements" mc="TagType" uid="003800a8-0000-0156-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TerminalPropertyChangeHandler" mc="Class" uid="4b3d9494-4aba-4605-ac85-c2e98a6310f0"/>
+    <PID name="TerminalView" mc="Class" uid="83066134-3067-44cc-93a7-65c29821840e"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Protected</ATT>
+      <ATT name="Name"><![CDATA[TerminalPropertyChangeHandler]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="propertyChange" mc="Operation" uid="e31245f4-8352-4953-8e1e-1d0bf62b3f26"/>
+          <PID name="TerminalPropertyChangeHandler" mc="Class" uid="4b3d9494-4aba-4605-ac85-c2e98a6310f0"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[propertyChange]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="event" mc="Parameter" uid="9fe6d8c7-b2a4-4ed1-9d98-b31544d7504a"/>
+                <PID name="TerminalPropertyChangeHandler" mc="Class" uid="4b3d9494-4aba-4605-ac85-c2e98a6310f0"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[event]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="edf52c14-f3a2-4581-a645-1e7df596443b"/>
+                      <PID name="TerminalPropertyChangeHandler" mc="Class" uid="4b3d9494-4aba-4605-ac85-c2e98a6310f0"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="9f78d04d-622d-43e7-8f31-eb5b7f5f8802"/>
+                            <PID name="TerminalPropertyChangeHandler" mc="Class" uid="4b3d9494-4aba-4605-ac85-c2e98a6310f0"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[PropertyChangeEvent]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="2fff30b4-2d75-4380-ad08-62c051064df9"/>
+                <PID name="TerminalPropertyChangeHandler" mc="Class" uid="4b3d9494-4aba-4605-ac85-c2e98a6310f0"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[if (event.getProperty().equals(FONT_DEFINITION)) {
+    onTerminalFontChanged();
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="14496163-d533-40d6-9405-73def6538d45"/>
+          <PID name="TerminalPropertyChangeHandler" mc="Class" uid="4b3d9494-4aba-4605-ac85-c2e98a6310f0"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="6fdc0e5d-f0bf-4efc-83fb-79b20e7d93bb"/>
+                <PID name="TerminalPropertyChangeHandler" mc="Class" uid="4b3d9494-4aba-4605-ac85-c2e98a6310f0"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[IPropertyChangeListener]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImplements" mc="TagType" uid="003800a8-0000-0156-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

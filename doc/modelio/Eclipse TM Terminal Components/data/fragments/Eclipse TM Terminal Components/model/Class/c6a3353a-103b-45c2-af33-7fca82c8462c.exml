@@ -1,0 +1,613 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TerminalConnectorExtension" version="3">
+  <DEPS>
+    <ID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+    <EXTID name="ITerminalConnector" mc="Interface" uid="23902cf5-74db-48a6-84cf-8ea4e9ac9606"/>
+    <EXTID name="TerminalConnector" mc="Class" uid="58e54999-b161-40dc-bf4f-d977dbdec392"/>
+    <EXTID name="TerminalConnectorImpl" mc="Class" uid="a74ffde1-f3fc-4e01-ab7a-7a0d46905142"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaFinal" mc="TagType" uid="eb8c1900-000a-b31d-0000-000000000000"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015d-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+    <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+    <PID name="api" mc="Package" uid="cd0dd477-1392-431c-a8eb-f5bdaee3f5d4"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[TerminalConnectorExtension]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="makeConnector" mc="Operation" uid="dee38d7b-9ef0-4be5-8f58-c7220854245e"/>
+          <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[makeConnector]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="config" mc="Parameter" uid="c51ba9bd-2f22-4e89-95aa-fb9b7f3a1e81"/>
+                <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[config]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="49cb321f-e620-473b-a1c2-ce5634a9f912"/>
+                      <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaFinal" mc="TagType" uid="eb8c1900-000a-b31d-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="d9785791-61a7-4391-9072-1c6387ddb26e"/>
+                      <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="6de700d3-0a24-4aae-9e72-63fba29a2395"/>
+                            <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[IConfigurationElement]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="8838b2b3-03eb-495e-942c-2dd63ba2ccc8"/>
+                <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalConnector" mc="Interface" uid="23902cf5-74db-48a6-84cf-8ea4e9ac9606"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="5e3886e0-3232-450c-9b95-c6780fe08014"/>
+                <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return new TerminalConnector(factory,id,name, isHidden);]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="7ddab5e3-e5c9-4d54-b312-cb628ec4e417"/>
+                <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[String id = config.getAttribute("id"); //$NON-NLS-1$
+if(id==null || id.length()==0)
+    id=config.getAttribute("class"); //$NON-NLS-1$
+String name= config.getAttribute("name"); //$NON-NLS-1$
+if(name==null || name.length()==0) {
+    name=id;
+}
+String hidden = config.getAttribute("hidden"); //$NON-NLS-1$
+boolean isHidden = hidden != null ? new Boolean(hidden).booleanValue() : false;
+TerminalConnector.Factory factory=new TerminalConnector.Factory(){
+    public TerminalConnectorImpl makeConnector() throws Exception {
+        return (TerminalConnectorImpl)config.createExecutableExtension("class"); //$NON-NLS-1$
+    }};
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="makeTerminalConnector" mc="Operation" uid="7fd65a10-57eb-41d4-bfba-dece3ec9dce0"/>
+          <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[makeTerminalConnector]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="id" mc="Parameter" uid="878acd6d-1402-4656-9743-57b9eb9f3b78"/>
+                <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[id]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="6ed14d13-afae-427c-9e8e-3a01aac8e3ef"/>
+                      <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="0caa4449-9e61-4dfd-951e-b037fe1e0040"/>
+                            <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[String]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="26a9da43-90f4-4f50-8de6-2a6bcaf591a9"/>
+                      <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the id of the terminal connector in the
+<code>org.eclipse.tm.terminal.terminalConnectors</code>
+extension point]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="92905403-ef0c-4e65-b40c-bc6c13a7f879"/>
+                <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalConnector" mc="Interface" uid="23902cf5-74db-48a6-84cf-8ea4e9ac9606"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="25ae5b9b-bdad-4c1a-94a7-3e43ef3b888a"/>
+                      <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[a new ITerminalConnector with id or <code>null</code> if there
+is no extension with that id.
+@since org.eclipse.tm.terminal 2.0]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="cbcf777b-e2d3-4ba3-a22f-5dce1f9e4931"/>
+                <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Return a specific terminal connector for a given connector id. The
+terminal connector is not yet instantiated to any real connection.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="5ded5626-1a2e-4f86-9263-a7512c22f0ca"/>
+                <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return null;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="b7905e1a-c840-4773-ae2e-48e8f3d86664"/>
+                <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[IConfigurationElement[] config = RegistryFactory.getRegistry().getConfigurationElementsFor("org.eclipse.tm.terminal.terminalConnectors"); //$NON-NLS-1$
+for (int i = 0; i < config.length; i++) {
+    if(id.equals(config[i].getAttribute("id"))) { //$NON-NLS-1$
+        return makeConnector(config[i]);
+    }
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="makeTerminalConnectors" mc="Operation" uid="05c32adc-d8ec-4542-a82b-2e8c25f9fe92"/>
+          <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[makeTerminalConnectors]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="d5049b7a-eca4-45b8-a14b-57164920002a"/>
+                <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalConnector" mc="Interface" uid="23902cf5-74db-48a6-84cf-8ea4e9ac9606"/>
+                  </LINK>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="79161a2e-37a5-4ff5-8689-cfffa0011483"/>
+                      <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="c45da94c-a8e5-4b48-b259-4161bb0cf1d6"/>
+                            <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Array]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="8e6adf4b-8c0d-4e87-adb1-e1409cde0bea"/>
+                      <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[a new list of {@link ITerminalConnector} instances defined in the
+<code>org.eclipse.tm.terminal.terminalConnectors</code>
+extension point
+@since org.eclipse.tm.terminal 2.0 return value is ITerminalConnector[]]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="b95938b1-40fc-4dc2-abbc-f1b197f4a50b"/>
+                <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Return a list of available terminal connectors (connection types).
+
+The terminal connectors returned are not yet instantiated to any real
+connection. Each terminal connector can connect to one remote system at a
+time.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="daf486da-635e-4a6d-a39b-a532ef6944cb"/>
+                <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return (ITerminalConnector[]) result.toArray(new ITerminalConnector[result.size()]);]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="fabf6258-d1bd-4abe-9dbb-8d763937a129"/>
+                <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[IConfigurationElement[] config = RegistryFactory.getRegistry().getConfigurationElementsFor("org.eclipse.tm.terminal.terminalConnectors"); //$NON-NLS-1$
+List result=new ArrayList();
+for (int i = 0; i < config.length; i++) {
+    result.add(makeConnector(config[i]));
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedImport">
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="50f65e5d-160d-4194-858d-697486cfdf2c"/>
+          <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="TerminalConnector" mc="Class" uid="58e54999-b161-40dc-bf4f-d977dbdec392"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="09d94f4b-b2b1-4a71-869d-c7e40665fed0"/>
+          <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="TerminalConnectorImpl" mc="Class" uid="a74ffde1-f3fc-4e01-ab7a-7a0d46905142"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="1ab76d95-ebc5-400d-9b14-8164ea886fe5"/>
+          <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="9bff79c7-ee07-4a46-9710-c88c0ae96993"/>
+                <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.util.ArrayList]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="bff5f0a1-9f36-42df-9286-2ab468f80e45"/>
+                <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.util.List]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="a2b1e446-b9a5-4219-99ec-04b4e40482ba"/>
+                <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.core.runtime.IConfigurationElement]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="7073eb8e-55e6-4170-995e-aadabdffe349"/>
+                <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.core.runtime.RegistryFactory]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="c3167c1c-5caf-41e7-a6fc-63b546265f68"/>
+          <PID name="TerminalConnectorExtension" mc="Class" uid="c6a3353a-103b-45c2-af33-7fca82c8462c"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[A factory to get {@link ITerminalConnector} instances.
+
+@author Michael Scharf
+
+@noextend This class is not intended to be subclassed by clients.
+@noinstantiate This class is not intended to be instantiated by clients.
+
+<p>
+<strong>EXPERIMENTAL</strong>. This class or interface has been added as
+part of a work in progress. There is no guarantee that this API will work or
+that it will remain the same. Please do not use this API without consulting
+with the <a href="http://www.eclipse.org/tm/">Target Management</a>
+team.
+</p>]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015d-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

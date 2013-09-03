@@ -1,0 +1,602 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="PipedStreamTest" version="3">
+  <DEPS>
+    <ID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+    <COMPID name="FakeInputStream" mc="Class" uid="55fec419-1716-4f60-bfe8-197647bcbb05"/>
+    <COMPID name="FakeOutputStream" mc="Class" uid="f3aa8bfd-bba1-488a-9a6d-f91759cf1c79"/>
+    <COMPID name="ReadThread" mc="Class" uid="9b6c0f4f-00aa-40cc-aed0-c67f36f054a5"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+    <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+    <PID name="textcanvas" mc="Package" uid="962e54a2-1be9-4744-b78c-571bb2e671ca"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">PackageVisibility</ATT>
+      <ATT name="Name"><![CDATA[PipedStreamTest]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="main" mc="Operation" uid="2e377b76-beac-4117-b232-558dca94898e"/>
+          <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[main]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="args" mc="Parameter" uid="401dba75-3540-4d07-8e37-c2f7556d753e"/>
+                <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[args]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="ec8caa70-ff6c-4497-a3b0-4b51314b11da"/>
+                      <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="1720b6bc-9a92-4557-bf05-3f22ad2e18af"/>
+                            <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Array]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="80982045-171c-4ee8-8a91-16351f55e1bc"/>
+                      <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="b41792d7-0520-440e-bf62-e4b3c943ee2f"/>
+                            <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[String]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="c3f35383-a64b-46e0-bef5-06364286696b"/>
+                <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="191dc773-754c-4a47-a4a7-86ceae084e16"/>
+                      <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[IOException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="62767238-b112-42a2-8e02-fee7e24ec1ca"/>
+                      <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[InterruptedException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="98255123-7438-4d1d-ba83-fbd212e17805"/>
+                <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[while(true) {
+    runSunTest();
+    runMyTest();
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="runSunTest" mc="Operation" uid="34dedad4-cee0-41f6-970f-91fe866174c7"/>
+          <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[runSunTest]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="18c64e76-98cd-4286-b64b-f080bf556155"/>
+                <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="7dc9b620-edb0-4805-bf5a-3c29b6eb0e10"/>
+                      <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[IOException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="6dfc22d6-41c9-4404-aa66-7775f9faf9de"/>
+                      <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[InterruptedException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="9d8ee4e0-0af6-404a-9d4b-87dd83c54734"/>
+                <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[java.io.PipedInputStream in = new java.io.PipedInputStream();
+OutputStream out = new java.io.PipedOutputStream(in);
+runPipe("Sun ",in, out,10);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="runMyTest" mc="Operation" uid="2d4cf3c1-09d2-4ef4-9655-c93a77a0f017"/>
+          <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[runMyTest]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="155572d3-484e-4220-af1f-a87804035446"/>
+                <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="34346670-9186-4407-9dd9-b8815c5d24cb"/>
+                      <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[IOException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="5072eb36-2e64-4523-a9a2-4a96dc3db20a"/>
+                      <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[InterruptedException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="3c7cbd9f-2347-403a-a652-5d4fb144513c"/>
+                <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[PipedInputStream in=new PipedInputStream(4*1024);
+OutputStream out=in.getOutputStream();
+runPipe("My  ",in, out,99);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="runPipe" mc="Operation" uid="3d075aae-700e-44ad-8d6a-d34a22add32e"/>
+          <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[runPipe]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="what" mc="Parameter" uid="743bd5c1-46bc-42f7-ab1d-41a4a3342fd7"/>
+                <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[what]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="7e2bca06-e6a9-4d8a-bea6-53046d6544c3"/>
+                      <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="95dd598d-7e73-439f-aba7-5bdf427a0f60"/>
+                            <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[String]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="writeIn" mc="Parameter" uid="f885e9f0-6911-4e3e-bb88-f64723a80fca"/>
+                <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[writeIn]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="abeeb704-8007-4185-a43b-6320efd85406"/>
+                      <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="1476c2f4-9cd9-4867-b38d-52679b99d512"/>
+                            <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[InputStream]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="readOut" mc="Parameter" uid="d4c30975-9e1e-4d30-b483-92e65f73c7c7"/>
+                <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[readOut]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="f1bb788a-9aa5-4a13-a064-e3e3c4eb88fd"/>
+                      <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="6249341c-071f-403b-a9a9-450728dcb213"/>
+                            <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[OutputStream]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="N" mc="Parameter" uid="59ed7f2e-6126-4403-a760-aa0f9ac2ccba"/>
+                <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[N]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="bb74e27f-8f29-4e37-abd6-32e139b882ef"/>
+                <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="ee574dbe-78db-49f7-9676-af3ee31c1d4b"/>
+                      <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[InterruptedException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="e41ce65e-c157-4bd5-a0cf-839914e2060e"/>
+                <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[FakeInputStream in=new FakeInputStream(N*1000*1000);
+FakeOutputStream out=new FakeOutputStream();
+ReadThread rt = new ReadThread("reader", in , readOut);
+ReadThread wt = new ReadThread("writer", writeIn, out);
+long t0=System.currentTimeMillis();
+rt.start();
+wt.start();
+wt.join();
+long t=System.currentTimeMillis();
+long n=out.N;
+System.out.println(what+n + " byte in " +(t-t0)+" ms -> "+(1000*n)/((t-t0+1)*1024)+" kb/sec");
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="ReadThread" mc="Class" uid="9b6c0f4f-00aa-40cc-aed0-c67f36f054a5"/>
+        <COMPID name="FakeInputStream" mc="Class" uid="55fec419-1716-4f60-bfe8-197647bcbb05"/>
+        <COMPID name="FakeOutputStream" mc="Class" uid="f3aa8bfd-bba1-488a-9a6d-f91759cf1c79"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="24848eef-bc02-4ba6-b5fd-1b0c5a14fe5b"/>
+          <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="6e4d4d45-8b0a-4d55-b926-504620b03bb4"/>
+                <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.io.IOException]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="10c8b504-daa4-44a2-9080-31f0b6c2d3e8"/>
+                <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.io.InputStream]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="f8acfeff-662c-4e41-b527-02cc020ab68c"/>
+                <PID name="PipedStreamTest" mc="Class" uid="f0b1308e-1a69-451b-90b2-89011ad40fae"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.io.OutputStream]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

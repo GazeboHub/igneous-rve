@@ -1,0 +1,660 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="LocalTerminalStillRunningListener" version="3">
+  <DEPS>
+    <ID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+    <EXTID name="LocalTerminalActivator" mc="Class" uid="831d498e-fcad-4181-ace4-dbac54d64a9c"/>
+    <EXTID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+    <EXTID name="LocalTerminalUtilities" mc="Class" uid="d0781d14-0017-4c5f-86a6-bd8984ac3a80"/>
+    <EXTID name="Logger" mc="Class" uid="2a7e52a1-ec66-497c-b7ea-653c8f220c3a"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaImplements" mc="TagType" uid="003800a8-0000-0156-0000-000000000000"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015d-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+    <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+    <PID name="launch" mc="Package" uid="e6b49eff-ec57-4ccc-b749-c507864c029a"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[LocalTerminalStillRunningListener]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="LocalTerminalStillRunningListener" mc="Operation" uid="5bcdfe6c-066f-49fb-99c7-017dead6c7f9"/>
+          <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[LocalTerminalStillRunningListener]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="f4890a9b-57ba-4b19-af08-a5e655a1734b"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Creates a new {@link LocalTerminalStillRunningListener}.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="eb1f5bf8-7f87-4fe3-b2f9-f9b6f782cb12"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[super();]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="preShutdown" mc="Operation" uid="b7d39168-70ae-4306-992a-1e7c302667f9"/>
+          <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[preShutdown]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="workbench" mc="Parameter" uid="b6e06c25-ccda-4ab9-b2e2-677e6246c567"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[workbench]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="a1baa19e-f6d9-4977-8c7e-70f0b2914a1e"/>
+                      <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="82547ae1-06ed-4e01-9299-0a035e042066"/>
+                            <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[IWorkbench]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="be753317-c83b-4e9e-a088-dd1d7be3924a"/>
+                      <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the {@link IWorkbench}]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="forced" mc="Parameter" uid="1e5b710d-5912-4ef4-b5b2-74c5a8c3b4a7"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[forced]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="70a24aba-1e98-4fce-bab2-56dd95d065d8"/>
+                      <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<code>true</code> if a forced shutdown occurred, <code>false</code> otherwise]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="577e9fd5-adab-475a-8323-71486818190b"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="38966e8b-d466-4d59-b6ea-363bedd18d2e"/>
+                      <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<code>true</code> to allow the workbench to proceed with shutdown, <code>false</code>
+to prevent a shutdown (only for non-forced shutdown)]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="5800e669-5c04-4ced-b169-c3dae51d433d"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Gets notified when the workbench is closed and informs the user about any left-over
+terminal launches.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="1395743d-0617-4dea-97e4-1866c76c6ce1"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return true;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="3b472312-0a7f-4758-93d6-9a210e2557f1"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[if (forced) {
+
+    return true;
+}
+IPreferenceStore store = LocalTerminalActivator.getDefault().getPreferenceStore();
+if (!store.getBoolean(LocalTerminalActivator.PREF_CONFIRM_TERMINATE_ON_SHUTDOWN)) {
+
+    return true;
+}
+ILaunchConfigurationType launchType;
+String launchTypeID = LocalTerminalLaunchDelegate.LAUNCH_CONFIGURATION_TYPE_ID;
+launchType = LocalTerminalUtilities.LAUNCH_MANAGER.getLaunchConfigurationType(launchTypeID);
+if (launchType == null) {
+
+    return true;
+}
+List notTerminated = new ArrayList();
+ILaunch launches[] = LocalTerminalUtilities.LAUNCH_MANAGER.getLaunches();
+ILaunchConfigurationType configurationType;
+ILaunchConfiguration configuration;
+for (int launch = 0; launch < launches.length; launch++) {
+
+    try {
+
+        configuration = launches[launch].getLaunchConfiguration();
+        if (configuration == null) {
+
+            continue;
+        }
+        configurationType= configuration.getType();
+    }
+    catch (CoreException exception) {
+
+        Logger.logException(exception);
+        continue;
+    }
+    if (configurationType.equals(launchType) && !launches[launch].isTerminated()) {
+
+        notTerminated.add(launches[launch]);
+    }
+}
+if (!notTerminated.isEmpty()) {
+
+    IWorkbenchWindow window = workbench.getActiveWorkbenchWindow();
+    ILaunch[] launch = (ILaunch[])notTerminated.toArray(new ILaunch[notTerminated.size()]);
+    return LocalTerminalStillRunningDialog.openDialog(window.getShell(), launch);
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="postShutdown" mc="Operation" uid="f5bbd62a-346c-430a-ae74-3b26d226e3eb"/>
+          <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[postShutdown]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="workbench" mc="Parameter" uid="a64b313e-a8fe-4880-9b97-ef8df7101f5f"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[workbench]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="88b1a9a5-2dbb-4494-85db-3aa10e2535e4"/>
+                      <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="81ac3b25-dffd-46ec-afad-a8aa7afaf9cf"/>
+                            <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[IWorkbench]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="450b978a-1bf2-4c98-b45b-6b738c9cb8e3"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[<i>Not implemented</i>.
+@see IWorkbenchListener#postShutdown(IWorkbench)]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="e0bda060-0806-4e3d-96cc-af16b4389272"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[// Not implemented]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedImport">
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="e558ab97-4ab3-4348-bca3-6da7ab55ff43"/>
+          <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="LocalTerminalActivator" mc="Class" uid="831d498e-fcad-4181-ace4-dbac54d64a9c"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="df815e07-f616-4a28-bc55-914118c86391"/>
+          <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="LocalTerminalUtilities" mc="Class" uid="d0781d14-0017-4c5f-86a6-bd8984ac3a80"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="3af2bfe8-1c1c-47ef-ac60-6db561221b3c"/>
+          <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="2140cf67-0ca7-4716-b0fb-8f4ab474cc73"/>
+          <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="Logger" mc="Class" uid="2a7e52a1-ec66-497c-b7ea-653c8f220c3a"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="8bbc20fd-b536-409d-8db1-21d831a92fb5"/>
+          <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="fa957b0f-0e4a-47e9-9e9a-37788ab5703a"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[IWorkbenchListener]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImplements" mc="TagType" uid="003800a8-0000-0156-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="e58df4b0-0578-4f3e-8283-73f13e0f8c36"/>
+          <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="d4c299cd-52b5-4779-a12c-892c4ee95d09"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.util.ArrayList]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="61ae00f7-d5a7-4e14-8c3f-4884fe3db5f4"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.util.List]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="1387e180-c174-428b-be19-75fd776cd8c3"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.core.runtime.CoreException]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="6df36079-2a09-450a-a194-62c89898a6a4"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.debug.core.ILaunch]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="97ba02fc-e12e-4603-aa75-d2ae8f28d646"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.debug.core.ILaunchConfiguration]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="e19e22ab-6c7b-4043-9d33-aae9c4a75db3"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.debug.core.ILaunchConfigurationType]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="a56ca355-a147-43ca-bfd7-267d8e9727e7"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.jface.preference.IPreferenceStore]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="55f2cd0f-62bd-4e54-a673-f19e99e4cfc4"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.ui.IWorkbench]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="f5194aa2-6b31-475d-837c-299cfc93e91c"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.ui.IWorkbenchListener]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="9d8dbdb8-3666-434d-be89-4a28c2404171"/>
+                <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.ui.IWorkbenchWindow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="e379ee41-9964-4d63-a9c7-ef0626a8963a"/>
+          <PID name="LocalTerminalStillRunningListener" mc="Class" uid="b7025fe9-eeae-42d6-a33a-a7fc287b53d4"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[The class {@link LocalTerminalStillRunningListener} is an {@link IWorkbenchListener} that warns
+the user about any terminal launches that are still running when the workbench closes. The user
+might want to take specific action to deal with such left-over processes. Typically, this
+listener will trigger only on very rare cases because the
+{@link org.eclipse.tm.internal.terminal.provisional.api.ITerminalConnector} implementation will
+terminate left-over launches when the workbench window is closed. However, it is possible that
+a terminal launch does not get automatically terminated, for example, if it was started through
+an External Tools launch rather than through the terminal.
+
+The class {@link LocalTerminalStillRunningListener} is inspired by the
+<code>ProgramLaunchWindowListener</code> class inside <code>ProgramLaunchDelegate</code> in the
+<code>org.eclipse.ui.externaltools</code> plug-in, though it works through a slightly different
+mechanism.
+
+@author Mirko Raner
+@version $Revision: 1.2 $]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015d-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

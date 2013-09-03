@@ -1,0 +1,942 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TerminalTextDataPerformanceTest" version="3">
+  <DEPS>
+    <ID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+    <EXTID name="ITerminalTextData" mc="Interface" uid="ac632690-0372-4dd9-8652-517688ae86b4"/>
+    <EXTID name="ITerminalTextDataSnapshot" mc="Interface" uid="b5768b9b-c546-40ba-be28-aac7a10baa83"/>
+    <EXTID name="Style" mc="Class" uid="7cdb99e1-1c04-4057-9dc6-e4097a90d2d1"/>
+    <EXTID name="StyleColor" mc="Class" uid="7143f483-46a9-4d92-88dd-ec714edb47ed"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaExtends" mc="TagType" uid="003800a8-0000-0154-0000-000000000000"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+    <FOREIGNID name="long" mc="DataType" uid="00000004-0000-0011-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+    <PID name="model" mc="Package" uid="9137cf6f-04f3-4c9b-a309-4bf94c2303e2"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[TerminalTextDataPerformanceTest]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="initPerformance" mc="Operation" uid="7fe1b52f-2b2f-4df1-acad-385559a7c27b"/>
+          <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[initPerformance]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="term" mc="Parameter" uid="28d8a961-8e3b-47ee-ac10-a72325e2e9e1"/>
+                <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[term]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalTextData" mc="Interface" uid="ac632690-0372-4dd9-8652-517688ae86b4"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="c0c8490b-6f9b-418a-935c-5e128b54f67e"/>
+                <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[term.setDimensions(300,200);]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testPerformance0" mc="Operation" uid="77de8b1d-f99b-4171-a75e-46fc1883ab53"/>
+          <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testPerformance0]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="8c3ecdc0-5486-4ef0-86d3-b109ff42d758"/>
+                <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ITerminalTextData term=new TerminalTextData();
+method0(term,"0 ");
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testPerformance0a" mc="Operation" uid="c6526447-3e8e-4736-bfa7-6c73377ba366"/>
+          <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testPerformance0a]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="e8aba56c-fd61-4815-ad80-4486266c20b7"/>
+                <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ITerminalTextData term=new TerminalTextData();
+ITerminalTextDataSnapshot snapshot=term.makeSnapshot();
+method0(term,"0a");
+snapshot.updateSnapshot(true);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testPerformance0b" mc="Operation" uid="93421565-0f9c-414b-a1fe-bc77a54f6a21"/>
+          <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testPerformance0b]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="25c67942-f1e0-4beb-80c0-da8bfc9efd2b"/>
+                <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ITerminalTextData term=new TerminalTextData();
+ITerminalTextDataSnapshot snapshot=term.makeSnapshot();
+N=0;
+snapshot.addListener(new ITerminalTextDataSnapshot.SnapshotOutOfDateListener(){
+    public void snapshotOutOfDate(ITerminalTextDataSnapshot snapshot) {
+        N++;
+    }});
+method0(term,"0b");
+snapshot.updateSnapshot(true);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="method0" mc="Operation" uid="12b85b06-945e-4643-a004-04d22ef7e25c"/>
+          <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[method0]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="term" mc="Parameter" uid="afc0ea7e-a22a-4fc7-961f-65b4530d26c4"/>
+                <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[term]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalTextData" mc="Interface" uid="ac632690-0372-4dd9-8652-517688ae86b4"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="label" mc="Parameter" uid="4eb5e5eb-fbc6-41e1-b40e-779d4359ee9a"/>
+                <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[label]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="dd809d8d-5be8-4c9f-b14a-b45aa2952cfd"/>
+                      <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="ca2cfa55-573d-4dea-9788-16dffafc8b7a"/>
+                            <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[String]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="00a42edf-e1d5-4cdb-a826-5ded907b9f51"/>
+                <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Style style=Style.getStyle(StyleColor.getStyleColor("fg"), StyleColor.getStyleColor("bg"), false, false, false, false);
+initPerformance(term);
+String s="This is a test string";
+long n=0;
+long t0=System.currentTimeMillis();
+for (int i = 0; i < 10000000; i++) {
+    char c=s.charAt(i%s.length());
+    for (int line = 0; line < term.getHeight(); line++) {
+        for (int column = 0; column < term.getWidth(); column++) {
+            term.setChar(line, column, c, style);
+            n++;
+        }
+    }
+    if(System.currentTimeMillis()-t0>TIME) {
+        System.out.println(label+" "+(n*1000)/(System.currentTimeMillis()-t0)+" setChar()/sec "+ N);
+        break;
+    }
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testPerformance1" mc="Operation" uid="94cdfaf6-58d0-4e97-8a88-5f6434163fc1"/>
+          <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testPerformance1]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="31b17d17-2440-4cb1-846f-a54572ec3d97"/>
+                <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ITerminalTextData term=new TerminalTextData();
+method1(term, "1 ");
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testPerformance1a" mc="Operation" uid="5e427f40-79b0-4885-8383-4ec9ca59cf86"/>
+          <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testPerformance1a]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="958fa0d4-6279-4ae6-a5e5-b72ca87e9b34"/>
+                <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ITerminalTextData term=new TerminalTextData();
+ITerminalTextDataSnapshot snapshot=term.makeSnapshot();
+method1(term, "1a");
+snapshot.updateSnapshot(true);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testPerformance1b" mc="Operation" uid="6848882a-8eb2-4a29-822a-c2b1ddfe000d"/>
+          <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testPerformance1b]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="df9e6260-b6f5-49f9-af32-72b286b54770"/>
+                <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ITerminalTextData term=new TerminalTextData();
+ITerminalTextDataSnapshot snapshot=term.makeSnapshot();
+N=0;
+snapshot.addListener(new ITerminalTextDataSnapshot.SnapshotOutOfDateListener(){
+    public void snapshotOutOfDate(ITerminalTextDataSnapshot snapshot) {
+        N++;
+    }});
+method1(term, "1b");
+snapshot.updateSnapshot(true);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="method1" mc="Operation" uid="ca8d5cc4-d1ee-4f8b-b8c1-0d9cdbc17ce5"/>
+          <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[method1]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="term" mc="Parameter" uid="3f7ce870-0ca6-4d07-9cf5-15acc3ead541"/>
+                <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[term]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalTextData" mc="Interface" uid="ac632690-0372-4dd9-8652-517688ae86b4"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="label" mc="Parameter" uid="7cb6ebe5-39d7-4468-9b50-d37a973888f9"/>
+                <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[label]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="cf76183c-1884-4044-9e2c-8ff6367b0b3f"/>
+                      <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="005b4971-7576-4682-880a-3d622dc77b60"/>
+                            <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[String]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="a08b4cee-d591-4500-8877-8e4004bcb484"/>
+                <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Style style=Style.getStyle(StyleColor.getStyleColor("fg"), StyleColor.getStyleColor("bg"), false, false, false, false);
+initPerformance(term);
+String s="This is a test string";
+long n=0;
+long t0=System.currentTimeMillis();
+char[] chars=new char[term.getWidth()];
+for (int i = 0; i < 10000000; i++) {
+    for (int j = 0; j < chars.length; j++) {
+        chars[j]=s.charAt((i+j)%s.length());
+    }
+    for (int line = 0; line < term.getHeight(); line++) {
+        term.setChars(line, 0, chars, style);
+        n+=chars.length;
+    }
+    if(System.currentTimeMillis()-t0>TIME) {
+        System.out.println(label+" "+(n*1000)/(System.currentTimeMillis()-t0)+" setChars()/sec "+ N);
+        break;
+    }
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testPerformance2" mc="Operation" uid="f8809287-ae95-4742-8d4a-d2023ea62393"/>
+          <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testPerformance2]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="fb494fb5-fd42-4205-aa7e-013265453b5b"/>
+                <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[TerminalTextData term=new TerminalTextData();
+Style style=Style.getStyle(StyleColor.getStyleColor("fg"), StyleColor.getStyleColor("bg"), false, false, false, false);
+initPerformance(term);
+TerminalTextData copy=new TerminalTextData();
+copy.copy(term);
+
+String s="This is a test string";
+long n=0;
+long t0=System.currentTimeMillis();
+char[] chars=new char[term.getWidth()];
+for (int i = 0; i < 10000000; i++) {
+    for (int j = 0; j < chars.length; j++) {
+        chars[j]=s.charAt((i+j)%s.length());
+    }
+    for (int line = 0; line < term.getHeight(); line++) {
+        term.setChars(line, 0, chars, 0,1,style);
+        copy.copy(term);
+        n+=1;
+        if(System.currentTimeMillis()-t0>TIME) {
+            System.out.println((n*1000)/(System.currentTimeMillis()-t0)+" copy()/sec");
+            return;
+        }
+    }
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testPerformance2a" mc="Operation" uid="c1073923-c752-4ec2-a25b-880be9480f6b"/>
+          <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testPerformance2a]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="1a698c71-e405-47a7-ac4d-7f214f0e0e00"/>
+                <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[TerminalTextData term=new TerminalTextData();
+ITerminalTextDataSnapshot snapshot=term.makeSnapshot();
+Style style=Style.getStyle(StyleColor.getStyleColor("fg"), StyleColor.getStyleColor("bg"), false, false, false, false);
+initPerformance(term);
+TerminalTextData copy=new TerminalTextData();
+copy.copy(term);
+
+String s="This is a test string";
+long n=0;
+long t0=System.currentTimeMillis();
+char[] chars=new char[term.getWidth()];
+for (int i = 0; i < 10000000; i++) {
+    for (int j = 0; j < chars.length; j++) {
+        chars[j]=s.charAt((i+j)%s.length());
+    }
+    for (int line = 0; line < term.getHeight(); line++) {
+        term.setChars(line, 0, chars, 0,1,style);
+        copy.copy(term);
+        n+=1;
+        if(System.currentTimeMillis()-t0>TIME) {
+            System.out.println((n*1000)/(System.currentTimeMillis()-t0)+" copy()/sec");
+            return;
+        }
+    }
+}
+snapshot.updateSnapshot(true);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testPerformance2b" mc="Operation" uid="d0e4443e-e99c-4462-94cf-4509d1433d11"/>
+          <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testPerformance2b]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="bbabc7c2-b793-475b-a864-35c8429dbccc"/>
+                <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[TerminalTextData term=new TerminalTextData();
+ITerminalTextDataSnapshot snapshot=term.makeSnapshot();
+N=0;
+snapshot.addListener(new ITerminalTextDataSnapshot.SnapshotOutOfDateListener(){
+    public void snapshotOutOfDate(ITerminalTextDataSnapshot snapshot) {
+        N++;
+    }});
+Style style=Style.getStyle(StyleColor.getStyleColor("fg"), StyleColor.getStyleColor("bg"), false, false, false, false);
+initPerformance(term);
+TerminalTextData copy=new TerminalTextData();
+copy.copy(term);
+
+String s="This is a test string";
+long n=0;
+long t0=System.currentTimeMillis();
+char[] chars=new char[term.getWidth()];
+for (int i = 0; i < 10000000; i++) {
+    for (int j = 0; j < chars.length; j++) {
+        chars[j]=s.charAt((i+j)%s.length());
+    }
+    for (int line = 0; line < term.getHeight(); line++) {
+        term.setChars(line, 0, chars, 0,1,style);
+        copy.copy(term);
+        n+=1;
+        if(System.currentTimeMillis()-t0>TIME) {
+            System.out.println((n*1000)/(System.currentTimeMillis()-t0)+" copy()/sec "+n);
+            return;
+        }
+    }
+}
+snapshot.updateSnapshot(true);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testPerformance3" mc="Operation" uid="549ed3a9-23bf-4a68-83aa-dbc89e1047ca"/>
+          <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testPerformance3]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="616c9b01-b1be-43ba-8923-69029955b109"/>
+                <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[TerminalTextData term=new TerminalTextData();
+Style style=Style.getStyle(StyleColor.getStyleColor("fg"), StyleColor.getStyleColor("bg"), false, false, false, false);
+initPerformance(term);
+TerminalTextData copy=new TerminalTextData();
+copy.copy(term);
+String s="This is a test string";
+long n=0;
+long t0=System.currentTimeMillis();
+char[] chars=new char[term.getWidth()];
+for (int i = 0; i < 10000000; i++) {
+    boolean[] linesToCopy=new boolean[term.getHeight()];
+    for (int j = 0; j < chars.length; j++) {
+        chars[j]=s.charAt((i+j)%s.length());
+    }
+    for (int line = 0; line < term.getHeight(); line++) {
+        term.setChars(line, 0, chars, 0,1,style);
+        linesToCopy[line]=true;
+        copy.copyLine(term,0,0);
+        linesToCopy[line]=false;
+        n+=1;
+        if(System.currentTimeMillis()-t0>TIME) {
+            System.out.println((n*1000)/(System.currentTimeMillis()-t0)+" copy()/sec");
+            return;
+        }
+    }
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="TIME" mc="Attribute" uid="faa484d3-0077-4267-9abf-253bc7a866d4"/>
+          <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA[100]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[TIME]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="long" mc="DataType" uid="00000004-0000-0011-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="N" mc="Attribute" uid="26741172-5e97-4705-b10e-04b1fce9c595"/>
+          <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA[0]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[N]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedImport">
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="55d07f34-8035-43ec-8520-af14cad6b726"/>
+          <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="ITerminalTextDataSnapshot" mc="Interface" uid="b5768b9b-c546-40ba-be28-aac7a10baa83"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="9a1b33b2-8e2a-49bb-89f6-cd7c5e084f27"/>
+          <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="Style" mc="Class" uid="7cdb99e1-1c04-4057-9dc6-e4097a90d2d1"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="3e29e06b-e39d-4161-8510-f1aff1bbfad8"/>
+          <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="StyleColor" mc="Class" uid="7143f483-46a9-4d92-88dd-ec714edb47ed"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="f181e6a4-7f09-403c-b87e-947092268c71"/>
+          <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="c506f703-c6ea-485b-82c7-a64efe6e8a8a"/>
+                <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[TestCase]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaExtends" mc="TagType" uid="003800a8-0000-0154-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="b4994d14-36eb-4354-9a8c-f7ec7539ce6b"/>
+          <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="3172b14d-2892-4811-a151-a77f3cc120fe"/>
+                <PID name="TerminalTextDataPerformanceTest" mc="Class" uid="f98db332-e712-4ce7-be03-45483fbcc1d1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[junit.framework.TestCase]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

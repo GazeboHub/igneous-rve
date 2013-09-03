@@ -1,0 +1,750 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="StyleTest" version="3">
+  <DEPS>
+    <ID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+    <EXTID name="Style" mc="Class" uid="7cdb99e1-1c04-4057-9dc6-e4097a90d2d1"/>
+    <EXTID name="StyleColor" mc="Class" uid="7143f483-46a9-4d92-88dd-ec714edb47ed"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaExtends" mc="TagType" uid="003800a8-0000-0154-0000-000000000000"/>
+    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0180-0000-000000000000"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+    <FOREIGNID name="JavaInitValue" mc="NoteType" uid="00380080-0000-0994-0000-000000000000"/>
+    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+    <PID name="model" mc="Package" uid="90653f85-0969-414d-bb93-ea0195be4052"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[StyleTest]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="testGetStyle" mc="Operation" uid="07070f4d-3227-4b42-9935-b357eb582f98"/>
+          <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testGetStyle]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="e75c7b05-4dcc-4462-a99b-d523fd8dc52f"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Style s1=Style.getStyle(c1, c2, true, false, true, false);
+Style s2=Style.getStyle(c1, c2, true, false, true, false);
+assertEquals(s1,s2);
+assertSame(s1,s2);
+s1=s1.setBlink(!s1.isBlink());
+assertNotSame(s1,s2);
+assertFalse(s1.equals(s2));
+s1=s1.setBlink(!s1.isBlink());
+assertSame(s1,s2);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testSetForground" mc="Operation" uid="6f331885-f860-4237-ba94-a650308ef705"/>
+          <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testSetForground]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="d023e973-99ce-4018-a73d-99b308665b8b"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Style s1=Style.getStyle(c1, c2, true, false, true, false);
+Style s2=s1;
+s2=s1.setForground(c3);
+assertNotSame(s1,s2);
+assertFalse(s1.equals(s2));
+assertSame(s2.getForground(), c3);
+assertSame(s1.getForground(), c1);
+assertSame(s1.getBackground(), c2);
+assertSame(s2.getBackground(), c2);
+s2=s2.setForground(c1);
+assertSame(s1, s2);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testSetBackground" mc="Operation" uid="670055c7-1354-4f16-99bb-37d4cdaaa22b"/>
+          <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testSetBackground]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="ac632231-ad8d-4a66-a6fe-392fc9ecefd6"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Style s1=Style.getStyle(c1, c2, true, false, true, false);
+Style s2=s1;
+s2=s1.setBackground(c3);
+assertNotSame(s1,s2);
+assertFalse(s1.equals(s2));
+assertSame(s2.getForground(), c1);
+assertSame(s1.getForground(), c1);
+assertSame(s1.getBackground(), c2);
+assertSame(s2.getBackground(), c3);
+s2=s2.setBackground(c2);
+assertSame(s1, s2);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testSetBold" mc="Operation" uid="2cefffa5-64bf-4a0d-be06-93a1a6241a6b"/>
+          <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testSetBold]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="762f1433-e288-4b3f-9638-428258e930f9"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Style s1=getDefaultStyle();
+Style s2=s1;
+assertSame(s1,s2);
+assertFalse(s2.isBold());
+s2=s2.setBold(true);
+assertNotSame(s1,s2);
+assertTrue(s2.isBold());
+s2=s2.setBold(false);
+assertSame(s1,s2);
+assertFalse(s2.isBold());
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testSetBlink" mc="Operation" uid="50d1faf7-3c59-415d-b6d0-ceda0267dc78"/>
+          <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testSetBlink]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="a8aff8a8-acda-4cc1-8e4d-711c9793c7d5"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Style s1=getDefaultStyle();
+Style s2=s1;
+assertSame(s1,s2);
+assertFalse(s2.isBlink());
+s2=s2.setBlink(true);
+assertNotSame(s1,s2);
+assertTrue(s2.isBlink());
+s2=s2.setBlink(false);
+assertSame(s1,s2);
+assertFalse(s2.isBlink());
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testSetUnderline" mc="Operation" uid="613f0381-92ae-4702-99c8-0cf84ab5dbea"/>
+          <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testSetUnderline]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="c38e6a3b-4f85-4a69-8a1c-300305e2ef85"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Style s1=getDefaultStyle();
+Style s2=s1;
+assertSame(s1,s2);
+assertFalse(s2.isUnderline());
+s2=s2.setUnderline(true);
+assertNotSame(s1,s2);
+assertTrue(s2.isUnderline());
+s2=s2.setUnderline(false);
+assertSame(s1,s2);
+assertFalse(s2.isUnderline());
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testSetReverse" mc="Operation" uid="2a204343-2107-4915-8be9-c9e29683f6c6"/>
+          <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testSetReverse]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="74aece58-c5c6-4518-95b1-060f45e692f4"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Style s1=getDefaultStyle();
+Style s2=s1;
+assertSame(s1,s2);
+assertFalse(s2.isReverse());
+s2=s2.setReverse(true);
+assertNotSame(s1,s2);
+assertTrue(s2.isReverse());
+s2=s2.setReverse(false);
+assertSame(s1,s2);
+assertFalse(s2.isReverse());
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="getDefaultStyle" mc="Operation" uid="6960f435-4224-466f-b17b-abe8b2924826"/>
+          <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[getDefaultStyle]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="76cd556b-ebae-401b-aecb-12a0dd326b04"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Style" mc="Class" uid="7cdb99e1-1c04-4057-9dc6-e4097a90d2d1"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="1ecb7f09-089c-4d0d-812e-cb8265ee72ae"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return Style.getStyle(c1, c2, false, false, false, false);]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedEnd">
+        <OBJECT>
+          <ID name="c1" mc="AssociationEnd" uid="8a8800a6-aa71-41a8-b80c-a0eca69de15d"/>
+          <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[c1]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="StyleColor" mc="Class" uid="7143f483-46a9-4d92-88dd-ec714edb47ed"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="AssociationEnd" uid="9c365897-73aa-4e81-b4e4-084b0c69e201"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="c1" mc="AssociationEnd" uid="8a8800a6-aa71-41a8-b80c-a0eca69de15d"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Association" uid="15278539-dac4-4382-8bee-db9dac99e894"/>
+                      <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <OBJECT>
+                <ID name="" mc="Association" uid="15278539-dac4-4382-8bee-db9dac99e894"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="8204d1c0-5795-46bc-8af9-def4e2d60b83"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0180-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="12d5c700-828c-48f7-a6df-1422112dcdcd"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[StyleColor.getStyleColor("c1")]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaInitValue" mc="NoteType" uid="00380080-0000-0994-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="c2" mc="AssociationEnd" uid="c5678d3b-628b-4135-a8c6-e731dc153248"/>
+          <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[c2]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="StyleColor" mc="Class" uid="7143f483-46a9-4d92-88dd-ec714edb47ed"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="AssociationEnd" uid="d86d79b2-b7d3-4c8a-8181-61ebbb181b58"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="c2" mc="AssociationEnd" uid="c5678d3b-628b-4135-a8c6-e731dc153248"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Association" uid="0b4d4d5d-ddd3-4882-9370-07f39efcf7d0"/>
+                      <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <OBJECT>
+                <ID name="" mc="Association" uid="0b4d4d5d-ddd3-4882-9370-07f39efcf7d0"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="2efe57ab-d184-417f-9c91-58ed42eb5c2b"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0180-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="eafc9646-a19d-454a-91ab-86d34cdfa621"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[StyleColor.getStyleColor("c2")]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaInitValue" mc="NoteType" uid="00380080-0000-0994-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="c3" mc="AssociationEnd" uid="c90b2254-8f70-4fc0-8cfe-bcae619a5298"/>
+          <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[c3]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="StyleColor" mc="Class" uid="7143f483-46a9-4d92-88dd-ec714edb47ed"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="AssociationEnd" uid="9d26e204-d382-409a-9e8e-08d314efa1b7"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="c3" mc="AssociationEnd" uid="c90b2254-8f70-4fc0-8cfe-bcae619a5298"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Association" uid="ebbca874-8443-4c31-bef4-f3b2c27a0567"/>
+                      <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <OBJECT>
+                <ID name="" mc="Association" uid="ebbca874-8443-4c31-bef4-f3b2c27a0567"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="af208ab0-8954-42ee-868d-de2f03fb04ee"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0180-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="69f916d0-acbb-4803-b6d6-bdbf9655b6a5"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[StyleColor.getStyleColor("c3")]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaInitValue" mc="NoteType" uid="00380080-0000-0994-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="c3d6f484-e6c9-4a8c-bc2e-5ed6f2f28a0b"/>
+          <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="848d2329-5494-4cd6-9f4c-b277ff3672aa"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[TestCase]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaExtends" mc="TagType" uid="003800a8-0000-0154-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="6bc9a2aa-aa33-41a0-bf65-ec7f2d3ff2a6"/>
+          <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="02c71f7e-9a3a-4378-b994-28b60d29a2b2"/>
+                <PID name="StyleTest" mc="Class" uid="98b62daa-59d6-4690-a196-2e5255523b6a"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[junit.framework.TestCase]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

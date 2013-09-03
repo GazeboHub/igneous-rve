@@ -1,0 +1,1318 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="LocalTerminalProcessRegistry" version="3">
+  <DEPS>
+    <ID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+    <EXTID name="LocalTerminalProcess" mc="Class" uid="47083145-ba0c-44f4-aa30-746607e807ae"/>
+    <EXTID name="LocalTerminalUtilities" mc="Class" uid="d0781d14-0017-4c5f-86a6-bd8984ac3a80"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0180-0000-000000000000"/>
+    <FOREIGNID name="JavaImplements" mc="TagType" uid="003800a8-0000-0156-0000-000000000000"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+    <FOREIGNID name="JavaInitValue" mc="NoteType" uid="00380080-0000-0994-0000-000000000000"/>
+    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015d-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+    <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+    <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+    <PID name="process" mc="Package" uid="10c3f861-fce2-4905-9cd9-d6d18271bd02"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[LocalTerminalProcessRegistry]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="LocalTerminalProcessRegistry" mc="Operation" uid="56cdd826-3629-41b4-b14a-4e9e74b743c7"/>
+          <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[LocalTerminalProcessRegistry]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="a3577230-ae72-493a-b215-7cc0f7cd3141"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[// The ILaunch interface does not make any statements about the suitability of implementing
+// objects as hash keys. There might be ILaunch implementations that return a different
+// hash code value if the object changes internally. To be safe in those cases, an
+// IdentityHashMap is used:
+//
+processes = new IdentityHashMap();
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="getFromLaunch" mc="Operation" uid="7273e9fd-e16d-4afe-9dc4-dc4df511b882"/>
+          <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[getFromLaunch]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="launch" mc="Parameter" uid="4db9a5ac-33f7-4523-95fd-81f1ce00fb11"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[launch]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="12519558-e419-4867-aba6-76c0dd8cdb55"/>
+                      <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="25bc33dd-3258-430f-b698-afe5bf3d3f7b"/>
+                            <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[ILaunch]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="35f1e7be-ba64-4bfb-919a-913cf5c24168"/>
+                      <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the {@link ILaunch} that was used for creating the process]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="41addf1f-d506-4a06-8fda-a17309182922"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="LocalTerminalProcess" mc="Class" uid="47083145-ba0c-44f4-aa30-746607e807ae"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="3228d7ef-ba61-4a42-bc27-c606a0b4f9a2"/>
+                      <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the corresponding {@link LocalTerminalProcess}, or <code>null</code> if no process
+could be found]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="29ba9df9-a94b-426a-b9eb-7eaf758f3c9c"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Gets the {@link LocalTerminalProcess} that was originally associated with a given
+{@link ILaunch} object.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="89c131ed-fa04-41a7-a4a0-a0f790187b93"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return (LocalTerminalProcess)INSTANCE.processes.get(launch);]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="addProcessBackToFinishedLaunch" mc="Operation" uid="0374c08e-0dfe-4fde-a769-85f1eee1e82b"/>
+          <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[addProcessBackToFinishedLaunch]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="launch" mc="Parameter" uid="bb60ae3a-b2dd-4860-9ee6-e8eaa79fa401"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[launch]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="4a395a1d-c0e9-4ac8-8c61-b54402fdfb97"/>
+                      <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="551a12ef-aef7-450e-898a-8e38866b1fc3"/>
+                            <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[ILaunch]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="341d6a92-24e7-4a2e-9daa-6ad97a76cff8"/>
+                      <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the {@link ILaunch} whose original process is to be re-attached]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="27015d6d-d06d-4cb8-8070-d5ba992543da"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Adds a {@link LocalTerminalProcess} object back to its original {@link ILaunch}. This method
+will also perform a {@link LocalTerminalProcess#resetStreamsProxy()} on the process.
+The {@link #addProcessBackToFinishedLaunch(ILaunch)} method is necessary for properly
+terminating the launch of a terminal application (see {@link LocalTerminalProcess} for
+details).]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="814cb210-39ef-44e7-b8e9-c1935b8c6e5c"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[LocalTerminalProcess process = getFromLaunch(launch);
+if (process == null) {
+
+    // Maybe the process wasn't actually started in a terminal (can happen when a Terminal
+    // is launched from the External Tools menu):
+    //
+    return;
+}
+process.resetStreamsProxy();
+if (launch.getProcesses().length == 0) {
+
+    launch.addProcess(process);
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="registerWithLaunch" mc="Operation" uid="bf1a12af-9742-4ae9-beb8-d64a020ba5e0"/>
+          <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[registerWithLaunch]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="launch" mc="Parameter" uid="e12fec85-e1ff-4226-b8f5-18caa3a9d09f"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[launch]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="e8804776-2a19-4b7c-89c2-9a354130787e"/>
+                      <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="63fdc15e-485c-4dd7-81e6-095d5d95cecb"/>
+                            <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[ILaunch]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="6af356b0-025a-4edc-8c9d-f78c23193ef9"/>
+                      <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the {@link ILaunch}]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="process" mc="Parameter" uid="11cdc110-3c2e-4517-8909-166757895f87"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[process]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="LocalTerminalProcess" mc="Class" uid="47083145-ba0c-44f4-aa30-746607e807ae"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="d52e846b-aa13-43ff-a10b-a6876159647c"/>
+                      <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the {@link LocalTerminalProcess} originally associated with that launch]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="bd2116ad-2f09-409e-8d78-54ed4abc9442"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Registers a {@link LocalTerminalProcess} with a given {@link ILaunch} so that the process can
+be safely removed from the launch.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="bc0a9c6b-c7c6-4d9c-a1c6-e284bbc059e1"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (INSTANCE) {
+
+    if (INSTANCE.processes.isEmpty()) {
+
+        // Start listening to terminated launches as soon as the first launch/process pair
+        // is registered:
+        //
+        LocalTerminalUtilities.LAUNCH_MANAGER.addLaunchListener(INSTANCE);
+    }
+    INSTANCE.processes.put(launch, process);
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="launchesTerminated" mc="Operation" uid="c438a082-7aa5-4a94-a420-8269b5959d2b"/>
+          <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[launchesTerminated]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="terminated" mc="Parameter" uid="889fed6b-c7ab-45fb-9628-6f2aecfb2c1c"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[terminated]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="bd2eb009-01ad-4f91-9371-d5af284341f1"/>
+                      <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="3f2e9830-d4cd-40c9-a25f-031611cc8bec"/>
+                            <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Array]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="319d8275-2cbb-4d7f-ae0c-45d3889ddf31"/>
+                      <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="e61917cd-c5ad-474e-881b-c511c7fe5da5"/>
+                            <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[ILaunch]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="b820b03f-b66b-4ded-91d9-348535f599a3"/>
+                      <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the launches that were terminated]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="fb11a217-7d69-44d7-a64b-e028df393e84"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Handles the termination of launches. The {@link LocalTerminalProcessRegistry} acts as a
+{@link ILaunchesListener2} if there are monitored launches outstanding. It will automatically
+de-register itself (as a listener) when the last monitored launch was terminated.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="29eaea92-f5f6-43ca-8ee3-34aaa0bae986"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized (INSTANCE) {
+
+    int numberOfTerminatedLaunches = terminated.length;
+    for (int launch = 0; launch < numberOfTerminatedLaunches; launch++) {
+
+        INSTANCE.processes.remove(terminated[launch]);
+    }
+    if (INSTANCE.processes.isEmpty()) {
+
+        // If there are no more outstanding launches the listener can be removed again:
+        //
+        LocalTerminalUtilities.LAUNCH_MANAGER.removeLaunchListener(INSTANCE);
+    }
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="launchesAdded" mc="Operation" uid="8368df8b-28df-4c42-a59e-7d3d63aa806b"/>
+          <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[launchesAdded]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="launches" mc="Parameter" uid="affd3815-338f-49c1-bdc8-ac07f553aa2b"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[launches]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="f5d11cdc-e059-43b7-a010-ec4cd826de13"/>
+                      <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="1f92859c-9607-421d-9625-0292e0db0dc7"/>
+                            <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Array]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="99172fc8-8ed1-4295-ad5e-aa6e9f4b3170"/>
+                      <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="96212807-49ca-43ae-969d-9efbacc5f775"/>
+                            <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[ILaunch]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="5a5c23a0-1133-4d46-8cf3-5776d3f40bf1"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[<i>Not implemented</i>.
+@see ILaunchesListener2#launchesAdded(ILaunch[])]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="a9f76115-8e93-401b-9658-42cb39c9c149"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[// Not implemented.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="launchesRemoved" mc="Operation" uid="1003e170-4522-49bb-ac6b-b65fdfcf9462"/>
+          <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[launchesRemoved]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="launches" mc="Parameter" uid="d9b4e5a1-5c8c-4511-8cef-9924f895df49"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[launches]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="0e2f52e9-f3c1-4d46-9038-3ddde01da014"/>
+                      <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="4987f9b6-1edd-44c4-be94-03df8cd71dd8"/>
+                            <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Array]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="d305b9d8-efc2-448a-8917-7092444a9125"/>
+                      <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="d022cb73-c477-4f11-8a96-e227a2798870"/>
+                            <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[ILaunch]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="100ba175-0bae-473b-90d1-799e249f8c5d"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[<i>Not implemented</i>.
+@see ILaunchesListener2#launchesRemoved(ILaunch[])]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="16661313-db9b-4fbc-9397-fd25986f3eb5"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[// Not implemented.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="launchesChanged" mc="Operation" uid="903a19d0-20a7-4b55-9bef-8dd8c2f1b3ff"/>
+          <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[launchesChanged]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="launches" mc="Parameter" uid="22485124-45af-4ded-9f57-225f40613b5b"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[launches]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="9fe93fd9-d787-4945-b08c-def2459dd9f4"/>
+                      <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="8d58660c-e737-4b6d-b8c3-b10b6bd21de1"/>
+                            <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Array]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="7e3a1269-c97c-4165-93e8-873bf513317b"/>
+                      <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="6698c5b8-e6c8-4f55-a862-0ea5be3df87e"/>
+                            <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[ILaunch]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="8ecb6480-f83d-45cc-9c1f-246a028a2c6e"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[<i>Not implemented</i>.
+@see ILaunchesListener2#launchesChanged(ILaunch[])]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="272d7ef2-ea02-4144-992f-01e465b5806f"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[// Not implemented.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="processes" mc="Attribute" uid="1637b588-e2f3-4233-b47f-5e646a85c6c6"/>
+          <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[processes]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="0e6be925-7462-4749-b5c5-9a100b85da21"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="cc4425f8-d14d-4bd4-bb67-4439b4b22994"/>
+                      <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[Map]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="6bee5b6f-dc29-49fa-8ce5-c759d9dca3cb"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedEnd">
+        <OBJECT>
+          <ID name="INSTANCE" mc="AssociationEnd" uid="85c265e4-bcc2-4f30-b2a0-870c35b4cb84"/>
+          <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[INSTANCE]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="AssociationEnd" uid="1d35ade2-50fd-4f4c-bcd7-f4e0261c86e3"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="INSTANCE" mc="AssociationEnd" uid="85c265e4-bcc2-4f30-b2a0-870c35b4cb84"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Association" uid="21508b2d-78ea-40f7-bfa3-9185cf0a19fe"/>
+                      <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <OBJECT>
+                <ID name="" mc="Association" uid="21508b2d-78ea-40f7-bfa3-9185cf0a19fe"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="d88faad3-b72f-4796-8165-885c303f3350"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0180-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="15ba1750-3a98-4d37-8723-935fbd39644f"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[new LocalTerminalProcessRegistry()]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaInitValue" mc="NoteType" uid="00380080-0000-0994-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedImport">
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="c9787b1b-9cda-45d7-a1fb-4ce971675687"/>
+          <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="LocalTerminalUtilities" mc="Class" uid="d0781d14-0017-4c5f-86a6-bd8984ac3a80"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="19b38396-5596-4091-9d6e-20ab060e27b3"/>
+          <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="6a9be887-bf40-42bd-9292-973866f199fd"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[ILaunchesListener2]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImplements" mc="TagType" uid="003800a8-0000-0156-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="4fc38526-4a21-4a08-9b58-630c6d439e25"/>
+          <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="e2dfb5b6-f71b-4d03-a002-a7ef6efc79c7"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.util.IdentityHashMap]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="864ad23b-0afd-4ba0-aa68-77d6b0059007"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.util.Map]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="1dccddf9-a16e-415e-912a-20d15fd09605"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.debug.core.ILaunch]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="720e248f-cfda-4f86-b901-0c2a21afae29"/>
+                <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.debug.core.ILaunchesListener2]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="47bce2f4-4e86-4d02-977f-845549610c31"/>
+          <PID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[The {@link LocalTerminalProcessRegistry} keeps a map between {@link ILaunch} objects and the
+{@link LocalTerminalProcess} objects that were associated with them. To prevent standard consoles
+from being opened, a {@link LocalTerminalProcess} is immediately removed from its {@link ILaunch}
+when the process is created (see {@link LocalTerminalProcess} for details).
+{@link LocalTerminalProcessRegistry} is a singleton (without lazy initialization).
+
+@author mirko
+@version $Revision: 1.1 $]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015d-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,1807 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SnapshotChangesTest" version="3">
+  <DEPS>
+    <ID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+    <EXTID name="ISnapshotChanges" mc="Interface" uid="62fb2c46-0a54-42d6-8533-ecdd8c7e9fef"/>
+    <EXTID name="ITerminalTextData" mc="Interface" uid="ac632690-0372-4dd9-8652-517688ae86b4"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaExtends" mc="TagType" uid="003800a8-0000-0154-0000-000000000000"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+    <PID name="model" mc="Package" uid="9137cf6f-04f3-4c9b-a309-4bf94c2303e2"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[SnapshotChangesTest]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="assertChangedLines" mc="Operation" uid="1b381836-f285-485e-881b-229b01f3f54d"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[assertChangedLines]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="change" mc="Parameter" uid="c61279cb-5b15-414e-9216-21182eaa6b81"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[change]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ISnapshotChanges" mc="Interface" uid="62fb2c46-0a54-42d6-8533-ecdd8c7e9fef"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="expected" mc="Parameter" uid="0ca70fa1-5e8b-4fbc-b256-19fc4a4eaf18"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[expected]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="32ad61eb-7963-4e92-8462-6c7a08a7d2f3"/>
+                      <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="e10fbc33-49a6-4728-87ab-499537f0735b"/>
+                            <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[String]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="7bc7077d-52c7-4640-855b-2165ebbbfeea"/>
+                      <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[a string of 0 and 1 (1 means changed)]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="76b5a848-50c2-4838-bbf1-da8c68e1a48d"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[@param change]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="1ac24048-bd11-42ff-933c-dc5d7839c371"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[StringBuffer buffer=new StringBuffer();
+for (int line = 0; line < expected.length(); line++) {
+    if(change.hasLineChanged(line))
+        buffer.append('1');
+    else
+        buffer.append('0');
+}
+assertEquals(expected, buffer.toString());
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testSnapshotChanges" mc="Operation" uid="e2ef1ffc-f842-46d6-ad26-a194972487a5"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testSnapshotChanges]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="4c2e1496-dbf8-4e52-8bc7-3a70dfaf58a6"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes=new SnapshotChanges(1);
+assertEquals(0, changes.getInterestWindowStartLine());
+assertEquals(0, changes.getInterestWindowSize());
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testSnapshotChangesWithWindow" mc="Operation" uid="a9ed2505-fc78-400a-bd95-027c14cf5540"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testSnapshotChangesWithWindow]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="6d083d63-bf69-44c3-a5cf-7c13e8b55d70"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes=new SnapshotChanges(2,5);
+assertEquals(2, changes.getInterestWindowStartLine());
+assertEquals(5, changes.getInterestWindowSize());
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testIsInInterestWindowIntInt" mc="Operation" uid="2000683d-c30b-45fa-a7c6-c0904f4dcf4f"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testIsInInterestWindowIntInt]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="1f63690b-72ee-4da4-b0fb-b67e537e1416"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes=new SnapshotChanges(2,5);
+assertFalse(changes.isInInterestWindow(0, 1));
+assertFalse(changes.isInInterestWindow(0, 2));
+assertTrue(changes.isInInterestWindow(0, 3));
+assertTrue(changes.isInInterestWindow(0, 4));
+assertTrue(changes.isInInterestWindow(0, 5));
+assertTrue(changes.isInInterestWindow(0, 6));
+assertTrue(changes.isInInterestWindow(0, 10));
+assertTrue(changes.isInInterestWindow(2, 5));
+assertTrue(changes.isInInterestWindow(6, 0));
+assertTrue(changes.isInInterestWindow(6, 1));
+assertTrue(changes.isInInterestWindow(6, 10));
+assertFalse(changes.isInInterestWindow(7, 0));
+assertFalse(changes.isInInterestWindow(7, 1));
+assertFalse(changes.isInInterestWindow(8, 10));
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testIsInInterestWindowIntIntNoWindow" mc="Operation" uid="306e8f1e-ca4b-40f0-887b-be9cf53ae3d9"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testIsInInterestWindowIntIntNoWindow]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="506063f6-b3ab-4090-9219-031630d5870b"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes=new SnapshotChanges(3);
+for (int i = 0; i < 5; i++) {
+    for (int j = 0; j < 5; j++) {
+        assertTrue(changes.isInInterestWindow(i,j));                
+    }            
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testIsInInterestWindowInt" mc="Operation" uid="c299438b-94a2-4cef-8c79-8d5d1bee46c3"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testIsInInterestWindowInt]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="a532f642-71bd-465c-bda0-1d542388dc29"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes=new SnapshotChanges(3,1);
+assertFalse(changes.isInInterestWindow(0));
+assertFalse(changes.isInInterestWindow(1));
+assertFalse(changes.isInInterestWindow(2));
+assertTrue(changes.isInInterestWindow(3));
+assertFalse(changes.isInInterestWindow(4));
+assertFalse(changes.isInInterestWindow(5));
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testIsInInterestWindowIntNoWindow" mc="Operation" uid="7bb12139-b17f-4aa0-b9ba-080c6149d15f"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testIsInInterestWindowIntNoWindow]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="b8fdb227-4083-4f48-b4e8-51b21ae162c7"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes=new SnapshotChanges(3);
+for (int i = 0; i < 10; i++) {
+    assertTrue(changes.isInInterestWindow(i));
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testFitLineToWindow" mc="Operation" uid="07e06a66-b814-40dd-a33d-a0420c7bd189"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testFitLineToWindow]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="809afa50-0c11-405b-8fb0-fc0de0a00cb0"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes=new SnapshotChanges(2,5);
+assertEquals(2, changes.fitLineToWindow(0));
+assertEquals(2, changes.fitLineToWindow(1));
+assertEquals(2, changes.fitLineToWindow(2));
+assertEquals(3, changes.fitLineToWindow(3));
+
+assertTrue(changes.isInInterestWindow(4));
+assertEquals(4, changes.fitLineToWindow(4));
+
+assertTrue(changes.isInInterestWindow(5));
+assertEquals(5, changes.fitLineToWindow(5));
+
+assertTrue(changes.isInInterestWindow(6));
+assertEquals(6, changes.fitLineToWindow(6));
+
+assertFalse(changes.isInInterestWindow(7));
+// value undefined!
+assertEquals(7, changes.fitLineToWindow(7));
+
+assertFalse(changes.isInInterestWindow(8));
+// value undefined!
+assertEquals(8, changes.fitLineToWindow(8));
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testFitLineToWindowNoWindow" mc="Operation" uid="8f32746f-2d7c-4c45-b48c-0dd4745c0b91"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testFitLineToWindowNoWindow]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="cf4c2599-6fe9-44d0-8460-be438d113e68"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes=new SnapshotChanges(5);
+assertEquals(0, changes.fitLineToWindow(0));
+assertEquals(1, changes.fitLineToWindow(1));
+assertEquals(2, changes.fitLineToWindow(2));
+assertEquals(3, changes.fitLineToWindow(3));
+assertEquals(4, changes.fitLineToWindow(4));
+assertEquals(5, changes.fitLineToWindow(5));
+assertEquals(6, changes.fitLineToWindow(6));
+assertEquals(7, changes.fitLineToWindow(7));
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testFitSizeToWindow" mc="Operation" uid="f33e991c-0db1-4379-a7e5-a02a8e713870"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testFitSizeToWindow]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="665028dd-1f05-4e24-bb61-d16f121d6c70"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes=new SnapshotChanges(2,3);
+assertFalse(changes.isInInterestWindow(0, 1));
+assertFalse(changes.isInInterestWindow(0, 2));
+assertTrue(changes.isInInterestWindow(0, 3));
+assertEquals(1, changes.fitSizeToWindow(0,3));
+assertEquals(2, changes.fitSizeToWindow(0,4));
+assertEquals(3, changes.fitSizeToWindow(0,5));
+assertEquals(3, changes.fitSizeToWindow(0,6));
+assertEquals(3, changes.fitSizeToWindow(0,7));
+assertEquals(3, changes.fitSizeToWindow(0,8));
+assertEquals(3, changes.fitSizeToWindow(0,9));
+assertEquals(3, changes.fitSizeToWindow(1,9));
+assertEquals(3, changes.fitSizeToWindow(2,9));
+assertEquals(3, changes.fitSizeToWindow(2,3));
+assertEquals(2, changes.fitSizeToWindow(2,2));
+assertEquals(1, changes.fitSizeToWindow(2,1));
+assertEquals(2, changes.fitSizeToWindow(3,9));
+assertEquals(2, changes.fitSizeToWindow(3,2));
+assertEquals(1, changes.fitSizeToWindow(3,1));
+assertEquals(2, changes.fitSizeToWindow(3,2));
+assertEquals(2, changes.fitSizeToWindow(3,3));
+assertEquals(1, changes.fitSizeToWindow(4,1));
+assertEquals(1, changes.fitSizeToWindow(4,2));
+assertFalse(changes.isInInterestWindow(5, 1));
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testFitSizeToWindowNoWindow" mc="Operation" uid="ace5f5d9-24bf-43b6-94e9-270fecfbd6f7"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testFitSizeToWindowNoWindow]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="5a9d012c-5f1c-422d-945d-f6e5ae37f5f9"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes=new SnapshotChanges(3);
+assertEquals(1, changes.fitSizeToWindow(0,1));
+assertEquals(2, changes.fitSizeToWindow(0,2));
+assertEquals(3, changes.fitSizeToWindow(0,3));
+assertEquals(4, changes.fitSizeToWindow(0,4));
+assertEquals(5, changes.fitSizeToWindow(0,5));
+
+assertEquals(5, changes.fitSizeToWindow(1,5));
+assertEquals(3, changes.fitSizeToWindow(2,3));
+assertEquals(2, changes.fitSizeToWindow(1,2));
+assertEquals(10, changes.fitSizeToWindow(5,10));
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testMarkLineChanged" mc="Operation" uid="188bc829-0ee9-4d3d-a001-af1357433c28"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testMarkLineChanged]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="18f7068d-42c0-4237-94cf-5ad54353edf2"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes=new SnapshotChanges(2,3);
+assertFalse(changes.hasChanged());
+changes.markLineChanged(0);
+assertFalse(changes.hasChanged());
+changes.markLineChanged(1);
+assertFalse(changes.hasChanged());
+changes.markLineChanged(2);
+assertTrue(changes.hasChanged());
+
+changes=new SnapshotChanges(2,3);
+assertFalse(changes.hasChanged());
+changes.markLineChanged(3);
+assertTrue(changes.hasChanged());
+
+assertLineChange(false,2,3,0);
+assertLineChange(false,2,3,1);
+assertLineChange(true,2,3,2);
+assertLineChange(true,2,3,3);
+assertLineChange(true,2,3,4);
+assertLineChange(false,2,3,5);
+assertLineChange(false,2,3,6);
+
+assertLineChange(true,2,4,5);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="assertLineChange" mc="Operation" uid="60d262f5-79e9-4779-8c59-4e7d7b1ede78"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[assertLineChange]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="expected" mc="Parameter" uid="b82d5cbe-91ba-4628-92c2-03639e47dd46"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[expected]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="windowStart" mc="Parameter" uid="46106dce-a839-4eb3-9bb0-2d895486ebf6"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[windowStart]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="windowSize" mc="Parameter" uid="8e9ffde3-473f-46da-a2e4-a88b4bbf8145"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[windowSize]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="changedLine" mc="Parameter" uid="95efb4c6-f9aa-4444-b88c-d6ccdcbcc7ac"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[changedLine]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="dbbb78d3-6a21-4b3b-bd25-455a4ec85c70"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes=new SnapshotChanges(windowStart,windowSize);
+assertFalse(changes.hasChanged());
+changes.markLineChanged(changedLine);
+if(expected) {
+    assertEquals(changedLine, changes.getFirstChangedLine());
+    assertEquals(changedLine, changes.getLastChangedLine());
+} else {
+    assertEquals(Integer.MAX_VALUE, changes.getFirstChangedLine());
+    assertEquals(-1, changes.getLastChangedLine());
+    
+}
+assertEquals(expected,changes.hasChanged());
+for (int i = 0; i < windowStart+windowSize+5; i++) {
+    boolean e= i==changedLine && i>=windowStart && i<windowStart+windowSize;
+    assertEquals(e, changes.hasLineChanged(i));
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testMarkLinesChanged" mc="Operation" uid="74c21e43-25ff-42b5-af50-4eb8f52ff801"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testMarkLinesChanged]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="4d2dcf1b-bf12-4933-990b-7007fb6abeeb"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes=new SnapshotChanges(2,3);
+assertFalse(changes.hasChanged());
+assertEquals(Integer.MAX_VALUE, changes.getFirstChangedLine());
+assertEquals(-1, changes.getLastChangedLine());
+changes.markLinesChanged(0, 1);
+assertChangedLines(changes, "00000000000");
+assertFalse(changes.hasChanged());
+assertEquals(Integer.MAX_VALUE, changes.getFirstChangedLine());
+assertEquals(-1, changes.getLastChangedLine());
+changes.markLinesChanged(0, 2);
+assertChangedLines(changes, "00000000000");
+assertFalse(changes.hasChanged());
+assertEquals(Integer.MAX_VALUE, changes.getFirstChangedLine());
+assertEquals(-1, changes.getLastChangedLine());
+changes.markLinesChanged(0, 3);
+assertEquals(2, changes.getFirstChangedLine());
+assertEquals(2, changes.getLastChangedLine());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "00100000000");
+
+changes=new SnapshotChanges(2,3);
+changes.markLinesChanged(1, 3);
+assertTrue(changes.hasChanged());
+assertEquals(2, changes.getFirstChangedLine());
+assertEquals(3, changes.getLastChangedLine());
+assertChangedLines(changes, "00110000000");
+
+changes=new SnapshotChanges(2,3);
+changes.markLinesChanged(1, 4);
+assertEquals(2, changes.getFirstChangedLine());
+assertEquals(4, changes.getLastChangedLine());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "00111000000");
+
+changes=new SnapshotChanges(2,3);
+changes.markLinesChanged(1, 4);
+assertEquals(2, changes.getFirstChangedLine());
+assertEquals(4, changes.getLastChangedLine());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "00111000000");
+
+changes=new SnapshotChanges(2,3);
+changes.markLinesChanged(2, 4);
+assertEquals(2, changes.getFirstChangedLine());
+assertEquals(4, changes.getLastChangedLine());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "00111000000");
+
+    
+changes=new SnapshotChanges(2,3);
+changes.markLinesChanged(3, 4);
+assertEquals(3, changes.getFirstChangedLine());
+assertEquals(4, changes.getLastChangedLine());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "00011000000");
+
+changes=new SnapshotChanges(2,3);
+changes.markLinesChanged(3, 1);
+assertEquals(3, changes.getFirstChangedLine());
+assertEquals(3, changes.getLastChangedLine());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "00010000000");
+
+changes=new SnapshotChanges(2,3);
+changes.markLinesChanged(4, 1);
+assertEquals(4, changes.getFirstChangedLine());
+assertEquals(4, changes.getLastChangedLine());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "00001000000");
+
+changes=new SnapshotChanges(2,3);
+changes.markLinesChanged(5, 1);
+assertEquals(Integer.MAX_VALUE, changes.getFirstChangedLine());
+assertEquals(-1, changes.getLastChangedLine());
+assertFalse(changes.hasChanged());
+assertChangedLines(changes, "00000000000");
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testMarkLinesChangedNoWindow" mc="Operation" uid="b2eecf0e-ac26-4b0b-afe1-42374e6479fd"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testMarkLinesChangedNoWindow]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="e55fa31d-7b46-47fe-9eda-1784d1990398"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes=new SnapshotChanges(10);
+assertFalse(changes.hasChanged());
+assertEquals(Integer.MAX_VALUE, changes.getFirstChangedLine());
+assertEquals(-1, changes.getLastChangedLine());
+
+changes.markLinesChanged(0, 1);
+assertTrue(changes.hasChanged());
+assertEquals(0, changes.getFirstChangedLine());
+assertEquals(0, changes.getLastChangedLine());
+assertChangedLines(changes, "1000000000");
+
+changes=new SnapshotChanges(10);
+changes.markLinesChanged(0, 5);
+assertTrue(changes.hasChanged());
+assertEquals(0, changes.getFirstChangedLine());
+assertEquals(4, changes.getLastChangedLine());
+assertChangedLines(changes, "1111100000");
+
+changes=new SnapshotChanges(3);
+changes.markLinesChanged(1, 6);
+assertTrue(changes.hasChanged());
+assertEquals(1, changes.getFirstChangedLine());
+assertEquals(6, changes.getLastChangedLine());
+assertChangedLines(changes, "011");
+
+
+changes=new SnapshotChanges(10);
+changes.markLinesChanged(5, 6);
+assertTrue(changes.hasChanged());
+assertEquals(5, changes.getFirstChangedLine());
+assertEquals(10, changes.getLastChangedLine());
+assertChangedLines(changes, "0000011111");
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testHasChanged" mc="Operation" uid="bde5aeb2-e0a1-4d4e-adf7-3f9d87dc36ca"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testHasChanged]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="8ef3f11f-36c7-4a2c-8106-8032d6ce8da4"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes=new SnapshotChanges(0);
+assertFalse(changes.hasChanged());
+changes=new SnapshotChanges(1);
+assertFalse(changes.hasChanged());
+changes=new SnapshotChanges(1,9);
+assertFalse(changes.hasChanged());
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testSetAllChanged" mc="Operation" uid="c772f2b2-75dc-4586-bb40-e817d460ffc5"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testSetAllChanged]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="a9b661ed-97fb-4452-8187-4bdf6772ebe0"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes;
+changes=new SnapshotChanges(2,3);
+changes.setAllChanged(10);
+assertEquals(2, changes.getFirstChangedLine());
+assertEquals(4, changes.getLastChangedLine());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "00111000000");
+
+changes=new SnapshotChanges(2,3);
+changes.setAllChanged(3);
+assertEquals(2, changes.getFirstChangedLine());
+assertEquals(2, changes.getLastChangedLine());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "00111000000");
+
+changes=new SnapshotChanges(2,3);
+changes.setAllChanged(4);
+assertEquals(2, changes.getFirstChangedLine());
+assertEquals(3, changes.getLastChangedLine());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "00111000000");
+
+changes=new SnapshotChanges(2,3);
+changes.setAllChanged(5);
+assertEquals(2, changes.getFirstChangedLine());
+assertEquals(4, changes.getLastChangedLine());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "00111000000");
+
+changes=new SnapshotChanges(2,3);
+changes.setAllChanged(6);
+assertEquals(2, changes.getFirstChangedLine());
+assertEquals(4, changes.getLastChangedLine());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "00111000000");
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testSetAllChangedNoWindow" mc="Operation" uid="c5f30a35-0dcb-47ce-80f5-a3e429fafc44"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testSetAllChangedNoWindow]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="4a4da5a1-bf6d-48ab-aa79-78a15564f20f"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes;
+changes=new SnapshotChanges(5);
+changes.setAllChanged(10);
+assertEquals(0, changes.getFirstChangedLine());
+assertEquals(9, changes.getLastChangedLine());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "1111111111");
+
+changes=new SnapshotChanges(5);
+changes.setAllChanged(3);
+assertEquals(0, changes.getFirstChangedLine());
+assertEquals(2, changes.getLastChangedLine());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "1111111111");
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testConvertScrollingIntoChanges" mc="Operation" uid="70946ce3-6ab8-4496-adec-b40d366e0afc"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testConvertScrollingIntoChanges]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="c65f1bd7-135a-47c8-853b-993fff915313"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes;
+changes=new SnapshotChanges(2,3);
+changes.scroll(0, 4, -1);
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "000100");
+changes.convertScrollingIntoChanges();
+assertEquals(2, changes.getFirstChangedLine());
+assertEquals(3, changes.getLastChangedLine());
+assertEquals(0, changes.getScrollWindowStartLine());
+assertEquals(0, changes.getScrollWindowSize());
+assertEquals(0, changes.getScrollWindowShift());
+assertChangedLines(changes, "001100");
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testConvertScrollingIntoChangesNoWindow" mc="Operation" uid="d366deec-3718-4545-aedd-f0d4b8b99a8c"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testConvertScrollingIntoChangesNoWindow]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="8baf48e9-263d-4392-a25e-29267e9384b6"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes;
+changes=new SnapshotChanges(7);
+changes.scroll(0, 4, -1);
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "000100");
+changes.convertScrollingIntoChanges();
+assertEquals(0, changes.getFirstChangedLine());
+assertEquals(3, changes.getLastChangedLine());
+assertEquals(0, changes.getScrollWindowStartLine());
+assertEquals(0, changes.getScrollWindowSize());
+assertEquals(0, changes.getScrollWindowShift());
+assertChangedLines(changes, "111100");
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testScrollNoWindow" mc="Operation" uid="4ebba66e-0c25-49b8-8258-9f2a2f8b1ad5"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testScrollNoWindow]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="71e21839-5f31-41bc-81b2-a148f8390c68"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes;
+changes=new SnapshotChanges(7);
+changes.scroll(0, 3, -2);
+assertEquals(1, changes.getFirstChangedLine());
+assertEquals(2, changes.getLastChangedLine());
+assertEquals(0, changes.getScrollWindowStartLine());
+assertEquals(3, changes.getScrollWindowSize());
+assertEquals(-2, changes.getScrollWindowShift());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "0110000");
+
+changes=new SnapshotChanges(7);
+changes.scroll(0, 3, -1);
+changes.scroll(0, 3, -1);
+assertEquals(1, changes.getFirstChangedLine());
+assertEquals(2, changes.getLastChangedLine());
+assertEquals(0, changes.getScrollWindowStartLine());
+assertEquals(3, changes.getScrollWindowSize());
+assertEquals(-2, changes.getScrollWindowShift());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "0110000");
+
+changes=new SnapshotChanges(7);
+changes.scroll(0, 7, -1);
+changes.scroll(0, 7, -1);
+assertEquals(5, changes.getFirstChangedLine());
+assertEquals(6, changes.getLastChangedLine());
+assertEquals(0, changes.getScrollWindowStartLine());
+assertEquals(7, changes.getScrollWindowSize());
+assertEquals(-2, changes.getScrollWindowShift());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "0000011");
+
+// positive scrolls cannot be optimized at the moment
+changes=new SnapshotChanges(7);
+changes.scroll(0, 7, 1);
+changes.scroll(0, 7, 1);
+assertEquals(0, changes.getFirstChangedLine());
+assertEquals(6, changes.getLastChangedLine());
+assertEquals(0, changes.getScrollWindowStartLine());
+assertEquals(0, changes.getScrollWindowSize());
+assertEquals(0, changes.getScrollWindowShift());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "1111111");
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testScroll" mc="Operation" uid="bb584642-8f29-409a-93a7-54f2fa68877a"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testScroll]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="13263cc0-07bc-486b-83f0-5bb49a53d958"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes;
+changes=new SnapshotChanges(2,3);
+changes.scroll(0, 7, -1);
+assertEquals(4, changes.getFirstChangedLine());
+assertEquals(4, changes.getLastChangedLine());
+assertEquals(2, changes.getScrollWindowStartLine());
+assertEquals(3, changes.getScrollWindowSize());
+assertEquals(-1, changes.getScrollWindowShift());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "0000100000");
+
+changes=new SnapshotChanges(2,3);
+changes.scroll(0, 7, -2);
+assertEquals(3, changes.getFirstChangedLine());
+assertEquals(4, changes.getLastChangedLine());
+assertEquals(2, changes.getScrollWindowStartLine());
+assertEquals(3, changes.getScrollWindowSize());
+assertEquals(-2, changes.getScrollWindowShift());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "0001100000");
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testScrollNergative" mc="Operation" uid="466d0f1d-6f0d-4a95-8b69-3b5c8763ea67"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testScrollNergative]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="f74fab26-4513-4dc2-b2be-16ec2c9beca5"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes;
+changes=new SnapshotChanges(2,3);
+changes.scroll(0, 7, -1);
+changes.scroll(0, 7, -1);
+assertEquals(3, changes.getFirstChangedLine());
+assertEquals(4, changes.getLastChangedLine());
+assertEquals(2, changes.getScrollWindowStartLine());
+assertEquals(3, changes.getScrollWindowSize());
+assertEquals(-2, changes.getScrollWindowShift());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "0001100000");
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testScrollPositive" mc="Operation" uid="a5f93039-ce1d-48a4-bc45-8ccb7423db8c"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testScrollPositive]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="a7bb5f58-fdc4-47d4-a594-c15949ae86b5"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes;
+changes=new SnapshotChanges(2,3);
+changes.scroll(0, 7, 1);
+changes.scroll(0, 7, 1);
+assertEquals(2, changes.getFirstChangedLine());
+assertEquals(4, changes.getLastChangedLine());
+assertEquals(0, changes.getScrollWindowStartLine());
+assertEquals(0, changes.getScrollWindowSize());
+assertEquals(0, changes.getScrollWindowShift());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "0011100000");
+    
+changes=new SnapshotChanges(2,3);
+changes.scroll(0, 3, 1);
+changes.scroll(0, 3, 1);
+assertEquals(2, changes.getFirstChangedLine());
+assertEquals(2, changes.getLastChangedLine());
+assertEquals(0, changes.getScrollWindowStartLine());
+assertEquals(0, changes.getScrollWindowSize());
+assertEquals(0, changes.getScrollWindowShift());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "0010000000");
+
+changes=new SnapshotChanges(2,3);
+changes.scroll(0, 4, 1);
+changes.scroll(0, 4, 1);
+assertEquals(2, changes.getFirstChangedLine());
+assertEquals(3, changes.getLastChangedLine());
+assertEquals(0, changes.getScrollWindowStartLine());
+assertEquals(0, changes.getScrollWindowSize());
+assertEquals(0, changes.getScrollWindowShift());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "0011000000");
+
+changes=new SnapshotChanges(2,3);
+changes.scroll(0, 5, 1);
+changes.scroll(0, 5, 1);
+assertEquals(2, changes.getFirstChangedLine());
+assertEquals(4, changes.getLastChangedLine());
+assertEquals(0, changes.getScrollWindowStartLine());
+assertEquals(0, changes.getScrollWindowSize());
+assertEquals(0, changes.getScrollWindowShift());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "0011100000");
+
+changes=new SnapshotChanges(2,3);
+changes.scroll(3, 5, 1);
+changes.scroll(3, 5, 1);
+assertEquals(3, changes.getFirstChangedLine());
+assertEquals(4, changes.getLastChangedLine());
+assertEquals(0, changes.getScrollWindowStartLine());
+assertEquals(0, changes.getScrollWindowSize());
+assertEquals(0, changes.getScrollWindowShift());
+assertTrue(changes.hasChanged());
+assertChangedLines(changes, "0001100000");
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testCopyChangedLines" mc="Operation" uid="b04ec995-1313-4ae0-b00f-a5a76f838bdb"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testCopyChangedLines]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="2caa221c-56db-4377-9849-ebe5223fa050"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes;
+changes=new SnapshotChanges(2,3);
+changes.markLineChanged(3);
+ITerminalTextData source=new TerminalTextDataStore();
+TerminalTextTestHelper.fillSimple(source, "01234567890");
+ITerminalTextData dest=new TerminalTextDataStore();
+TerminalTextTestHelper.fillSimple(dest, "abcdefghijk");
+
+changes.copyChangedLines(dest, source);
+assertEquals("abc3efghijk",TerminalTextTestHelper.toSimple(dest));
+
+changes=new SnapshotChanges(2,3);
+changes.setAllChanged(7);
+source=new TerminalTextDataStore();
+TerminalTextTestHelper.fillSimple(source, "01234567890");
+dest=new TerminalTextDataStore();
+TerminalTextTestHelper.fillSimple(dest, "abcdefghijk");
+
+changes.copyChangedLines(dest, source);
+assertEquals("ab234fghijk",TerminalTextTestHelper.toSimple(dest));
+
+changes=new SnapshotChanges(2,3);
+changes.scroll(0,7,-1);
+source=new TerminalTextDataStore();
+TerminalTextTestHelper.fillSimple(source, "01234567890");
+dest=new TerminalTextDataStore();
+TerminalTextTestHelper.fillSimple(dest, "abcdefghijk");
+// only one line has changed! The other lines are scrolled!
+assertChangedLines(changes,"00001000");
+changes.copyChangedLines(dest, source);
+assertEquals("abcd4fghijk",TerminalTextTestHelper.toSimple(dest));
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testCopyChangedLinesWithSmallSource" mc="Operation" uid="8e5417b9-8d30-4dba-829f-e2e48824879d"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testCopyChangedLinesWithSmallSource]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="45be258b-80e3-4fe2-be0f-2705e65edab2"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes;
+changes=new SnapshotChanges(2,3);
+changes.markLineChanged(3);
+ITerminalTextData source=new TerminalTextDataStore();
+source.setDimensions(2, 2);
+TerminalTextDataWindow dest=new TerminalTextDataWindow();
+dest.setWindow(2, 2);
+changes.copyChangedLines(dest, source);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testCopyChangedLinesWithSmallSource1" mc="Operation" uid="92ea7a62-c507-421c-aa40-8b508e6cbd3c"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testCopyChangedLinesWithSmallSource1]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="eec062aa-8b43-4752-a0b8-f670dd813437"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes;
+changes=new SnapshotChanges(2,3);
+changes.markLineChanged(3);
+ITerminalTextData source=new TerminalTextDataStore();
+TerminalTextTestHelper.fillSimple(source, "01");
+ITerminalTextData dest=new TerminalTextDataStore();
+changes.copyChangedLines(dest, source);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testSetInterestWindowSize" mc="Operation" uid="f2f40649-a646-4193-ab8b-4a907c827aaf"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testSetInterestWindowSize]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="6db9c734-0dde-46d3-8b6b-647ae1384e0a"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes;
+changes=new SnapshotChanges(2,3);
+// move the window
+changes.setInterestWindow(3, 3);
+// only one line has changed! The other lines are scrolled!
+assertEquals(3, changes.getScrollWindowStartLine());
+assertEquals(3, changes.getScrollWindowSize());
+assertEquals(-1, changes.getScrollWindowShift());
+
+assertChangedLines(changes,"0000010");
+changes.convertScrollingIntoChanges();
+assertChangedLines(changes,"0001110");
+
+changes=new SnapshotChanges(2,3);
+// move the window
+changes.setInterestWindow(3, 4);
+// only one line has changed! The other lines are scrolled!
+assertEquals(3, changes.getScrollWindowStartLine());
+assertEquals(3, changes.getScrollWindowSize());
+assertEquals(-1, changes.getScrollWindowShift());
+
+assertChangedLines(changes,"0000011");
+changes.convertScrollingIntoChanges();
+assertChangedLines(changes,"0001111");
+
+    
+changes=new SnapshotChanges(2,3);
+// move the window
+changes.setInterestWindow(6, 3);
+// cannot scroll
+assertEquals(0, changes.getScrollWindowStartLine());
+assertEquals(0, changes.getScrollWindowSize());
+assertEquals(0, changes.getScrollWindowShift());
+assertChangedLines(changes,"000000111000");
+
+changes=new SnapshotChanges(2,3);
+// expand the window
+changes.setInterestWindow(2, 5);
+// cannot scroll
+assertEquals(0, changes.getScrollWindowStartLine());
+assertEquals(0, changes.getScrollWindowSize());
+assertEquals(0, changes.getScrollWindowShift());
+
+assertChangedLines(changes,"0000011000");
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="testSetInterestWindowSize2" mc="Operation" uid="ad3e0648-306d-47cf-bfbf-cd2274f0ecf9"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[testSetInterestWindowSize2]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="49edc4ba-6210-45b1-9601-41f64b3cc2cd"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[SnapshotChanges changes;
+changes=new SnapshotChanges(2,3);
+// move the window
+changes.setInterestWindow(1, 3);
+assertChangedLines(changes,"0111000");
+
+changes=new SnapshotChanges(2,3);
+// move the window
+changes.setInterestWindow(1, 4);
+assertChangedLines(changes,"01111000");
+
+    
+changes=new SnapshotChanges(2,3);
+// expand the window
+changes.setInterestWindow(6, 3);
+assertChangedLines(changes,"000000111000");
+
+changes=new SnapshotChanges(2,3);
+// expand the window
+changes.setInterestWindow(1, 2);
+assertChangedLines(changes,"0110000");
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedImport">
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="f9d9d8da-c217-4bd0-ac0b-4f334ee46dd9"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="ITerminalTextData" mc="Interface" uid="ac632690-0372-4dd9-8652-517688ae86b4"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="4e041664-ad07-453e-b2f7-5f5d15c29089"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="15c1ea63-4d04-4c74-8e43-b836a128e672"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[TestCase]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaExtends" mc="TagType" uid="003800a8-0000-0154-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="9495ed4a-f9e3-45a7-8f0f-f1182f9fd7d6"/>
+          <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="6a222ca7-3585-4f12-901c-07c59273efe8"/>
+                <PID name="SnapshotChangesTest" mc="Class" uid="bd7e60da-412f-4a95-84ed-d43c3974012e"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[junit.framework.TestCase]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

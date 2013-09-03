@@ -1,0 +1,315 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TerminalContextMenuHandler" version="3">
+  <DEPS>
+    <ID name="TerminalContextMenuHandler" mc="Class" uid="58da6971-595a-439c-b1df-4eff54ec3085"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaImplements" mc="TagType" uid="003800a8-0000-0156-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TerminalContextMenuHandler" mc="Class" uid="58da6971-595a-439c-b1df-4eff54ec3085"/>
+    <PID name="TerminalView" mc="Class" uid="83066134-3067-44cc-93a7-65c29821840e"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Protected</ATT>
+      <ATT name="Name"><![CDATA[TerminalContextMenuHandler]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="menuHidden" mc="Operation" uid="ada97049-c53b-4f57-8ed5-2e381ef24070"/>
+          <PID name="TerminalContextMenuHandler" mc="Class" uid="58da6971-595a-439c-b1df-4eff54ec3085"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[menuHidden]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="event" mc="Parameter" uid="7c2f5a85-cc2e-4b4f-a2f9-4ce1874f48d5"/>
+                <PID name="TerminalContextMenuHandler" mc="Class" uid="58da6971-595a-439c-b1df-4eff54ec3085"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[event]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="d856df34-0fe0-43f6-b464-214e518320aa"/>
+                      <PID name="TerminalContextMenuHandler" mc="Class" uid="58da6971-595a-439c-b1df-4eff54ec3085"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="afe41c30-74bf-4fde-a4fe-e8e628a5b863"/>
+                            <PID name="TerminalContextMenuHandler" mc="Class" uid="58da6971-595a-439c-b1df-4eff54ec3085"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[MenuEvent]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="480836ab-2344-401e-8e16-5ba44ffc5924"/>
+                <PID name="TerminalContextMenuHandler" mc="Class" uid="58da6971-595a-439c-b1df-4eff54ec3085"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[fMenuAboutToShow = false;
+fActionEditCopy.updateAction(fMenuAboutToShow);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="menuShown" mc="Operation" uid="21042b07-4f80-433a-b4f5-0b8f5b4a00ac"/>
+          <PID name="TerminalContextMenuHandler" mc="Class" uid="58da6971-595a-439c-b1df-4eff54ec3085"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[menuShown]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="e" mc="Parameter" uid="e2d35b7f-1b41-45f4-b4a1-287ddf2b4d0a"/>
+                <PID name="TerminalContextMenuHandler" mc="Class" uid="58da6971-595a-439c-b1df-4eff54ec3085"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[e]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="cd68f441-f022-4f5e-bb63-b103dbb77e1b"/>
+                      <PID name="TerminalContextMenuHandler" mc="Class" uid="58da6971-595a-439c-b1df-4eff54ec3085"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="6a112538-f14c-41fe-968f-3f48ccb281be"/>
+                            <PID name="TerminalContextMenuHandler" mc="Class" uid="58da6971-595a-439c-b1df-4eff54ec3085"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[MenuEvent]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="e229ea17-387c-4898-8045-832baed51ee5"/>
+                <PID name="TerminalContextMenuHandler" mc="Class" uid="58da6971-595a-439c-b1df-4eff54ec3085"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[//]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="menuAboutToShow" mc="Operation" uid="3efc2c27-4960-4e74-88f4-732cdaf10512"/>
+          <PID name="TerminalContextMenuHandler" mc="Class" uid="58da6971-595a-439c-b1df-4eff54ec3085"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[menuAboutToShow]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="menuMgr" mc="Parameter" uid="faf33ed1-c9ff-4156-9d8d-2203cdd1c38b"/>
+                <PID name="TerminalContextMenuHandler" mc="Class" uid="58da6971-595a-439c-b1df-4eff54ec3085"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[menuMgr]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="e5c9ed24-0535-4071-871c-ed3715dfabff"/>
+                      <PID name="TerminalContextMenuHandler" mc="Class" uid="58da6971-595a-439c-b1df-4eff54ec3085"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="f24b4f71-d31e-4d37-a528-2b38a56eca7c"/>
+                            <PID name="TerminalContextMenuHandler" mc="Class" uid="58da6971-595a-439c-b1df-4eff54ec3085"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[IMenuManager]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="ff8c6fff-7007-447b-b6ca-74defb7ec3fb"/>
+                <PID name="TerminalContextMenuHandler" mc="Class" uid="58da6971-595a-439c-b1df-4eff54ec3085"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[fMenuAboutToShow = true;
+fActionEditCopy.updateAction(fMenuAboutToShow);
+fActionEditCut.updateAction(fMenuAboutToShow);
+fActionEditSelectAll.updateAction(fMenuAboutToShow);
+fActionEditPaste.updateAction(fMenuAboutToShow);
+fActionEditClearAll.updateAction(fMenuAboutToShow);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="54b4aa7a-4e3c-4da9-84bc-b87273e1cf53"/>
+          <PID name="TerminalContextMenuHandler" mc="Class" uid="58da6971-595a-439c-b1df-4eff54ec3085"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="207c9eec-df44-4b58-bfcc-62215d926404"/>
+                <PID name="TerminalContextMenuHandler" mc="Class" uid="58da6971-595a-439c-b1df-4eff54ec3085"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[MenuListener]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="025ac3e2-8a66-4cb1-aef4-acd1d6d8e03e"/>
+                <PID name="TerminalContextMenuHandler" mc="Class" uid="58da6971-595a-439c-b1df-4eff54ec3085"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[IMenuListener]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImplements" mc="TagType" uid="003800a8-0000-0156-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

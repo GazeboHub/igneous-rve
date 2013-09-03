@@ -1,0 +1,300 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TerminalActionCopy" version="3">
+  <DEPS>
+    <ID name="TerminalActionCopy" mc="Class" uid="7c02c6f2-55db-49a4-b71f-65a6a8fe4335"/>
+    <EXTID name="AbstractTerminalAction" mc="Class" uid="108c9308-d5c5-4028-977e-3bd8775c0ef8"/>
+    <EXTID name="ITerminalViewControl" mc="Interface" uid="c48973a6-e9dc-4236-a050-1010cb10d4e0"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+    <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TerminalActionCopy" mc="Class" uid="7c02c6f2-55db-49a4-b71f-65a6a8fe4335"/>
+    <PID name="actions" mc="Package" uid="f854e869-b006-46b0-9aa6-023351cfbc2a"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[TerminalActionCopy]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="TerminalActionCopy" mc="Operation" uid="e6a9692c-2096-4afe-aead-2a0ff71a0226"/>
+          <PID name="TerminalActionCopy" mc="Class" uid="7c02c6f2-55db-49a4-b71f-65a6a8fe4335"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[TerminalActionCopy]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="73b17cf2-50fc-4ebe-8b75-608fb68d9280"/>
+                <PID name="TerminalActionCopy" mc="Class" uid="7c02c6f2-55db-49a4-b71f-65a6a8fe4335"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[super(TerminalActionCopy.class.getName());
+setActionDefinitionId("org.eclipse.tm.terminal.copy"); //$NON-NLS-1$
+ISharedImages si = PlatformUI.getWorkbench().getSharedImages();
+setupAction(ActionMessages.COPY, ActionMessages.COPY, si
+        .getImageDescriptor(ISharedImages.IMG_TOOL_COPY), si
+        .getImageDescriptor(ISharedImages.IMG_TOOL_COPY), si
+        .getImageDescriptor(ISharedImages.IMG_TOOL_COPY_DISABLED), true);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="TerminalActionCopy" mc="Operation" uid="9a62b404-6b89-4f04-822e-2538574c9d3b"/>
+          <PID name="TerminalActionCopy" mc="Class" uid="7c02c6f2-55db-49a4-b71f-65a6a8fe4335"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[TerminalActionCopy]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="target" mc="Parameter" uid="36924191-ca06-47f2-a1bd-f3c2c2e5c4aa"/>
+                <PID name="TerminalActionCopy" mc="Class" uid="7c02c6f2-55db-49a4-b71f-65a6a8fe4335"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[target]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ITerminalViewControl" mc="Interface" uid="c48973a6-e9dc-4236-a050-1010cb10d4e0"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="402778f8-6b9c-48fe-9fa3-9743b697b579"/>
+                <PID name="TerminalActionCopy" mc="Class" uid="7c02c6f2-55db-49a4-b71f-65a6a8fe4335"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[super(target, TerminalActionCopy.class.getName());
+setActionDefinitionId("org.eclipse.tm.terminal.copy"); //$NON-NLS-1$
+ISharedImages si = PlatformUI.getWorkbench().getSharedImages();
+setupAction(ActionMessages.COPY, ActionMessages.COPY, si
+        .getImageDescriptor(ISharedImages.IMG_TOOL_COPY), si
+        .getImageDescriptor(ISharedImages.IMG_TOOL_COPY), si
+        .getImageDescriptor(ISharedImages.IMG_TOOL_COPY_DISABLED), true);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="run" mc="Operation" uid="7dd2e33f-308b-4bcb-a9b5-0164d3706fef"/>
+          <PID name="TerminalActionCopy" mc="Class" uid="7c02c6f2-55db-49a4-b71f-65a6a8fe4335"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[run]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="09c90777-a624-488a-8b15-96a22a469a9a"/>
+                <PID name="TerminalActionCopy" mc="Class" uid="7c02c6f2-55db-49a4-b71f-65a6a8fe4335"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ITerminalViewControl target = getTarget();
+if (target != null) {
+    String selection = target.getSelection();
+
+    if (!selection.equals("")) {//$NON-NLS-1$
+        target.copy();
+    } else {
+        target.sendKey('\u0003');
+    }
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="updateAction" mc="Operation" uid="cba76345-91aa-4c5c-b883-54632788057b"/>
+          <PID name="TerminalActionCopy" mc="Class" uid="7c02c6f2-55db-49a4-b71f-65a6a8fe4335"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[updateAction]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="aboutToShow" mc="Parameter" uid="ba561c96-3c6f-4e68-a72d-3f05113ffcb6"/>
+                <PID name="TerminalActionCopy" mc="Class" uid="7c02c6f2-55db-49a4-b71f-65a6a8fe4335"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[aboutToShow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="5377acd8-96c1-499d-a9ed-4da4563af945"/>
+                <PID name="TerminalActionCopy" mc="Class" uid="7c02c6f2-55db-49a4-b71f-65a6a8fe4335"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ITerminalViewControl target = getTarget();
+boolean bEnabled = target != null;
+if (aboutToShow && bEnabled) {
+    bEnabled = target.getSelection().length() > 0;
+}
+setEnabled(bEnabled);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="" mc="Generalization" uid="d7ca85c4-2a10-4203-913c-eda6bf058897"/>
+          <PID name="TerminalActionCopy" mc="Class" uid="7c02c6f2-55db-49a4-b71f-65a6a8fe4335"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="AbstractTerminalAction" mc="Class" uid="108c9308-d5c5-4028-977e-3bd8775c0ef8"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="6dc9c229-88ee-43fa-a39b-57821617c949"/>
+          <PID name="TerminalActionCopy" mc="Class" uid="7c02c6f2-55db-49a4-b71f-65a6a8fe4335"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="a0812bba-ba2b-499b-9229-58477d029fef"/>
+                <PID name="TerminalActionCopy" mc="Class" uid="7c02c6f2-55db-49a4-b71f-65a6a8fe4335"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.ui.ISharedImages]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="3356ea7a-8eb4-42b7-bc0f-abab78318e5f"/>
+                <PID name="TerminalActionCopy" mc="Class" uid="7c02c6f2-55db-49a4-b71f-65a6a8fe4335"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.ui.PlatformUI]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,2468 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TerminalTextUITest" version="3">
+  <DEPS>
+    <ID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+    <COMPID name="Status" mc="Class" uid="c52e1896-ed5d-4699-8297-d7fc08da9b9f"/>
+    <EXTID name="DataReader" mc="Class" uid="b074a81a-b391-40c8-92c0-4728ad40a005"/>
+    <EXTID name="ITerminalTextData" mc="Interface" uid="ac632690-0372-4dd9-8652-517688ae86b4"/>
+    <EXTID name="ITerminalTextDataSnapshot" mc="Interface" uid="b5768b9b-c546-40ba-be28-aac7a10baa83"/>
+    <EXTID name="ITextCanvasModel" mc="Interface" uid="db0d75ab-8a36-4894-ad68-901151456b4a"/>
+    <EXTID name="PollingTextCanvasModel" mc="Class" uid="48ebb484-595b-444f-bba8-8bfbd4148045"/>
+    <EXTID name="TerminalTextDataFactory" mc="Class" uid="118cf880-7691-465d-bdec-71f64f666e3a"/>
+    <EXTID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+    <EXTID name="TextLineRenderer" mc="Class" uid="53c44274-a4f7-45c6-ab92-44088875cf79"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaFinal" mc="TagType" uid="eb8c1900-000a-b31d-0000-000000000000"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+    <FOREIGNID name="JavaVolatile" mc="TagType" uid="003800a8-0000-0163-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015d-0000-000000000000"/>
+    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+    <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+    <PID name="ui" mc="Package" uid="dc4bc261-1b44-4c7a-873f-e729db12cb8e"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[TerminalTextUITest]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="main" mc="Operation" uid="eef0eacd-eb6c-4bd4-a5b4-c944ad0312e8"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[main]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="args" mc="Parameter" uid="e5a40b4a-cf80-47f2-ba9e-7ed075170947"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[args]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="b4bacb86-fa2c-4454-9a5b-df6bd538f231"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="71240cc6-c0e8-45a2-8510-4bddd4f2dafe"/>
+                            <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Array]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="49e9031f-16c5-4dd2-8d81-92c1514697a5"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="80272502-fcea-40a3-b56c-809d5040a601"/>
+                            <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[String]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="d9c9ad53-5448-4ec0-922f-b43b4978be2d"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Display display = new Display();
+Shell shell = new Shell(display);
+shell.setLayout(new GridLayout());
+Composite composite=new Composite(shell, SWT.NONE);
+composite.setLayoutData(new GridData(GridData.FILL_HORIZONTAL));
+RowLayout layout = new RowLayout(SWT.HORIZONTAL);
+layout.wrap = true;
+layout.fill = false;
+fTerminalModel=TerminalTextDataFactory.makeTerminalTextData();
+fHeight=24;
+fWidth=80;
+fTerminalModel.setDimensions(fHeight, fWidth);
+fTerminalModel.setMaxHeight(fHeight);
+ITerminalTextDataSnapshot snapshot=fTerminalModel.makeSnapshot();
+// TODO how to get the initial size correctly!
+snapshot.updateSnapshot(false);
+fgModel=new PollingTextCanvasModel(snapshot);
+fgTextCanvas=new TextCanvas(shell,fgModel, SWT.NONE,new TextLineRenderer(fgTextCanvas,fgModel));
+fgTextCanvas.setLayoutData(new GridData(GridData.FILL_BOTH));
+
+
+composite.setLayout(layout);
+addAutorevealCursorButton(composite);
+Text maxHeightText = addMaxHeightInput(composite);
+addHeightInput(composite, maxHeightText);
+addWidthText(composite);
+Text throttleText = addThrottleText(composite);
+
+IStatus status=new Status();
+DataReader reader=new DataReader("Line Count",fTerminalModel,new LineCountingDataSource(),status);
+addDataReader(composite, reader);
+reader=new DataReader("Fast",fTerminalModel,new FastDataSource(),status);
+addDataReader(composite, reader);
+reader=new DataReader("Random",fTerminalModel,new RandomDataSource(),status);
+addDataReader(composite, reader);
+for (int i = 0; i < args.length; i++) {
+    File file=new File(args[i]);
+    reader=new DataReader(file.getName(),fTerminalModel,new VT100DataSource(args[i]),status);
+    addDataReader(composite, reader);
+}
+addStopAllButton(composite, reader);
+
+fStatusLabel=new Label(shell,SWT.NONE);
+fStatusLabel.setLayoutData(new GridData(250,15));
+throttleText.setText("100");
+setThrottleForAll(100);
+
+if(args.length==0)
+    addLabel(composite, "[Files can be added via commandline]");
+shell.setSize(600,300);
+shell.open();
+while (!shell.isDisposed()) {
+    if (!display.readAndDispatch())
+        display.sleep();
+}
+display.dispose();
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="addMaxHeightInput" mc="Operation" uid="e0013084-0dd2-40e7-a13a-461395c6ac82"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[addMaxHeightInput]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="composite" mc="Parameter" uid="1bb55a42-a259-4a1a-a6d9-7e670fb3969d"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[composite]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="2da4ee0d-b403-429a-9569-38675fd44bd6"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="ac87becd-91c4-488d-a976-a472c460f5aa"/>
+                            <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Composite]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="427113e5-fb60-4857-aeeb-50612bed5b06"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="006cd567-dad2-4519-abe6-f0fe31887362"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="86267719-2a53-4ab7-9c53-3263143c5ace"/>
+                            <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Text]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="ad7017ae-f1db-492f-b2a3-8110908e7879"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return maxHeightText;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="120409af-9e39-479c-ba4c-bbdb57c6e959"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[addLabel(composite, "maxHeight:");
+final Text maxHeightText=new Text(composite,SWT.BORDER);
+setLayoutData(maxHeightText,30);
+maxHeightText.addModifyListener(new ModifyListener(){
+    public void modifyText(ModifyEvent e) {
+        synchronized (fTerminalModel) {
+            int height=textToInt(maxHeightText);
+            if(height<1)
+                return;
+            if(fTerminalModel.getHeight()>height) {
+                fTerminalModel.scroll(0, fTerminalModel.getHeight(), height-fTerminalModel.getHeight());
+                fTerminalModel.setDimensions(height,fTerminalModel.getWidth());
+                heightText.setText(height+"");
+            }
+            fTerminalModel.setMaxHeight(height);
+        }
+    }
+});
+maxHeightText.setText(fHeight+"");
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="addHeightInput" mc="Operation" uid="e2daac0f-1674-47a1-bb67-c5fb0a3dd9b0"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[addHeightInput]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="composite" mc="Parameter" uid="48f5b703-4937-43c2-b8bb-1bbd92068d36"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[composite]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="b2e73fbf-e536-4044-a8fd-6c213e7d9778"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="5bee9c5f-caf1-45db-821a-c84d3b24d13c"/>
+                            <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Composite]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="maxHeightText" mc="Parameter" uid="715b273e-550a-4ef6-ada2-b94fbb6fb48f"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[maxHeightText]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="8ba9d329-eb43-401f-b532-0196e3cd4b67"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaFinal" mc="TagType" uid="eb8c1900-000a-b31d-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="a998458e-5f6a-4518-8fb2-6e9ca5d7fd70"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="8f43eeab-481e-4a7e-8ce8-2bbbd9db6594"/>
+                            <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Text]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="fa01a075-f402-4b26-990e-315719c2cee5"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[addLabel(composite,"heigth:");
+heightText=new Text(composite,SWT.BORDER);
+setLayoutData(heightText,30);
+heightText.addModifyListener(new ModifyListener(){
+    public void modifyText(ModifyEvent e) {
+        synchronized (fTerminalModel) {
+            int height=textToInt(heightText);
+            if(height<1)
+                return;
+            maxHeightText.setText(""+height);
+            fTerminalModel.setDimensions(height,fTerminalModel.getWidth());
+            fTerminalModel.setMaxHeight(height);
+        }
+    }
+});
+heightText.setText(fHeight+"");
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="addWidthText" mc="Operation" uid="d661c4cd-63fb-438f-afb1-776a7c5cc687"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[addWidthText]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="composite" mc="Parameter" uid="ab314cf2-bfc7-4424-a0d0-f996a275a923"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[composite]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="aec1f1d4-c2bc-44ca-9a98-467519a513f7"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="4b359518-9456-4ee2-a6ca-3ff30b74489e"/>
+                            <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Composite]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="b25df060-7b31-4545-95ac-40dc0b20a5b2"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="a7f870c5-be4b-40a1-b696-60647dc0f5fc"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="b11518d5-ad15-4fb6-a47e-3d882daaa73e"/>
+                            <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Text]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="ad84d8c9-4cb5-4706-8397-033e662c71f0"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return widthText;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="0afb8550-3a49-4a0d-a74f-09437c5a0601"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[addLabel(composite,"width:");
+final Text widthText=new Text(composite,SWT.BORDER);
+setLayoutData(widthText,30);
+widthText.addModifyListener(new ModifyListener(){
+    public void modifyText(ModifyEvent e) {
+        synchronized (fTerminalModel) {
+            int width=textToInt(widthText);
+            if(width>1)
+                fTerminalModel.setDimensions(fTerminalModel.getHeight(), width);
+        }
+    }
+});
+widthText.setText(fWidth+"");
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="addThrottleText" mc="Operation" uid="0a8ec985-c42a-4905-9896-fd2972886a1b"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[addThrottleText]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="composite" mc="Parameter" uid="40b1ef77-cd97-4349-a70b-54cc447a8e45"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[composite]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="41a33fc6-eb68-4a8f-96e9-b4be91c288ce"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="bcc81d27-1adf-4faf-9c66-7e30adc6d20d"/>
+                            <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Composite]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="a7bf6eea-bec6-47b7-967a-8452c365d562"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="dae21324-f585-4ecd-a0fe-638fbdc9f598"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="269e0c26-8e6a-46e1-92c8-c94fc4804b3a"/>
+                            <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Text]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="b9a7204b-40b1-40a9-9983-9d58d3513169"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return throttleText;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="07e4a747-07b4-4447-ae9f-4a66bc746f22"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[addLabel(composite,"throttle:");
+final Text throttleText=new Text(composite,SWT.BORDER);
+setLayoutData(throttleText,30);
+throttleText.addModifyListener(new ModifyListener(){
+    public void modifyText(ModifyEvent e) {
+        synchronized (fTerminalModel) {
+            int throttle=textToInt(throttleText);
+            setThrottleForAll(throttle);
+        }
+    }});
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="addStopAllButton" mc="Operation" uid="039839ec-c792-4e5a-a1fd-67f219f65ce9"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[addStopAllButton]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="composite" mc="Parameter" uid="0fb6e65e-cc5a-4720-beb2-e5a674a07310"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[composite]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="6a4395b0-5592-4620-965b-b29421ce06f2"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="575f6593-3d82-474d-ac3f-5a0b72dc3287"/>
+                            <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Composite]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="reader" mc="Parameter" uid="e41c6622-2a25-41d2-a31c-21d02a7dd602"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[reader]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="DataReader" mc="Class" uid="b074a81a-b391-40c8-92c0-4728ad40a005"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="89e384c1-e4ba-485f-9044-5a52147cdb1f"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[final Button stopAllButton=new Button(composite,SWT.CHECK);
+stopAllButton.setText("Stop ALL");
+stopAllButton.addSelectionListener(new SelectionAdapter(){
+
+    public void widgetSelected(SelectionEvent e) {
+        boolean stop=stopAllButton.getSelection();
+        for (Iterator iterator = fDataReaders.iterator(); iterator.hasNext();) {
+            DataReader reader = (DataReader) iterator.next();
+            reader.setStop(stop);
+
+    }}});
+stopAllButton.setSelection(reader.isStart());
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="addAutorevealCursorButton" mc="Operation" uid="9f1c74ea-6a01-4915-885f-9d03fbf75c22"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[addAutorevealCursorButton]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="composite" mc="Parameter" uid="0bcd475c-c692-41ed-8474-dccde4f8b466"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[composite]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="e0947f3d-5b2f-4a03-85c0-fdae2e03554c"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="09d64d3d-b20a-453f-bf2e-0d0ea2fbbc99"/>
+                            <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Composite]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="e2e71a14-d7df-42a7-8de6-bb75b3683c6c"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[final Button button=new Button(composite,SWT.CHECK);
+button.setText("ScrollLock");
+button.addSelectionListener(new SelectionAdapter(){
+    public void widgetSelected(SelectionEvent e) {
+        boolean scrollLock=button.getSelection();
+        fgTextCanvas.setScrollLock(scrollLock);
+    }
+});
+button.setSelection(fgTextCanvas.isScrollLock());
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="addLabel" mc="Operation" uid="628f1b90-8e5c-41e7-9cea-dc6fc8a5fce1"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[addLabel]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="composite" mc="Parameter" uid="abaef41b-4c8c-47bb-a737-eb231fa5699f"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[composite]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="dd73af40-5d9b-4b5a-8377-1bed75c8dd12"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="e56d4087-6a0d-4751-8ed3-2b2da66ae459"/>
+                            <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Composite]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="message" mc="Parameter" uid="2ea6c5ca-d1bf-4fd9-9d25-014db9afb7c3"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[message]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="75ed6518-717e-45cc-8c78-daec13158455"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="02ce7932-f6ad-4aa5-ae6f-dc68fe9344f3"/>
+                            <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[String]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="32d9e499-fa45-4ac7-83af-2418dae50092"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Label label;
+label=new Label(composite, SWT.NONE);
+label.setText(message);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="addDataReader" mc="Operation" uid="81c0126d-2222-445a-b78c-27a29828c45e"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[addDataReader]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="composite" mc="Parameter" uid="7626c337-11d6-4b88-849a-f31c35eb2447"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[composite]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="e81ec027-ecf3-48cd-941e-e987d86bb206"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="6183481b-4578-4f6d-bb5d-3b2608997784"/>
+                            <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Composite]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="reader" mc="Parameter" uid="e8599c15-b594-4128-b1ab-60caf3396036"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[reader]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="DataReader" mc="Class" uid="b074a81a-b391-40c8-92c0-4728ad40a005"/>
+                  </LINK>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="ab8d4721-d524-4539-b80a-1e8c23a8f9fa"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaFinal" mc="TagType" uid="eb8c1900-000a-b31d-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="07dec741-673d-4ae1-8fec-c5f963af16eb"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[fDataReaders.add(reader);
+final Button button=new Button(composite,SWT.CHECK);
+button.setText(reader.getName());
+button.addSelectionListener(new SelectionAdapter(){
+
+    public void widgetSelected(SelectionEvent e) {
+        reader.setStart(button.getSelection());
+    }});
+button.setSelection(reader.isStart());
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="setThrottleForAll" mc="Operation" uid="5ba21364-1aff-4c38-8b18-06298a9ea439"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[setThrottleForAll]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="throttle" mc="Parameter" uid="1e5c3a6e-340a-49c5-a3e5-b0bf75bee79f"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[throttle]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="19566759-1045-4c36-b0d0-7ce8609d88da"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[for (Iterator iterator = fDataReaders.iterator(); iterator.hasNext();) {
+    DataReader reader = (DataReader) iterator.next();
+    reader.setThrottleTime(throttle);
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="setLayoutData" mc="Operation" uid="2c36b5bf-21e1-471b-b193-094f194a269d"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[setLayoutData]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="c" mc="Parameter" uid="e979a5f2-bdbc-4a6e-9ba5-61c557bb2742"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[c]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="0bd430de-a925-4206-b804-b2b0127c04a9"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="18850d44-17d8-43e5-99c6-13e4a7e3d471"/>
+                            <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Control]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="width" mc="Parameter" uid="e35cc603-e96b-4cd1-a6c5-2459bf14765c"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[width]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="74c6343a-6fb7-4916-9e9b-bf9d82e36681"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[c.setLayoutData(new RowData(width,-1));]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="textToInt" mc="Operation" uid="18ab098b-c4fa-4f0e-af71-f3cf0206a9c6"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[textToInt]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="text" mc="Parameter" uid="da87ebac-4d88-4737-a2ca-d161c85b6028"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[text]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="df61e113-dad8-4645-9c58-4ce3b26cd74d"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="e38b83a0-a39d-4d89-9ec8-699ee1f92850"/>
+                            <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Text]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="db7dd7e9-92e7-4ce6-9aba-ac97c41a2209"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="611a7b89-4b0e-4359-968b-f142dd634e30"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[try {
+    return Integer.valueOf(text.getText()).intValue();
+} catch (Exception ex) {
+    return 0;
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="fStatusLabel" mc="Attribute" uid="95e1c69a-e7c4-49d5-9638-3f391c662cdb"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fStatusLabel]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="630c7023-a08f-4224-b83d-835bad77212b"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="ff0877ae-779b-41be-b23e-0a230363f63b"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[Label]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="7cfc729c-8c5e-43df-b16c-65288be56af7"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fHeight" mc="Attribute" uid="d54bc45e-4034-412b-8c37-7697e76250fa"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fHeight]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="eeb227bb-5995-4a6c-9f5a-0602289899f7"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaVolatile" mc="TagType" uid="003800a8-0000-0163-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="2101efd1-9b2f-4c26-a52d-14d07f50f4bf"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fWidth" mc="Attribute" uid="091b1493-04ef-4a47-a0c3-54bee7e6f825"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fWidth]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="2bcf8d78-22d9-4b48-9947-2169a3ff725e"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaVolatile" mc="TagType" uid="003800a8-0000-0163-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="988bf545-666f-4a6b-ac91-5772e5fa7f8b"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fDataReaders" mc="Attribute" uid="6c5dae71-fdc2-4758-bd43-a2565dccf997"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA[new ArrayList()]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fDataReaders]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="8f97900a-bde9-47a9-a46a-3f5aacc864a6"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="3c228ea5-b2e7-4462-99eb-d2b0cf62decc"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[List]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="heightText" mc="Attribute" uid="e6383dcf-f8c5-4d0d-9c4b-d4d5e6a7f9fc"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[heightText]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="7af10c71-9103-48d1-95fb-495a67707070"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="c82ddfbd-bd75-4978-b10c-84449483b0ee"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[Text]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="16e5d9c8-d05d-4285-addc-9578ce8e1e51"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedEnd">
+        <OBJECT>
+          <ID name="fgTextCanvas" mc="AssociationEnd" uid="1f3d19c5-c37a-4aba-b134-66215e22f7c1"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fgTextCanvas]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="TextCanvas" mc="Class" uid="4809fbf4-c7ed-4d57-84ce-f6dd26ec79d5"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="AssociationEnd" uid="c0c72ce1-cd44-4841-b4a3-0dc51f2aaf84"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="fgTextCanvas" mc="AssociationEnd" uid="1f3d19c5-c37a-4aba-b134-66215e22f7c1"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Association" uid="9f800f11-29d8-4b8f-8fb5-80fdd47204a3"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <OBJECT>
+                <ID name="" mc="Association" uid="9f800f11-29d8-4b8f-8fb5-80fdd47204a3"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="67a6088a-d609-4635-97b6-254647ddcb1d"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fgModel" mc="AssociationEnd" uid="218efbf0-aaa7-4e6e-9020-43c276cf1c98"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fgModel]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="ITextCanvasModel" mc="Interface" uid="db0d75ab-8a36-4894-ad68-901151456b4a"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="AssociationEnd" uid="c9358cfb-7dc1-498b-b23c-2131d7a3de6b"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="fgModel" mc="AssociationEnd" uid="218efbf0-aaa7-4e6e-9020-43c276cf1c98"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Association" uid="646bd150-c425-4ee0-8beb-2505d5876903"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <OBJECT>
+                <ID name="" mc="Association" uid="646bd150-c425-4ee0-8beb-2505d5876903"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="36f09fa3-f4b9-4795-8d14-57adfcb6a0ca"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fTerminalModel" mc="AssociationEnd" uid="22700f5b-a624-40fe-b9cc-6474c8e361b8"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fTerminalModel]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="ITerminalTextData" mc="Interface" uid="ac632690-0372-4dd9-8652-517688ae86b4"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="AssociationEnd" uid="f7c3a294-8c69-4b01-8f85-25e714195a4a"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="fTerminalModel" mc="AssociationEnd" uid="22700f5b-a624-40fe-b9cc-6474c8e361b8"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Association" uid="cdd43bc7-8304-43f6-859e-2ba3d425938f"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <OBJECT>
+                <ID name="" mc="Association" uid="cdd43bc7-8304-43f6-859e-2ba3d425938f"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="8349c74e-97e4-4c54-afb7-01278c5d56e9"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fDataReader" mc="AssociationEnd" uid="a5e3d496-f279-480f-8b12-143bf2889ed9"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fDataReader]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="DataReader" mc="Class" uid="b074a81a-b391-40c8-92c0-4728ad40a005"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="AssociationEnd" uid="f4c20e40-1a31-447c-83fb-820b7885cc73"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="fDataReader" mc="AssociationEnd" uid="a5e3d496-f279-480f-8b12-143bf2889ed9"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Association" uid="4bbc41fa-b161-4648-87e9-d6d1afc95840"/>
+                      <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <OBJECT>
+                <ID name="" mc="Association" uid="4bbc41fa-b161-4648-87e9-d6d1afc95840"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="3becaf0c-302a-4025-991b-e20d59ac35e4"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedImport">
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="a0696c22-baba-49f8-8735-84c7469a0094"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="PollingTextCanvasModel" mc="Class" uid="48ebb484-595b-444f-bba8-8bfbd4148045"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="5f0c3263-7c5d-4f78-9bac-b8ef0b2fbaf6"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="TextLineRenderer" mc="Class" uid="53c44274-a4f7-45c6-ab92-44088875cf79"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="d17c1920-2896-4e01-9f4e-8308a1baf822"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="ITerminalTextDataSnapshot" mc="Interface" uid="b5768b9b-c546-40ba-be28-aac7a10baa83"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="b2846bf5-0dab-4686-aa49-b96c0a871b64"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="TerminalTextDataFactory" mc="Class" uid="118cf880-7691-465d-bdec-71f64f666e3a"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Status" mc="Class" uid="c52e1896-ed5d-4699-8297-d7fc08da9b9f"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="29d35401-35a1-4716-b5c5-02f8b802740d"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="d1290041-1159-43e5-9ee4-d3bd52942294"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.io.File]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="fb0c758e-7b4d-4846-9a25-5e0e21c8a6fa"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.util.ArrayList]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="439e5a8c-96d3-4916-b785-0232f48a6c0c"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.util.Iterator]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="7e8216ae-0203-4eee-9d03-8ff32605538c"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.util.List]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="23d5f812-0d50-4769-b086-800648a18672"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.SWT]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="281d16a8-d974-4a05-aad2-f30a0ae1e49f"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.events.ModifyEvent]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="e45061e1-0a7b-4c68-983f-3a34b804e48b"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.events.ModifyListener]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="7bc9e800-5d58-4f88-84bb-12e768aa795f"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.events.SelectionAdapter]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="78b440ea-d72c-4a0e-a834-d658c7f2326b"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.events.SelectionEvent]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="540fca31-09fc-4930-824b-e8096f20d89b"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.layout.GridData]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="b41497dd-fd58-4d31-b77e-01c6c3b61acd"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.layout.GridLayout]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="7317cee3-70c4-4db1-9b32-002dd516fd09"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.layout.RowData]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="ea2fe194-9963-4296-9ce7-f8c08d6a2962"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.layout.RowLayout]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="045d71ab-1fe2-42f6-b12b-7bb2595a5d27"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Button]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="bbd94b01-9c8e-4a8a-86ec-00e57edabc3b"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Composite]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="274461ca-27cc-467c-a002-47ac07295a09"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Control]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="4b92fbea-9a5a-4b1b-bf2e-e15e943b462c"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Display]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="56c87cf4-6893-4b7b-b202-2aa0d43541f8"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Label]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="32434f55-10b2-4f46-9d48-fcc385017c30"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Shell]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="b353d9c3-1da5-4b47-a1ca-f12ff5194dee"/>
+                <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Text]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="7c3de709-8e27-49e5-b7b2-091ce321ddde"/>
+          <PID name="TerminalTextUITest" mc="Class" uid="4849da9c-478a-4199-87be-a73f46eef0a1"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[adjust columns when table gets resized....]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015d-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

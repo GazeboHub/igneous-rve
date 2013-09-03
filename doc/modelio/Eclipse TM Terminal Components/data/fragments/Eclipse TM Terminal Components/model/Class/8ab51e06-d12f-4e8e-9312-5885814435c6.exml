@@ -1,0 +1,1968 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="LocalTerminalSettingsPage" version="3">
+  <DEPS>
+    <ID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+    <EXTID name="AbstractSettingsPage" mc="Class" uid="0826ea62-87c4-4f36-a18e-1390b8ce72a3"/>
+    <EXTID name="DependentHeightComposite" mc="Class" uid="d0e3539d-c55e-41f3-b31b-e6a9dc695591"/>
+    <EXTID name="ILocalTerminalSettings" mc="Interface" uid="519c53e1-e5b4-4f63-a713-5d4764c4b706"/>
+    <EXTID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+    <EXTID name="LocalTerminalLaunchUtilities" mc="Class" uid="8977a93e-fc29-4b8b-86ae-7fa8d72528b6"/>
+    <EXTID name="Logger" mc="Class" uid="2a7e52a1-ec66-497c-b7ea-653c8f220c3a"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+    <FOREIGNID name="JavaImplements" mc="TagType" uid="003800a8-0000-0156-0000-000000000000"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015d-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+    <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+    <PID name="local" mc="Package" uid="c164f5fa-cb58-46b3-a1a5-5e52cc1b90ee"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[LocalTerminalSettingsPage]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="LocalTerminalSettingsPage" mc="Operation" uid="60f4c48f-5355-42e1-8b4d-e4787d33e759"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[LocalTerminalSettingsPage]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="settings" mc="Parameter" uid="3c5e92eb-bd3e-49a3-aa3a-a331a86a0ad9"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[settings]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="ILocalTerminalSettings" mc="Interface" uid="519c53e1-e5b4-4f63-a713-5d4764c4b706"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="e07fcdd4-1862-4a69-be3c-06ef178033e3"/>
+                      <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the {@link ILocalTerminalSettings}]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="26331e11-8a6b-43bb-aab9-07ee3b3ebe79"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Creates a new {@link LocalTerminalSettingsPage} that reflects the settings of the specified
+{@link ILocalTerminalSettings} object.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="ea8dafc7-85b9-4858-882a-dd00fd1f8ff3"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[this.settings = settings;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="createControl" mc="Operation" uid="7160d0d7-f20b-437e-9c45-dc5474a45eb5"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[createControl]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="parent" mc="Parameter" uid="4302fa5d-1744-4d1f-ab41-4d61cd50606c"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[parent]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="ef7a7220-9c21-4600-b996-df7972a0067a"/>
+                      <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="0d026f9b-4d00-41af-a182-355ec38303d8"/>
+                            <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Composite]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="2808d13f-2fb2-4c18-90c9-5ab5675ab4f8"/>
+                      <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the parent {@link Composite} into which the control is to be inserted]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="c7290528-3b1f-4d8c-a5fd-07ad80659744"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Creates the {@link org.eclipse.swt.widgets.Control} for the settings page.
+(NOTE: contrary to the common pattern, this method does not actually return the Control it
+created)
+@see ISettingsPage#createControl(Composite)]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="2e0dc33a-5765-4148-a176-7b898562b875"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ILaunchConfiguration defaultConfiguration;
+defaultConfiguration = LocalTerminalLaunchUtilities.createDefaultLaunchConfiguration();
+Composite enclosing = parent.getParent();
+Layout enclosingLayout = enclosing.getLayout();
+int extra = 0;
+if (enclosingLayout instanceof GridLayout) {
+
+    extra = -2*((GridLayout)enclosingLayout).marginHeight-2;
+}
+Composite composite = new DependentHeightComposite(parent, SWT.NONE, enclosing, extra);
+//
+// TODO: This is a HACK that ensures proper resizing of the settings page inside the
+//       StackLayout of the PageBook. The following code makes implicit assumptions about
+//       the internal layout of surrounding widgets. This is something that should be
+//       properly addressed in the framework (maybe in the PageBook class).
+
+GridLayout layout = new GridLayout();
+layout.marginWidth = layout.marginHeight = 0;
+layout.horizontalSpacing = layout.verticalSpacing = 0;
+composite.setLayout(layout);
+composite.setLayoutData(new GridData(GridData.FILL_BOTH));
+Label label = new Label(composite, SWT.NONE);
+label.setText(LocalTerminalMessages.launchConfiguration);
+label.setLayoutData(new GridData());
+
+// Create list of available launch configurations:
+//
+Composite tableAndButtons = new Composite(composite, SWT.NONE);
+tableAndButtons.setLayoutData(new GridData(GridData.FILL_BOTH));
+layout = new GridLayout(2, false);
+layout.marginWidth = 0;
+tableAndButtons.setLayout(layout);
+Table table = new Table(tableAndButtons, SWT.BORDER);
+viewer = new TableViewer(table);
+viewer.setLabelProvider(new LocalTerminalLaunchLabelProvider());
+viewer.setContentProvider(new LocalTerminalLaunchListProvider());
+viewer.setInput(new Object());
+viewer.addSelectionChangedListener(this);
+table.setLayoutData(new GridData(GridData.FILL, GridData.FILL, true, true, 0, 3));
+buttonNew = pushButton(tableAndButtons, LocalTerminalMessages.labelNew, false);
+buttonEdit = pushButton(tableAndButtons, LocalTerminalMessages.labelEdit, false);
+buttonEdit.setEnabled(settings.getLaunchConfigurationName() != null);
+buttonDelete = pushButton(tableAndButtons, LocalTerminalMessages.labelDelete, true);
+buttonDelete.setEnabled(settings.getLaunchConfigurationName() != null);
+//
+// NOTE: echo and line separator settings were moved to the launch configuration!
+
+// NOTE: loadSettings() is actually NOT called by the framework but needs to be called
+//       by the settings page itself
+// TODO: this should be fixed in the framework; otherwise there is really no point
+//       in having it be a part of the ISettingsPage interface
+//
+loadSettings();
+if (defaultConfiguration != null) {
+
+    // If there is only one configuration (the default one), then make sure it gets
+    // selected:
+    //
+    viewer.setSelection(new StructuredSelection(defaultConfiguration), true);
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="loadSettings" mc="Operation" uid="2cec9536-ac2f-4017-80b3-ad3791e09c55"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[loadSettings]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="6abaf52f-3afd-4c21-bff4-bd8872d74b61"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Loads the settings from the internal {@link ILocalTerminalSettings} object.
+This method will update the UI to reflect the current settings.
+@see ISettingsPage#loadSettings()]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="38749796-ab6f-43cd-b754-98b6ff749a7e"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[String configurationName = settings.getLaunchConfigurationName();
+ILaunchConfiguration configuration;
+try {
+
+    configuration = LocalTerminalUtilities.findLaunchConfiguration(configurationName);
+}
+catch (CoreException couldNotFindLaunchConfiguration) {
+
+    configuration = null;
+}
+if (settings.getLaunchConfigurationName() != null && configuration != null) {
+
+    viewer.setSelection(new StructuredSelection(configuration), true);
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="saveSettings" mc="Operation" uid="36f2725d-c2ee-4fc0-b444-f3447641c4dc"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[saveSettings]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="6f66fd15-a74a-4de3-87ee-651c2d1227e2"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Saves the settings that are currently displayed in the UI to the internal
+{@link ILocalTerminalSettings} object.
+@see ISettingsPage#saveSettings()]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="7402286d-3628-4982-b4a0-92675bcb14c2"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[if (viewer != null && !viewer.getSelection().isEmpty()) {
+
+    IStructuredSelection selection = (IStructuredSelection)viewer.getSelection();
+    Object element = selection.getFirstElement();
+    if (element instanceof ILaunchConfiguration) {
+
+        String launchConfiguration = ((ILaunchConfiguration)element).getName();
+        settings.setLaunchConfigurationName(launchConfiguration);
+    }
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="validateSettings" mc="Operation" uid="bf924d3d-f175-47bb-b907-85ff44bbf131"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[validateSettings]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="23d6559f-92ac-4bf2-816c-a47aa1f81d15"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="cb271d5a-1eaf-4352-9c6b-d19689d0132b"/>
+                      <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<code>true</code> if a launch configuration has been selected, <code>false</code>
+otherwise]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="27dc393b-6374-4058-a538-9351c048b55a"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Checks if the current settings are valid for starting a terminal session.
+This method will only return <code>true</code> if a launch configuration is selected.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="33b0bb63-1d6d-4bab-a848-0161c1bb2edc"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return viewer != null && !viewer.getSelection().isEmpty();]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="selectionChanged" mc="Operation" uid="40848b37-6e15-4053-80c9-fa2674a01126"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[selectionChanged]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="event" mc="Parameter" uid="c530cf8e-15fc-4ded-b0d9-6fca6cde28fc"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[event]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="a719bd4c-30ae-4e2a-b761-9962bdaeb3a0"/>
+                      <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="385159d8-2f28-4203-a757-017fe5a127a9"/>
+                            <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[SelectionChangedEvent]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="8f370af8-21a8-4d00-b82f-b0a024d34e21"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Enables or disables the Edit... and Delete buttons depending on whether a launch
+configuration is currently selected in the viewer.
+@see ISelectionChangedListener#selectionChanged(SelectionChangedEvent)]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="51f146aa-3b66-451a-93a1-0e9f6a6f582c"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[buttonEdit.setEnabled(!event.getSelection().isEmpty());
+buttonDelete.setEnabled(!event.getSelection().isEmpty());
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="widgetDefaultSelected" mc="Operation" uid="43818982-4774-4381-a3d8-f49d2283e639"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[widgetDefaultSelected]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="event" mc="Parameter" uid="b47a8067-38cb-4495-b16d-9317f92cd07a"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[event]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="5a5035ca-8a59-447e-8615-b89baaeb7629"/>
+                      <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="eb5ab458-47fe-498e-9791-ddfb40065b4e"/>
+                            <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[SelectionEvent]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="0f03a527-ee85-4c00-b81c-cd79bedcc939"/>
+                      <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the {@link SelectionEvent}]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="69563130-c754-42d8-8928-8e8a9f2bfb65"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Handles default button clicks for the Edit... and New.. buttons. This method will simply
+pass on the call to {@link #widgetSelected(SelectionEvent)}.
+@see SelectionListener#widgetDefaultSelected(SelectionEvent)]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="3214fedd-8124-4f95-bcd3-f5fa936b7d03"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[widgetSelected(event);]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="widgetSelected" mc="Operation" uid="c100dda7-6423-44ff-bb01-db32cd62eabd"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[widgetSelected]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="event" mc="Parameter" uid="edbf6883-8e6f-446d-9514-de8e28535443"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[event]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="a34bbab5-993a-436a-90c6-8160f7b7e6cb"/>
+                      <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="542119ac-e89a-4fff-9893-142ecef3ccd0"/>
+                            <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[SelectionEvent]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="a33846f5-f35a-4024-a5e9-9a776254ea45"/>
+                      <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the {@link SelectionEvent}]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="f2db9685-e8e5-401d-9f31-bf5a9fbf1d5a"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Handles default button clicks for the Edit... and New.. buttons.
+@see SelectionListener#widgetSelected(SelectionEvent)]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="33f5fde3-bdb7-49d4-9e4d-ea78c84b2192"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ILaunchConfiguration configuration = null;
+Widget widget = event.widget;
+if (widget == null) {
+
+    return;
+}
+if (widget.equals(buttonNew)) {
+
+    try {
+
+        ILaunchConfigurationWorkingCopy newLaunch;
+        newLaunch = LocalTerminalLaunchUtilities.createNewLaunchConfigurationWorkingCopy();
+        configuration = newLaunch.doSave();
+    }
+    catch (CoreException couldNotCreateNewLaunchConfiguration) {
+
+        Logger.logException(couldNotCreateNewLaunchConfiguration);
+    }
+}
+if (widget.equals(buttonEdit) || configuration != null) {
+
+    ILaunchGroup group;
+    IStructuredSelection selection = (IStructuredSelection)viewer.getSelection();
+    if (configuration == null) {
+
+        configuration = (ILaunchConfiguration)selection.getFirstElement();
+    }
+    group = DebugUITools.getLaunchGroup(configuration, ILaunchManager.RUN_MODE);
+    String groupID = group.getIdentifier();
+    DebugUITools.openLaunchConfigurationDialog(getShell(), configuration, groupID, null);
+    //
+    // TODO: handle return value (maybe start terminal right away if "Run" was selected)
+    // - a return value of Window.CANCEL indicates that "Close" was selected
+    // - a return value of Window.OK indicates that "Run" was selected
+
+    viewer.refresh();
+    viewer.setSelection(new StructuredSelection(configuration), true);
+    //
+    // TODO: handle renamed configurations; setSelection(...) will not work if the user
+    //       renamed the configuration in the dialog (apparently, because renaming actually
+    //       creates a different ILaunchConfiguration object, rather than just renaming the
+    //       existing one)
+}
+if (widget.equals(buttonDelete)) {
+
+    String title = LocalTerminalMessages.questionTitleDeleteLaunchConfiguration;
+    String question = LocalTerminalMessages.questionDeleteLaunchConfiguration;
+    if (MessageDialog.openQuestion(getShell(), title, question)) {
+
+        IStructuredSelection selection = (IStructuredSelection)viewer.getSelection();
+        configuration = (ILaunchConfiguration)selection.getFirstElement();
+        try {
+
+            configuration.delete();
+        }
+        catch (CoreException exception) {
+
+            ErrorDialog.openError(getShell(), null, null, exception.getStatus());
+        }
+        viewer.refresh();
+    }
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="getShell" mc="Operation" uid="90d2884c-b122-47e3-ae51-d215cc5e0b7b"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[getShell]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="c13beb7f-88d0-411e-b74b-9d17cd7d46a3"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="34eff13d-da53-49d6-af0f-df15f8731348"/>
+                      <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="e1ab0230-3ece-4036-b722-3f227b554bc2"/>
+                            <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Shell]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="57a8018e-55cd-4fcc-b5fa-a80580a28907"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return allWindows.length > 0? allWindows[0].getShell():null;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="60556643-7da4-4ac9-9213-e05d5b8d4bff"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[IWorkbench workbench = PlatformUI.getWorkbench();
+IWorkbenchWindow activeWindow = workbench.getActiveWorkbenchWindow();
+if (activeWindow != null) {
+
+    return activeWindow.getShell();
+}
+IWorkbenchWindow[] allWindows = workbench.getWorkbenchWindows();
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="pushButton" mc="Operation" uid="1b982a28-cb68-46b5-bd84-8b89ad31186c"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[pushButton]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="parent" mc="Parameter" uid="d8cff147-ec75-4768-bf07-c0d3aa306bff"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[parent]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="cb014f80-2c03-49bb-bc13-fa1f25a09ee3"/>
+                      <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="716a2c89-e3d2-440b-af08-efe37f127ba0"/>
+                            <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Composite]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="label" mc="Parameter" uid="8c14874d-aa54-45af-ad38-2de4d2a4f485"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[label]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="f61f6339-1e0a-43e8-993c-3949ef222d4c"/>
+                      <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="191c917a-169b-4f2c-a7ad-843eb37163e8"/>
+                            <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[String]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="grabVertical" mc="Parameter" uid="274610b2-7bd3-49ee-849d-b2e4df66ec92"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[grabVertical]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="9089b280-27a3-4fb4-9b9b-bf89203a5d30"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="56f068de-6412-48ee-899f-065befa25403"/>
+                      <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="1a42c0db-6c9d-482c-8b9e-9e423f25c3fd"/>
+                            <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Button]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="f7c88352-b25e-427a-9076-61fd02a7622b"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[//------------------------------------ PRIVATE SECTION ---------------------------------------//]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="012be96d-9978-40c2-b052-96e3412a10c5"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return button;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="0752d7b0-c65f-4a92-bed5-d8b3e970151a"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[GridData layoutData;
+Button button = new Button(parent, SWT.PUSH);
+button.setText(label);
+layoutData = new GridData(GridData.VERTICAL_ALIGN_BEGINNING|GridData.HORIZONTAL_ALIGN_FILL);
+layoutData.grabExcessVerticalSpace = grabVertical;
+button.setLayoutData(layoutData);
+button.addSelectionListener(this);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="viewer" mc="Attribute" uid="0045a64b-5e3e-4372-9cea-c2dec112057c"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[viewer]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="ea132b78-59e0-46e5-b0c7-c1d1ced0c974"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="83d1676e-aec1-450c-894a-50679344019d"/>
+                      <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[TableViewer]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="229a0486-fcb2-44e7-8b8c-f165de30b830"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="buttonEdit" mc="Attribute" uid="caa9d2d7-8c3a-4b57-b91b-e26f40cd0d08"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[buttonEdit]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="ad3fce6a-1d47-4cd5-ae8c-f7c3de48a607"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="5adfb952-e655-4ef4-b7c6-6be34ab2ef13"/>
+                      <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[Button]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="82fb1d34-4539-46a3-b3a0-f637550540bb"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="buttonNew" mc="Attribute" uid="9d2b8746-aa1d-4755-80ba-087a5c5d1f6c"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[buttonNew]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="d9cfe32e-c255-4b7e-aade-38f25447c216"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="c593860b-b35a-4cde-9cec-a2ff354b7e59"/>
+                      <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[Button]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="c22fcea3-25d5-4432-a772-1b794f9b6d4d"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="buttonDelete" mc="Attribute" uid="6930b305-e18f-437c-a8f6-b000b139b730"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[buttonDelete]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="5c4eadc1-5680-4839-95d8-c9613795fd6e"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="7f68923a-8f15-4e4e-af9a-79996717dc2e"/>
+                      <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[Button]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="05aa070c-c4c8-4051-9696-06b253ae80e2"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedEnd">
+        <OBJECT>
+          <ID name="settings" mc="AssociationEnd" uid="86403335-3876-413d-b02c-5003e6a93678"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[settings]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="ILocalTerminalSettings" mc="Interface" uid="519c53e1-e5b4-4f63-a713-5d4764c4b706"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="AssociationEnd" uid="aa95a02f-8781-405a-bb74-0aeb9508416f"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="settings" mc="AssociationEnd" uid="86403335-3876-413d-b02c-5003e6a93678"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Association" uid="b3f5021d-aef1-4def-ad26-2a791fe39517"/>
+                      <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <OBJECT>
+                <ID name="" mc="Association" uid="b3f5021d-aef1-4def-ad26-2a791fe39517"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="1ec5bdaf-97ce-49cb-88f2-a1eec3f1f3fc"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="" mc="Generalization" uid="8333adca-c80c-4101-baeb-8ad22ba4bc22"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="AbstractSettingsPage" mc="Class" uid="0826ea62-87c4-4f36-a18e-1390b8ce72a3"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedImport">
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="6e607e1a-e876-4d93-8ac5-0458d96ca204"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="LocalTerminalLaunchUtilities" mc="Class" uid="8977a93e-fc29-4b8b-86ae-7fa8d72528b6"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="f166c378-7936-4da4-ae52-534399700a80"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="DependentHeightComposite" mc="Class" uid="d0e3539d-c55e-41f3-b31b-e6a9dc695591"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="6da4d18b-ac47-48ee-9ba3-db8310768c96"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="ISettingsPage" mc="Interface" uid="4fda420f-43ed-4548-8b30-b0700c4eb335"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="d9d9006f-6caa-4f93-b27e-6edab508691b"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="Logger" mc="Class" uid="2a7e52a1-ec66-497c-b7ea-653c8f220c3a"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="7f8cd64d-c320-447e-9a55-f55b2c88e334"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="6106a589-5031-45f9-a9d3-bdacc8ba15d5"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[ISelectionChangedListener]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="57406d97-ce74-45ca-8182-ccc8af54d5d9"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[SelectionListener]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImplements" mc="TagType" uid="003800a8-0000-0156-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="89bc8396-b376-448c-9fbc-00986ff991cc"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="3f3b04cd-3da5-455a-954c-27a852a44947"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.core.runtime.CoreException]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="d4dde712-c981-491b-8940-8247cef8920a"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.debug.core.ILaunchConfiguration]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="1ca56773-adc5-4e6d-9cc2-743c133274e8"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.debug.core.ILaunchConfigurationWorkingCopy]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="92d02646-7aab-4927-96d1-4e48071980b7"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.debug.core.ILaunchManager]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="24f6cea2-fafb-4747-9c05-880c76509188"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.debug.ui.DebugUITools]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="eb6e18f2-0f5c-4341-8e45-c772b5bde357"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.debug.ui.ILaunchGroup]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="1a600f70-3a3a-403d-af60-660c7803a154"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.jface.dialogs.ErrorDialog]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="524c8d74-0ad1-407d-9312-5f7ccb1162a6"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.jface.dialogs.MessageDialog]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="cdbf603d-f4dc-4f08-bfca-03f1e5661170"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.jface.viewers.ISelectionChangedListener]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="17d90efb-4b9d-48db-87a3-f55586fbe7d9"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.jface.viewers.IStructuredSelection]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="65181400-9f0f-4df9-ae89-234cc143f6d4"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.jface.viewers.SelectionChangedEvent]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="280de6fa-9e9c-478d-bb11-d5f410bb023f"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.jface.viewers.StructuredSelection]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="cb98111d-64cb-44bd-b078-ac44597bc832"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.jface.viewers.TableViewer]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="22c10ff8-ceb6-4502-a82f-8375d2160cb1"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.SWT]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="75f552df-c5da-406f-a587-f42e37dee4ef"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.events.SelectionEvent]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="3be642d2-0ad1-49b4-a7a1-ffd894fbc2a4"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.events.SelectionListener]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="4525e902-c7a6-4ae9-9de3-cfe28bf1f166"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.layout.GridData]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="0f9665d6-094b-407e-975a-ca1462b9c5ea"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.layout.GridLayout]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="8a48181e-4d73-491d-88c4-2579306421b9"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Button]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="59555c9a-584a-46d6-9989-65122e02986f"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Composite]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="fb809957-679e-4d92-a837-188aee37e530"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Label]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="50225a67-dd2c-4d62-9f72-9a5533558fed"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Layout]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="bd911912-c5e1-4e1a-9482-02631c02353d"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Shell]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="ca30aef2-8cd3-4860-aeec-bf3da07a3454"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Table]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="7c0166bf-65fa-4c8d-b578-9c983bfe8f4d"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Widget]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="358b5847-cc23-4c4c-aa13-e2c2dfaf7561"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.ui.IWorkbench]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="93c69ad7-9039-4038-805f-61aa731a2657"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.ui.IWorkbenchWindow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="cd27cfdd-0e3a-49cd-9c38-76d0cdcdc7d6"/>
+                <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.ui.PlatformUI]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="a3056700-875a-4bd8-b8be-ad0fe4b916b9"/>
+          <PID name="LocalTerminalSettingsPage" mc="Class" uid="8ab51e06-d12f-4e8e-9312-5885814435c6"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[The class {@link LocalTerminalSettingsPage} is an implementation {@link ISettingsPage} for
+local program connections.
+
+@author Mirko Raner
+@version $Revision: 1.3 $]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015d-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

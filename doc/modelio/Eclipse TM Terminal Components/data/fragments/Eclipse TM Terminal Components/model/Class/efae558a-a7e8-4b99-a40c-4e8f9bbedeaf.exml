@@ -1,0 +1,2865 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="LocalTerminalStillRunningDialog" version="3">
+  <DEPS>
+    <ID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+    <EXTID name="LocalTerminalLaunchUtilities" mc="Class" uid="8977a93e-fc29-4b8b-86ae-7fa8d72528b6"/>
+    <EXTID name="LocalTerminalMessages" mc="Class" uid="d591c504-cda9-458d-809c-285d7ae5f1a1"/>
+    <EXTID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+    <EXTID name="LocalTerminalUtilities" mc="Class" uid="d0781d14-0017-4c5f-86a6-bd8984ac3a80"/>
+    <EXTID name="Logger" mc="Class" uid="2a7e52a1-ec66-497c-b7ea-653c8f220c3a"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+    <FOREIGNID name="JavaExtends" mc="TagType" uid="003800a8-0000-0154-0000-000000000000"/>
+    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0161-0000-000000000000"/>
+    <FOREIGNID name="JavaImplements" mc="TagType" uid="003800a8-0000-0156-0000-000000000000"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+    <FOREIGNID name="JavaInitValueComment" mc="NoteType" uid="eb8c06dc-0000-0f67-0000-000000000000"/>
+    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015d-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+    <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+    <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3765-0000-000000000000"/>
+    <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+    <PID name="ui" mc="Package" uid="cc1ea619-a141-4bf3-8ea6-e86a568e64a0"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[LocalTerminalStillRunningDialog]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="LocalTerminalStillRunningDialog" mc="Operation" uid="f7861cad-33a8-4e93-b0e1-8952b9aff57e"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[LocalTerminalStillRunningDialog]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="parentShell" mc="Parameter" uid="48621076-eb8a-46bd-8769-e85bfb080dc7"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[parentShell]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="6a7be151-8874-4ad4-9bc0-da975052c7ce"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="bdef0a37-a5ae-4b2c-9f9c-8e2e66814354"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Shell]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="launches" mc="Parameter" uid="1a6f2e7e-430b-42bd-bd9f-932da7689eb9"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[launches]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="2a9fd771-f699-40d3-8794-0320e8800602"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="eda7e6fa-3c0f-4377-b348-29d202188ba7"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Array]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="5fb1a9a4-11b5-4238-8b76-cbe77907f40a"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="bad1f093-4140-407d-a7a3-ddb11aa2c0cc"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[ILaunch]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="15ec25af-ef97-4bb4-96c3-27c54f1c1cdf"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[super(parentShell, TITLE, null, MESSAGE, WARNING, BUTTONS, 0);
+setShellStyle(SWT.BORDER|SWT.TITLE|SWT.APPLICATION_MODAL|SWT.RESIZE|SWT.MAX);
+unterminated = launches;
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="openDialog" mc="Operation" uid="2e8172bb-763a-4bd5-832c-344f062f4be0"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[openDialog]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="shell" mc="Parameter" uid="a3cc525e-280e-47a4-8b73-a10f1754f81a"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[shell]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="ba573104-dd6b-455d-b6a1-0f27d47fc812"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="e7f6608c-a590-4aa8-9a98-faa3c284b5be"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Shell]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="c308d32c-2c2d-4f2a-8c1a-f344f9d0c5e0"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the parent {@link Shell} for the dialog]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="launches" mc="Parameter" uid="f5a45bfd-0fbf-49ba-b38e-4e8c916087a3"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[launches]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="5bbe983d-93fd-4a7b-9349-35fd9f90b561"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="1b97b294-8667-453d-ad5b-18a893649c24"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Array]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="d78f3103-ab33-4344-bdc5-736c72ad4eb3"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="25d77e93-d856-402b-b89c-4bc44a0a04e4"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[ILaunch]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="612abdfd-e544-4eb7-8487-6a35b821cd77"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the launches that have not yet terminated]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="d0d974bf-52c6-4157-bb4f-af6cc1abec0f"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="3877afd1-cf1b-4f39-9069-53eaac29229e"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<code>true</code> to allow the workbench to proceed with shutdown, <code>false</code>
+to prevent a shutdown (only for non-forced shutdown)]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="18060779-fcf0-4d18-b997-b34dc8f5f24e"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Opens a dialog that lists all terminal launches that have not yet terminated.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="c6d2e371-2768-4188-aec2-b99c4625fbe2"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[LocalTerminalStillRunningDialog dialog;
+dialog = new LocalTerminalStillRunningDialog(shell, launches);
+dialog.setBlockOnOpen(true);
+try {
+
+    LocalTerminalUtilities.LAUNCH_MANAGER.addLaunchListener(dialog);
+    return dialog.open() == 0;
+}
+finally {
+
+    LocalTerminalUtilities.LAUNCH_MANAGER.removeLaunchListener(dialog);
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="createButtonsForButtonBar" mc="Operation" uid="d2f1981d-5596-4f0e-a096-fb6cacbeb91e"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Protected</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[createButtonsForButtonBar]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="parent" mc="Parameter" uid="073ac9b1-7d8b-4390-8ffe-7437212944b1"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[parent]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="d382e10e-97d7-4bd4-898e-7234f1e028d1"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="4deb393c-13c2-4e53-85d1-eb7d8cc20225"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Composite]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="3fde4c04-b461-456d-8f21-fe0200549adc"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the parent {@link Composite}]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="ff004a98-be99-4600-980f-07a2b9e1119b"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Creates the dialog buttons and sets the focus on the default button. This is done because
+otherwise the focus might land on one of the stop buttons of the unterminated launches, which
+looks somewhat funny.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="71bd3f22-eb6c-4470-9010-3aa28acab8f6"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[super.createButtonsForButtonBar(parent);
+getButton(1).forceFocus();
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="createCustomArea" mc="Operation" uid="d60bb1ea-36f5-46b5-b4b6-b364aef064a0"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Protected</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[createCustomArea]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="parent" mc="Parameter" uid="ff2c4f28-ba9c-425c-8d2e-37162435947f"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[parent]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="923f42a4-efbf-4c48-b431-94847bf8be1a"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="9b6beb43-eca3-404d-82ad-afd9ca0e8d9b"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Composite]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="732a5aa4-a6d6-44f7-88c8-2e6bf3c91d69"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the parent {@link Composite} into which the custom area is inserted]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="19da0ceb-2177-4891-a8cb-646499783343"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="b37633c3-3f78-405d-91f1-f3d290930f22"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="922a83a6-a3f6-4256-a517-1a131ed8f30b"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Control]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="9eb3e50c-7b30-4845-9f6d-767527790f46"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the {@link ScrolledComposite} for the custom area]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="8506c4fc-d59b-4531-a250-a0b102afaff9"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Creates the custom area of the dialog that shows the list of terminal launches that have not
+yet been terminated.
+@see MessageDialog#createCustomArea(Composite)]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="3fe40e18-ccac-4523-aa59-f5198d38afda"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return scrollable;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="d7583dc4-a03a-4f6c-a1b1-2c51db11c632"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ScrolledComposite scrollable = new ScrolledComposite(parent, SWT.BORDER|SWT.V_SCROLL);
+GridData gridData = new GridData(GridData.FILL_BOTH);
+gridData.heightHint = SCROLLABLE_HEIGHT;
+scrollable.setLayoutData(gridData);
+scrollable.setExpandHorizontal(true);
+scrollable.setExpandVertical(true);
+GridLayout gridLayout = new GridLayout();
+gridLayout.marginWidth = gridLayout.marginHeight = gridLayout.verticalSpacing = 0;
+content = new Composite(scrollable, SWT.NONE);
+content.setLayout(gridLayout);
+content.setBackground(new Color(parent.getDisplay(), WHITE));
+scrollable.setContent(content);
+for (int index = 0; index < unterminated.length; index++) {
+
+    Composite item = createItem(content, unterminated[index]);
+    item.setLayoutData(new GridData(GridData.FILL_HORIZONTAL));
+}
+content.pack();
+scrollable.setMinHeight(content.getBounds().height);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="widgetSelected" mc="Operation" uid="229fc0c7-0e0b-4312-9e91-8504ae815ad2"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[widgetSelected]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="event" mc="Parameter" uid="d8c16e0b-a346-4b65-b46c-f25f16e68d0b"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[event]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="2121f512-3103-44d3-ac4d-3e1de93f724d"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="08d01f8c-9b41-4487-8b26-a3316a907148"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[SelectionEvent]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="ae108f58-8631-491d-8e5f-e04dabb3dbbe"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the {@link SelectionEvent}]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="97ca0243-d5fe-4b78-a3c8-26495695564f"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Handles the {@link SelectionEvent}s that are sent when the user clicks the stop button of a
+launch. The stop button will immediately be disabled to indicate that the stop request is
+being processed. The actual launch termination will be confirmed in an asynchronous fashion
+by the {@link #launchesTerminated(ILaunch[])} method.
+@see #launchesTerminated(ILaunch[])]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="bbbc5642-676a-4ea0-992e-0786c6681082"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[ToolItem item = (ToolItem)event.widget;
+ILaunch launch = (ILaunch)item.getParent().getParent().getData();
+item.setEnabled(false);
+try {
+
+    LocalTerminalProcessRegistry.addProcessBackToFinishedLaunch(launch);
+    launch.terminate();
+}
+catch (DebugException exception) {
+
+    Logger.logException(exception);
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="widgetDefaultSelected" mc="Operation" uid="bff482b2-cfc0-48ee-9afd-a468084fdf45"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[widgetDefaultSelected]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="event" mc="Parameter" uid="a955b07e-2aeb-4c7a-988a-7dbf7e76006d"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[event]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="2262e902-1821-4d6f-a2f7-b0bd2901c811"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="a46ac7d0-bfd9-4459-b6fb-c0527e423b71"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[SelectionEvent]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="8ec6a45b-1f29-4c79-ad7e-6a11e8335ed2"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the {@link SelectionEvent}]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="238bb978-1ed8-4cf0-b7bc-0bb40e0c06e4"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Handles default selection events by passing them to {@link #widgetSelected(SelectionEvent)}.
+@see #widgetSelected(SelectionEvent)
+@see SelectionListener#widgetSelected(SelectionEvent)]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="e4b7ddc0-dcc4-443e-bb34-52f903527b59"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[widgetSelected(event);]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="run" mc="Operation" uid="966e184f-884b-4a4c-a15a-f9226b209494"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[run]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="33fc89b9-9fe9-4c0e-b30c-d927b72416a4"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Removes terminated launches from the list displayed by the dialog and closes the dialog once
+all outstanding launches have been terminated.
+@see #launchesTerminated(ILaunch[])]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="668fc181-54a8-4c81-aea8-e342f81db1c0"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[boolean allLaunchesTerminated = true;
+Control[] child = content.getChildren();
+int numberOfChildren = child.length;
+for (int number = 0; number < numberOfChildren; number++) {
+
+    ILaunch launch = (ILaunch)child[number].getData();
+    if (launch != null && launch.isTerminated()) {
+
+        child[number].setData(null);
+        String exitValue;
+        try {
+
+            exitValue = String.valueOf(launch.getProcesses()[0].getExitValue());
+        }
+        catch (DebugException couldNotGetExitValue) {
+
+            exitValue = '(' + couldNotGetExitValue.getMessage() + ')';
+        }
+        Label label = (Label)((Composite)child[number]).getChildren()[1];
+        String process = label.getText();
+        process = NLS.bind(LocalTerminalMessages.terminatedProcess, process, exitValue);
+        label.setText(process);
+
+        // In case the launch terminated by itself (and not because the user pressed the
+        // stop button) disable the stop button so that no attempt can be made to stop the
+        // process twice:
+        //
+        ((Composite)child[number]).getChildren()[2].setEnabled(false);
+    }
+    if (child[number].getData() != null) {
+
+        allLaunchesTerminated = false;
+    }
+}
+if (allLaunchesTerminated) {
+
+    setReturnCode(0);
+    close();
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="launchesTerminated" mc="Operation" uid="5865ce34-42d9-4573-9620-a8f90c9115f2"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[launchesTerminated]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="terminated" mc="Parameter" uid="bb5704ab-cc60-4cbc-928d-b4daaa5ca323"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[terminated]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="56609a97-124a-4d13-bc53-fb8d4eb2bb09"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="98ab0764-5f03-470e-a868-6e6f34f15167"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Array]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="6b8527f6-c441-429b-979f-1149f5ecda7a"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="30f21274-f7d6-41e4-aa8d-12d9c75a9b76"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[ILaunch]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="14bcf832-c61b-49d3-b9ed-b3ea78516587"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[a list of terminated launches]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="f0f8c685-0768-44b1-8180-56ce63077f2f"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Removes a recently terminated launch from the list displayed by the dialog. The actual work
+needs to be done in the UI thread and is performed by the {@link #run()} method.
+@see #run()]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="92ca265b-1f40-4a09-b939-2c23521c6208"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Display.getDefault().syncExec(this);]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="launchesAdded" mc="Operation" uid="d9945751-21cc-4079-ab7b-0be60748d185"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[launchesAdded]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="launches" mc="Parameter" uid="99d615ed-fe6f-4501-a22b-89b652f55d56"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[launches]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="8fcc590f-2e7f-44a3-b116-2812431fb6e4"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="5fdbd9e8-ac49-4589-b835-303b5a68c2d7"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Array]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="43723813-d51d-43ae-9b0d-9310a0449641"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="ec6ef33e-ad9f-4827-a627-3f9edb6b8c6e"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[ILaunch]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="a7564b4d-0db3-442b-8e49-090b48028ada"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[<i>Not implemented</i>.
+@see ILaunchesListener2#launchesAdded(ILaunch[])]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="4029d02f-f61c-4163-ba3b-cf3d79954311"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[// Not implemented...]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="launchesChanged" mc="Operation" uid="d5ad379e-091c-4895-a5f5-3a2d98f2a5a1"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[launchesChanged]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="launches" mc="Parameter" uid="18222650-a03d-4161-b666-bd2c86121d62"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[launches]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="2616701e-e646-4055-b88d-844d2ace3c27"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="e9b3e29f-bfc6-4917-83c1-9e653452e16e"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Array]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="55191356-831e-4e08-88a9-97d32a843d62"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="ee8ff23a-a52b-4a37-adeb-80538c32fcc2"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[ILaunch]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="0c768e11-825b-45e8-b612-c45bae32a2f6"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[<i>Not implemented</i>.
+@see ILaunchesListener2#launchesChanged(ILaunch[])]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="4914b5b4-f1be-4c31-b2a9-82da8ab0ad62"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[// Not implemented...]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="launchesRemoved" mc="Operation" uid="d9767db8-106e-4b51-9ea4-d5d0fe223e1d"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[launchesRemoved]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="launches" mc="Parameter" uid="7190680e-0b3c-4f42-ba8b-313f0d7060ad"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[launches]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="83139800-95f5-4e7d-9ade-065a444a69d3"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="e322471a-1354-4ae3-837b-16b67286d233"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Array]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="e0faaa69-7ecd-4b7e-a8f0-f5c332250c28"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="d9d23c3b-344d-4f81-b9a0-70d69ecff1c7"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[ILaunch]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="4265e3a2-1093-4b32-831b-0cf2bdefc133"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[<i>Not implemented</i>.
+@see ILaunchesListener2#launchesRemoved(ILaunch[])]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="0acf86a7-d316-4874-8d16-3028b80bdd05"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[// Not implemented...]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="createItem" mc="Operation" uid="e076d7ac-c789-4033-b152-a7af3efc183c"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[createItem]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="parent" mc="Parameter" uid="3a21a6dd-0b36-43b3-959d-d6f64415b2ec"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[parent]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="4bf0e07b-0871-42f1-af94-52a6261abbed"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="248643fe-89c5-47b5-b081-d18c51292e2d"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Composite]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="launch" mc="Parameter" uid="eddf56a8-c0ad-447f-a3cf-f11d6ccaf38a"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[launch]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="7a354c5f-b4e0-41bc-9304-ff69830c4642"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="21b353f8-23e7-4700-b284-26697e204db9"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[ILaunch]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="7521c72a-f9ba-488b-a4c9-89dc0526f2e8"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="c405bc6f-0d05-44f5-aaca-224ad8df47b7"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="7847a33c-cd8e-4fdf-8eae-b87e70c519a7"/>
+                            <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Composite]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="74d5e17e-e136-4921-b203-a57c7e1d98e6"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[//-------------------------------------- PRIVATE SECTION -------------------------------------//]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="713678bb-8f29-49c6-80ed-c20daa0df889"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return item;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="1e16ebc7-f912-4359-bfb7-209b559b8a8d"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Composite item = new Composite(parent, SWT.NULL);
+GridLayout gridLayout = new GridLayout(3, false);
+item.setData(launch);
+item.setLayout(gridLayout);
+Image processImage = LocalTerminalLaunchUtilities.getImage(launch.getLaunchConfiguration());
+Label icon = new Label(item, SWT.NULL);
+icon.setImage(processImage);
+Label label = new Label(item, SWT.NULL);
+label.setText(launch.getLaunchConfiguration().getName());
+ToolItem stopButton = new ToolItem(new ToolBar(item, SWT.FLAT), SWT.PUSH);
+stopButton.addSelectionListener(this);
+Image deleteImage = DebugUITools.getImage(IMG_LCL_TERMINATE);
+stopButton.setImage(deleteImage);
+GridData gridData = new GridData(GridData.FILL_HORIZONTAL);
+gridData.verticalAlignment = GridData.CENTER;
+gridData.grabExcessHorizontalSpace = true;
+label.setLayoutData(gridData);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="TITLE" mc="Attribute" uid="59837b9a-e30f-48e9-9d3b-10cd4f4aa5f4"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA[LocalTerminalMessages.warningTitleTerminalsStillRunning]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[TITLE]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="13108083-dec6-4438-bf9b-94e9c0859885"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0161-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="3a47cfac-ea1f-4cfd-bfcb-3bd6c424ca2c"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="8a5ab9ce-b921-440f-ba78-762ba96a4a04"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[String]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="MESSAGE" mc="Attribute" uid="3349db0a-d7bb-45c6-909d-75d1b9f8f915"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA[LocalTerminalMessages.warningMessageTerminalsStillRunning]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[MESSAGE]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="eb4464c8-75b1-4c3d-a003-f54033ceba2d"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0161-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="eafaee37-c271-4554-94b2-1c7a625cce82"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="a49383bb-b7d3-40f0-a0e3-79c842d3e205"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[String]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="QUIT_ANYWAY" mc="Attribute" uid="e6840873-7ef4-4d43-aa77-faaeb633ba4c"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA[LocalTerminalMessages.quitWorkbenchAnyway]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[QUIT_ANYWAY]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="690e74ba-3cea-4c7e-9dfc-1922ad4ebd73"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0161-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="aa017995-22a1-4909-9187-c8b34c93a64f"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="440adf12-4e3e-4f14-9b8e-82e52ceb0376"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[String]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="DO_NOT_QUIT" mc="Attribute" uid="b3b94b15-0f27-4e4b-bc3a-0c3e2b15128b"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA[LocalTerminalMessages.doNoQuitWorkbench]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[DO_NOT_QUIT]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="ca26f78c-c00b-42d5-b111-5800ee8d631d"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0161-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="bc9733cf-0c1e-4107-99b2-870cac5d7d16"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="bab738e3-2927-42ad-9ba6-1c5cae8fd849"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[String]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="BUTTONS" mc="Attribute" uid="b705ff28-54d4-4d9f-a0f0-589e78d70178"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA[{QUIT_ANYWAY, DO_NOT_QUIT}]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[BUTTONS]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="edd988cb-45cd-44de-a06a-80aa9b6170d4"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0161-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="dad8fd8c-53da-410f-93a7-d7d9cd9e0147"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="6a6ef2be-e86d-4462-987b-400207b837d8"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[Array]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3765-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="f18019db-d685-4d05-8bef-076328f16d53"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="16878d0f-458d-48b8-9b9e-4826a7f18eb2"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[String]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="WHITE" mc="Attribute" uid="ea5dd2fc-2f49-4049-955c-b4bfba0388c8"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA[new RGB(255, 255, 255)]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[WHITE]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="033ec2d5-d869-4d5f-916f-14c7d30de9fd"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0161-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="ab87d18c-3fb9-46c5-a84f-87e5b872fafc"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="0bd27951-b596-463a-9902-dff61186b4df"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[RGB]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="SCROLLABLE_HEIGHT" mc="Attribute" uid="f99d05d7-41e4-404e-b472-d89151e173eb"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA[100]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[SCROLLABLE_HEIGHT]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="a87a6e67-e6af-4275-8913-13202a4875a5"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0161-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="IMG_LCL_TERMINATE" mc="Attribute" uid="510bb4fd-0ddb-4a48-ac7c-2dd24f45a7ac"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA["IMG_LCL_TERMINATE"]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[IMG_LCL_TERMINATE]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="22a2d5f3-4e9b-4c11-b7c6-7e09df39a9b1"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0161-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="1376b8b5-9ed8-45de-81db-18da508a4790"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="dc5b6996-5d8f-40ad-b249-c39400e0b5ab"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[String]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="d2405344-3f2d-41b2-9820-c749bb2daebf"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[$NON-NLS-1$]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaInitValueComment" mc="NoteType" uid="eb8c06dc-0000-0f67-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="0c57f4b5-19da-4265-9b35-94e1b33841b7"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[// Image key copied from IInternalDebugUIConstants:
+//]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="unterminated" mc="Attribute" uid="9e5e74ce-961d-4753-a540-3b14b07a59da"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[unterminated]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="d5b9ddfb-5af5-4f0c-9191-eb02ff16ecde"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="eb0e4594-e720-4fc1-ad25-1e64d69f5d2b"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[Array]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3765-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="2a71be46-b621-4fce-8f07-a778200efc2e"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="13b8ce07-2815-491d-b9a9-110c2f4698e1"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[ILaunch]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="e7bc7498-23b1-443c-847a-2e086f5669be"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="content" mc="Attribute" uid="ef5b01bd-2404-4501-b3da-db063942b5a4"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[content]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="1821f567-d5e9-4062-b101-6f00bf67aa81"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="fc4ae852-1726-4d68-8c41-80f489736f79"/>
+                      <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[Composite]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="f150a804-f2b5-45f8-b59c-1b6886bd84ed"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedImport">
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="9fc769ce-2445-47fa-826d-16c7a69ea81d"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="LocalTerminalMessages" mc="Class" uid="d591c504-cda9-458d-809c-285d7ae5f1a1"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="f619cf0d-5306-4cee-92e3-d3cdb535cdf9"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="LocalTerminalUtilities" mc="Class" uid="d0781d14-0017-4c5f-86a6-bd8984ac3a80"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="dcdc0498-c9a6-4ce7-b2a0-931c59c93ae1"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="LocalTerminalLaunchUtilities" mc="Class" uid="8977a93e-fc29-4b8b-86ae-7fa8d72528b6"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="8193ce39-6faa-4b81-9402-18fec90497ea"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="LocalTerminalProcessRegistry" mc="Class" uid="12256b2f-877d-4d82-97d5-61aa815dd280"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="807a9d42-6bad-43d2-b926-5bbb8e54b6ea"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="Logger" mc="Class" uid="2a7e52a1-ec66-497c-b7ea-653c8f220c3a"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="1e93b77f-3f2b-46d9-af34-40d836c00504"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="e705b5c7-546f-48d3-8eea-a7431cc46f88"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[MessageDialog]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaExtends" mc="TagType" uid="003800a8-0000-0154-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="2ca1434e-2165-4ed4-aac4-f1374e8dd503"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="349898b6-ab52-4176-b9b3-9a0089d09ad7"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[Runnable]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="966f516e-e1f7-47c1-bf11-d89a7a66393e"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[SelectionListener]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="3173ba5e-7cf3-4ef0-8ad7-be2e704a6757"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[ILaunchesListener2]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImplements" mc="TagType" uid="003800a8-0000-0156-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="f668aa64-de0f-4fc0-80ab-c4c914fe94ab"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="9610b62f-abf2-4b39-b42a-9429bf556e5b"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.debug.core.DebugException]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="2c843854-df23-4a6e-b881-aa470bb25abd"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.debug.core.ILaunch]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="91799713-6d47-43eb-9079-22778347a88a"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.debug.core.ILaunchesListener2]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="f965139f-9926-43ce-949d-0987b8ecf578"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.debug.ui.DebugUITools]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="a26fa665-70b0-4464-8dac-bfc187857c5b"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.jface.dialogs.MessageDialog]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="bd249651-f0e6-4b93-a244-4b3ac2abca7e"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.osgi.util.NLS]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="93dc3830-93f6-4066-8e9b-0e3652bc293f"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.SWT]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="b0b77933-cbc3-4349-b658-cd9ec2ae08cc"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.custom.ScrolledComposite]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="d5c19dbb-7f53-4778-b608-ce7a956c4751"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.events.SelectionEvent]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="6c888aa2-1f8d-4066-a22a-84ce05290ab3"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.events.SelectionListener]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="6d5f220e-40e5-4004-a381-fef7baec8e3d"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.graphics.Color]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="029a0fcf-e5e6-424c-bc44-1b0e01f4e0ca"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.graphics.Image]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="89dc94e1-5a9d-49f5-b4a0-4440c0bdaf30"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.graphics.RGB]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="7457b154-cb4e-4c05-88f3-4e6d92fe6919"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.layout.GridData]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="4ec38c84-9caf-4eb7-8880-06ffc4c058e8"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.layout.GridLayout]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="f036a5ab-baf5-4563-b1f7-66097cfde624"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Composite]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="b7398978-9946-4a55-8352-21353554d0ab"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Control]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="b7df172c-e264-46e2-ab62-51b7eddc5933"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Display]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="4ee6bd18-9103-4561-a7f0-223fb11a4c4d"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Label]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="46df3a97-00d5-4de4-b21c-86c87dc00d32"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Shell]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="e5f807f5-0097-42f3-abc1-7c8423f45835"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.ToolBar]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="97ee0d26-0c7f-4cda-a248-db4af74eb64d"/>
+                <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.ToolItem]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="4291ac52-81f0-4190-b4a6-ee49222fbbcf"/>
+          <PID name="LocalTerminalStillRunningDialog" mc="Class" uid="efae558a-a7e8-4b99-a40c-4e8f9bbedeaf"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[The class {@link LocalTerminalStillRunningDialog} is a dialog that is shown when the workbench is
+about to exit and one or more terminal launches are still running. It gives the user a choice
+between aborting the workbench shut-down, proceeding, or terminating the outstanding launches
+individually. When no more launches are running the dialog will automatically disappear and
+workbench shut-down will proceed.
+
+@author Mirko Raner
+@version $Revision: 1.1 $]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015d-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

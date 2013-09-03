@@ -1,0 +1,1783 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TerminalInputStream" version="3">
+  <DEPS>
+    <ID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+    <COMPID name="BoundedByteBuffer" mc="Class" uid="4f93b474-c90a-433e-8a47-d38bf3f47fba"/>
+    <COMPID name="TerminalOutputStream" mc="Class" uid="0bb00d53-6fff-4be3-a63b-7a160733c98e"/>
+    <EXTID name="BoundedByteBuffer" mc="Class" uid="4f93b474-c90a-433e-8a47-d38bf3f47fba"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+    <FOREIGNID name="JavaExtends" mc="TagType" uid="003800a8-0000-0154-0000-000000000000"/>
+    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0161-0000-000000000000"/>
+    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0180-0000-000000000000"/>
+    <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015d-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+    <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+    <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+    <FOREIGNID name="byte" mc="DataType" uid="00000004-0000-0013-0000-000000000000"/>
+    <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+    <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+    <PID name="impl" mc="Package" uid="c201a885-32c9-4a22-bb48-99de580b2d6b"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[TerminalInputStream]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="TerminalInputStream" mc="Operation" uid="2b5d38bb-5ace-405f-9dbc-54ec9314000d"/>
+          <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[TerminalInputStream]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="bufferSize" mc="Parameter" uid="b261b70c-d542-484d-9434-fea631bca419"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[bufferSize]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="7dd8ef5b-deaa-4dc7-93d8-02833b2f3fdd"/>
+                      <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the size of the buffer of the output stream]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="uiTimeout" mc="Parameter" uid="ba2aafb8-804c-4f0a-a9b4-c4470c7c74fa"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[uiTimeout]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="295d7b37-f955-4b95-a8c0-06b8382d2c3e"/>
+                      <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the maximum time the notifyChange runnable runs. It will be
+rescheduled after uiTimeout if input data is still available.]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="notifyChange" mc="Parameter" uid="7ebe122f-ebf3-4a92-8e92-5b68592e1a5c"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[notifyChange]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="fd67fe4a-cee3-4292-b4ca-659253412ad4"/>
+                      <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="9a4c6428-8861-44b1-898f-9072a2bd7894"/>
+                            <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Runnable]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="23713d01-7bd8-4042-84f8-72a83991b652"/>
+                      <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[a Runnable that is posted to the Display thread
+via {@link Display#asyncExec}. The runnable is posted several times!]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="3203aeb9-1441-4289-ac78-4e6fc931319e"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[//if(true) {notifyChange=new Runnable() {public void run() {byte buff[]=new byte[1024];while((available())>0)try {read(buff);} catch (IOException e) {break;}}};}
+fOutputStream =new TerminalOutputStream();
+fNotifyChange=notifyChange;
+fQueue=new BoundedByteBuffer(bufferSize);
+fUITimeout=uiTimeout;
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="bytesAreAvailable" mc="Operation" uid="962e710e-183c-4bcf-b951-f8aa21a36a2b"/>
+          <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[bytesAreAvailable]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="2c3c9e57-e4b9-4388-b4dc-e38531797d5e"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Posts the runnable {@link #fNotifyChange} to the display Thread,
+unless the runnable is already scheduled.
+It will make {@link #ready} return false after
+{@link #fUITimeout} milli seconds.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="afc17261-a48d-4927-b050-7a2533c6e230"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[// synchronize on the Queue to reduce the locks
+synchronized(fQueue) {
+    if(fRunnable==null) {
+        fRunnable=new Runnable(){
+            public void run() {
+                // protect the access to fRunnable
+                synchronized(fQueue){
+                    fRunnable=null;
+                }
+                // end the reading after some time
+                startTimer(fUITimeout);
+                // and start the real runnable
+                fNotifyChange.run();
+            }
+
+        };
+        // TODO: make sure we don't create a display if the display is disposed...
+        Display.getDefault().asyncExec(fRunnable);
+    }
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="startTimer" mc="Operation" uid="d318195d-20d5-4632-8db0-ff1a924f396e"/>
+          <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[startTimer]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="milliSec" mc="Parameter" uid="5dc94cfe-1d86-4f5d-8984-23e31d40c8a4"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[milliSec]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="ee161bff-29fc-455e-83a8-5be744bcef79"/>
+                      <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[The time after which fEnoughDisplayTime is set to true.]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="33aa1a7e-f889-4961-8ea2-ad7b5e252f34"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Starts a timer that sets {@link #fEnoughDisplayTime} to
+true after milliSec.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="a3fcfe4b-5b31-47f2-ae82-e59fb28e0b4f"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[synchronized(fQueue) {
+    fEnoughDisplayTime=false;
+}
+fgTimer.schedule(new TimerTask(){
+    public void run() {
+        synchronized(fQueue) {
+            fEnoughDisplayTime=true;
+            // there is some data available
+            if(fQueue.size()>0) {
+                // schedule a new runnable to do the work
+                bytesAreAvailable();
+            }
+        }
+    }}, milliSec);
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="getOutputStream" mc="Operation" uid="62e8889f-f50a-4ed8-b430-491daae49064"/>
+          <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[getOutputStream]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="d4868a88-2c61-4269-b3a4-447f07aa8d44"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="3b65620f-6a20-40da-ba96-a54856e47877"/>
+                      <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="c73b1c99-1731-404e-a5a8-40adf33e6ead"/>
+                            <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[OutputStream]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="00380080-0000-01a4-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="3dcacd66-9041-4e45-ac48-19d2c5b95168"/>
+                      <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the output stream used by the backend to write to the terminal.]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="fadf1976-e020-456a-81d1-1208a40e844e"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return fOutputStream;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="available" mc="Operation" uid="c5036b00-2d15-443f-b95e-742a940b06fe"/>
+          <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[available]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="b2a5e15d-46bd-4416-ab1a-209a03b923f8"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="b8476069-87ca-485a-b1bb-d62aa9cc498d"/>
+                      <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[true if a character is available for the terminal to show.]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="3cd2887a-a3b4-489e-b1be-d79b786c0f1a"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Must be called in the Display Thread!]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="00fed89c-244c-418a-bbd6-4f34722ec461"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return available;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="766f4284-78c8-42d0-a5ec-b57317cb7beb"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[int available;
+synchronized(fQueue) {
+    if(fEnoughDisplayTime)
+        return 0;
+    available=fQueue.size();
+}
+// Limit the available amount of data.
+// else our trick of limiting the time spend
+// reading might not work.
+if(available>BLOCK_SIZE)
+    available=BLOCK_SIZE;
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="read" mc="Operation" uid="2df603a0-2bac-4bf0-8d85-c81cff8cf7cc"/>
+          <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[read]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="163b4858-36b8-4944-819d-3ddbc0c11cad"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Note" uid="c09d5e90-c89b-44c1-89a7-44cf401bee89"/>
+                      <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[the next available byte. Check with {@link #available}
+if characters are available.]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="Javadoc" mc="NoteType" uid="01240268-0000-0044-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="d282a9c7-3dc3-4678-82bb-32d7ac3ada9a"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="c96eb603-0035-47ec-8884-1d77a9f383ee"/>
+                      <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[IOException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="d33dfcea-ce4a-49ad-b8f4-28db2f7d9523"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[try {
+    return fQueue.read();
+} catch (InterruptedException e) {
+    Thread.currentThread().interrupt();
+    return -1;
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="close" mc="Operation" uid="587f0d93-fc0d-47b5-ba96-66f9d5118ee2"/>
+          <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[close]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="8f7225d0-8d14-4c2d-86ae-7a0a7c42eeb6"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="db56b116-7322-46c9-babf-152540647a74"/>
+                      <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[IOException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="ce1ab5d2-908b-4dd1-bd66-d284310c271f"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Closing a <tt>ByteArrayInputStream</tt> has no effect. The methods in
+this class can be called after the stream has been closed without
+generating an <tt>IOException</tt>.
+<p>]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="read" mc="Operation" uid="e533f4cd-9a24-4c85-89d9-a9f94d406fe2"/>
+          <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[read]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="cbuf" mc="Parameter" uid="fef3bbc1-f0f5-421f-8121-e11057c3941a"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[cbuf]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="byte" mc="DataType" uid="00000004-0000-0013-0000-000000000000"/>
+                  </LINK>
+                  <COMP relation="Tag">
+                    <OBJECT>
+                      <ID name="" mc="TaggedValue" uid="cfa75cc4-16d8-4c01-9037-6ad76f730c3c"/>
+                      <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Actual">
+                          <OBJECT>
+                            <ID name="" mc="TagParameter" uid="3822c339-4326-4051-bc02-e8262f35e266"/>
+                            <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                            <ATTRIBUTES>
+                              <ATT name="Value"><![CDATA[Array]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Definition">
+                          <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="off" mc="Parameter" uid="f898cb20-5c46-4dc5-bc15-01f239414fde"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[off]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="len" mc="Parameter" uid="e014c92c-50b3-45ad-8fef-feaef0424dd1"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[len]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Return">
+              <OBJECT>
+                <ID name="" mc="Parameter" uid="4ee21f31-a537-4cb3-be80-7bb4bc0e9576"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="c32f5d66-9bb7-42cb-873c-3a6ac838f73d"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="2147eefd-4fd6-4a36-bf53-1f17d53f7fe5"/>
+                      <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[IOException]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaThrownException" mc="TagType" uid="003800a8-0000-017c-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="5379be4f-82c4-477f-9ec2-c7923d7e8e54"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return n;]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="c0004dd9-e32e-4f47-844a-d97cbd119444"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[int n=0;
+// read as much as we can using a single synchronized statement
+synchronized (fQueue) {
+    try {
+        // The assumption is that the caller has used available to
+        // check if bytes are available! That's why we don't check
+        // for fEnoughDisplayTime!
+        // Make sure that not more than BLOCK_SIZE is read in one call
+        while(fQueue.size()>0 && n<len && n<BLOCK_SIZE) {
+            cbuf[off+n]=fQueue.read();
+            n++;
+        }
+    } catch (InterruptedException e) {
+        Thread.currentThread().interrupt();
+    }
+}
+]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="fUITimeout" mc="Attribute" uid="18ef7f03-87f2-4ea7-9e7c-ead82e79984a"/>
+          <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fUITimeout]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="d0b3c559-e9c1-46cc-a6f7-5b681ef8e58d"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0161-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="a6c929e2-030d-4810-ae7e-f4c3c6977152"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="d904865f-b644-4d41-887f-c39f37fbcca4"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[The maximum time in milliseconds the {@link #fNotifyChange} runs until
+{@link #ready()} returns false.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fOutputStream" mc="Attribute" uid="d3f42c9c-41c3-4828-b6f7-ac5abe81bd22"/>
+          <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Protected</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fOutputStream]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="da7d89c1-f54c-415b-8e61-db663cd5611a"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0161-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="9c04748b-214c-4a8d-8d1f-fa98ce1dcc9e"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="13a62e74-a21f-4ff4-83f5-ab45c3d27ce8"/>
+                      <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[OutputStream]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="e1335765-931f-423d-a8c4-ad00fa17ba07"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="0e6cf4ea-b203-4dcc-817f-cbf9a2e8042c"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[The output stream used by the terminal backend to write to the terminal]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fNotifyChange" mc="Attribute" uid="6ac061ee-3a41-4cd1-950c-d5a0047e44ff"/>
+          <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fNotifyChange]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="1afc7515-a2c6-4c20-a74e-513f663f3d74"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0161-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="028f04f3-6b85-49f6-9aea-ef48f774f859"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="5cb025a7-4ba2-4d99-a0b8-a8e0cee387fb"/>
+                      <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[Runnable]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="9f4eaa82-62b7-47db-afe7-562d48c0b0a3"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="dad19f03-2bb1-41fd-9600-dc619e683a55"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[This runnable is called every time some characters are available from...]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fgTimer" mc="Attribute" uid="fcb2c1f2-5bf5-48c3-a65d-201875ea6fbd"/>
+          <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA[new Timer(false)]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fgTimer]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="0d2cf080-4563-4470-aca7-5d06bba60ab2"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="16c6d230-d8a4-461f-96d6-de1f1e707cf5"/>
+                      <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[Timer]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="fbe513d6-5c6d-4e71-9d2b-0592b1e31492"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[A shared timer for all terminals. This times is used to limit the
+time used in the display thread....]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="BLOCK_SIZE" mc="Attribute" uid="6a4d9f21-f5da-41aa-9a55-0716cb8116b4"/>
+          <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA[64]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">PackageVisibility</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[BLOCK_SIZE]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="integer" mc="DataType" uid="00000004-0000-0009-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="b05b960c-8265-4da2-976f-1899d821ffd7"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0161-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="b0b220b3-a468-4a16-803c-bddff337174b"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[The maximum amount of data read and written in one shot.
+The timer cannot interrupt reading this amount of data.
+{@link #available()} and {@link #read(byte[], int, int)}
+This is used as optimization, because reading single characters
+can be very inefficient, because each call is synchronized.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="aa2e4b0e-f740-426f-b7b8-66ff9852453b"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[// block size must be smaller than the Queue capacity!]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fRunnable" mc="Attribute" uid="fee3af61-3614-4e73-bd26-e92a1739fec8"/>
+          <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fRunnable]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="d970d6a4-f394-49c8-bad1-b7888775fa24"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="TagParameter" uid="9b153de0-5608-4299-b8ef-5bddb813f610"/>
+                      <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[Runnable]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaTypeExpr" mc="TagType" uid="003800a8-0000-0165-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="0073a92f-b316-4b4c-8a94-c90f8a09beb7"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="f373361f-c0d6-4f21-b0db-f29533fe1f31"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[The runnable that is scheduled in the display tread. Takes care of the
+timeout management. It calls the {@link #fNotifyChange}]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="cc62a519-2081-4f4d-ba1c-d39df1aceb71"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[// synchronized with fQueue!]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="fEnoughDisplayTime" mc="Attribute" uid="a70a40cf-b99a-4038-ad83-678eed56f0e3"/>
+          <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fEnoughDisplayTime]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="boolean" mc="DataType" uid="00000004-0000-0005-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="8da35689-5ede-4433-b8f8-c69c119e2bac"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="34e2e837-6866-4b56-908d-0461fd2e38c5"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Used as flag to indicate that the current runnable
+has used enough time in the display thread.
+This variable is set by a timer thread after the
+Runnable starts to run in the Display thread after
+{@link #fUITimeout}.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="94451d9a-e31f-4fc8-bfe4-1bc2614051fd"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[// synchronized with fQueue!]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaComment" mc="NoteType" uid="69ab88b5-741c-11e1-89e3-002564c97630"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedEnd">
+        <OBJECT>
+          <ID name="fQueue" mc="AssociationEnd" uid="239c0686-7d6e-42af-9119-3d8bfb7ee7ad"/>
+          <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[fQueue]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="BoundedByteBuffer" mc="Class" uid="4f93b474-c90a-433e-8a47-d38bf3f47fba"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="AssociationEnd" uid="2ac25dd6-53fb-475b-95ff-7034e350ed8d"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="fQueue" mc="AssociationEnd" uid="239c0686-7d6e-42af-9119-3d8bfb7ee7ad"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Association" uid="48c51ab9-1fc4-4e67-a1d6-89b605fca898"/>
+                      <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <OBJECT>
+                <ID name="" mc="Association" uid="48c51ab9-1fc4-4e67-a1d6-89b605fca898"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="4a7d6d1e-0376-401d-bf2c-daa91aa5500e"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaFinal" mc="TagType" uid="003800a8-0000-0180-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TaggedValue" uid="23b3312c-0e13-41c8-a1bb-bc0bba5b15fb"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="918e1511-283e-455f-840d-748ecea300af"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[A blocking byte queue.]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015f-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="BoundedByteBuffer" mc="Class" uid="4f93b474-c90a-433e-8a47-d38bf3f47fba"/>
+        <COMPID name="TerminalOutputStream" mc="Class" uid="0bb00d53-6fff-4be3-a63b-7a160733c98e"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="807b5fe3-fbfb-4a30-92b2-417f0927aefa"/>
+          <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="9fbac1c1-b1bd-436d-abbc-e84fef5bf051"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[InputStream]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaExtends" mc="TagType" uid="003800a8-0000-0154-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="TaggedValue" uid="a7c84ed7-4aec-4de8-9981-171e22a7f6ca"/>
+          <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="a513ddfa-bb23-4066-a307-b5b8a88193a9"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.io.IOException]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="47f31e4c-42d0-499d-903d-56c85f07c43d"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.io.InputStream]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="37618eb8-de4f-4212-9450-e3798fccc90a"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.io.OutputStream]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="ba1afa68-c027-4edf-bfc3-2c8bc252a0dc"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.util.Timer]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="4109ab91-5d8b-4160-90f1-a9b21a6efaba"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[java.util.TimerTask]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="TagParameter" uid="cacdcdf3-d13d-48e1-a2ba-f67d82de7473"/>
+                <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[org.eclipse.swt.widgets.Display]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImport" mc="TagType" uid="003800a8-0000-0155-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Note" uid="83b4772e-1da9-4a83-8f65-3d6bba02c90c"/>
+          <PID name="TerminalInputStream" mc="Class" uid="38b5f153-bab7-4267-9bc8-6288aa3a625e"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[The main purpose of this class is to start a runnable in the
+display thread when data is available and to pretend no data
+is available after a given amount of time the runnable is running.]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="Javadoc" mc="NoteType" uid="003800a8-0000-015d-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
